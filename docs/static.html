@@ -422,6 +422,100 @@
         </div>
     </main>
 
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <p class="footer-text">
+                <strong>Sisällön luonti:</strong> Tekstit ideoitu ja kehitetty 
+                <a href="mailto:stochasticphilosopher@gmail.com" class="footer-link">Stochastic Philosopherin</a> 
+                näkemysten pohjalta. Argumentit ja sisältö generoitu <strong>Claude Sonnet 4.5</strong> -tekoälyn avulla.
+            </p>
+        </div>
+        
+        <div class="footer-section">
+            <p class="footer-text">
+                <strong>Yksityisyys:</strong> Tämä sivusto tallentaa ainoastaan teemavalintasi (vaalea/tumma) 
+                selaimeesi, jos annat siihen luvan. Emme kerää muita tietoja. 
+                Katso <a href="#" onclick="showConsentModal(); return false;" class="footer-link">evästeasetukset</a>.
+            </p>
+        </div>
+        
+        <div class="footer-section footer-bottom">
+            <p class="copyright">
+                © <span id="currentYear"></span> Stochastic Philosopher. 
+                <a href="mailto:stochasticphilosopher@gmail.com" class="footer-link">stochasticphilosopher@gmail.com</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Update copyright year automatically
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+<style>
+.site-footer {
+    background-color: var(--header-bg);
+    border-top: 2px solid var(--border-color);
+    padding: 30px 20px 20px 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section:last-child {
+    margin-bottom: 0;
+}
+
+.footer-text {
+    line-height: 1.7;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.footer-link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.copyright {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 20px 15px 15px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .footer-section {
+        margin-bottom: 15px;
+    }
+}
+</style>
+
     <script>
         // Only theme toggle - no content loading
         const CONSENT_KEY = 'theme-consent';
