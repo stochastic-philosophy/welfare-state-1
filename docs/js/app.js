@@ -1,12 +1,6 @@
 // SPA Application Logic
 // Only used by index.html
-
-// Initialize markdown-it
-const md = window.markdownit({
-    html: true,
-    linkify: true,
-    typographer: true
-});
+// Uses page-navigation.js for page loading
 
 // Global state
 let contentData = null;
@@ -15,10 +9,12 @@ let currentPageIndex = -1;
 
 // Initialize the application
 async function init() {
-    // Consent and footer initialized by their own modules
     await loadContentData();
-    handleRoute();
-    window.addEventListener('hashchange', handleRoute);
+    // Use the enhanced route handler from page-navigation.js
+    window.PageNavigation.handleRouteWithAnchor();
+    window.addEventListener('hashchange', () => {
+        window.PageNavigation.handleRouteWithAnchor();
+    });
 }
 
 // Content loading
@@ -55,30 +51,14 @@ function buildPagesList() {
                             id: `${part.id}-chapter-${index}`,
                             title: chapter.title,
                             file: chapter.file,
-                            type: 'chapter'
+                            type: 'chapter',
+                            anchor: chapter.anchor // Support for chapter anchors
                         });
                     });
                 }
             });
         }
     });
-}
-
-// Routing
-function handleRoute() {
-    const hash = window.location.hash.slice(1);
-    
-    if (!hash) {
-        showTableOfContents();
-    } else {
-        const pageIndex = allPages.findIndex(p => p.id === hash);
-        if (pageIndex !== -1) {
-            currentPageIndex = pageIndex;
-            showPage(allPages[pageIndex]);
-        } else {
-            showError('Sivua ei löytynyt');
-        }
-    }
 }
 
 // Display table of contents
@@ -139,18 +119,33 @@ function renderPart(part) {
         html += '</div>';
         html += '</div>';
     } else if (part.chapters) {
-        // Has chapters - show all with their descriptions
+        // Has chapters - show all with their descriptions and section links
         html += '<ul class="chapter-list">';
         part.chapters.forEach((chapter, index) => {
+            const chapterId = `${part.id}-chapter-${index}`;
             html += '<li class="chapter-item">';
             html += '<div class="chapter-title">';
             html += '<span>' + chapter.title + '</span>';
             html += '<div>';
             html += '<button class="download-btn" onclick="downloadFile(\'' + chapter.file + '\', \'' + sanitizeFilename(chapter.title) + '.md\')">📥 Lataa</button>';
-            html += '<button class="download-btn view-btn" onclick="viewPage(\'' + part.id + '-chapter-' + index + '\')">👁️ Näytä</button>';
+            html += '<button class="download-btn view-btn" onclick="viewPage(\'' + chapterId + '\')">👁️ Näytä</button>';
             html += '</div>';
             html += '</div>';
             html += '<p class="chapter-description">' + chapter.description + '</p>';
+            
+            // Add section links if provided in content.json
+            if (chapter.sections && chapter.sections.length > 0) {
+                html += '<div class="section-links">';
+                html += '<span class="section-links-label">Hyppää:</span>';
+                chapter.sections.forEach(sectionLink => {
+                    const anchorId = window.PageNavigation.generateHeadingId(sectionLink.title);
+                    html += '<button class="section-link-btn" onclick="navigateToSection(\'' + chapterId + '\', \'' + anchorId + '\')">';
+                    html += sectionLink.title;
+                    html += '</button>';
+                });
+                html += '</div>';
+            }
+            
             html += '</li>';
         });
         html += '</ul>';
@@ -160,26 +155,7 @@ function renderPart(part) {
     return html;
 }
 
-// Show a page with markdown content
-async function showPage(page) {
-    updateNavButtons();
-    
-    try {
-        const response = await fetch(page.file);
-        if (!response.ok) throw new Error('Tiedoston lataus epäonnistui');
-        const content = await response.text();
-        
-        const html = md.render(content);
-        document.getElementById('contentArea').innerHTML = '<div class="content">' + html + '</div>';
-        
-        // Scroll to top
-        window.scrollTo(0, 0);
-    } catch (error) {
-        showError('Virhe tiedoston "' + page.file + '" latauksessa: ' + error.message);
-    }
-}
-
-// Navigation
+// Navigation functions
 function updateNavButtons() {
     const homeBtn = document.getElementById('homeBtn');
     const prevBtn = document.getElementById('prevBtn');
@@ -217,6 +193,11 @@ function navigateNext() {
 
 function viewPage(pageId) {
     window.location.hash = pageId;
+}
+
+// Navigate to specific section within a page
+function navigateToSection(pageId, anchorId) {
+    window.PageNavigation.navigateToPage(pageId, anchorId);
 }
 
 // File download
