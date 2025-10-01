@@ -510,6 +510,50 @@ main {
     font-size: 0.9rem;
 }
 
+.base-url-info code {
+    background-color: var(--header-bg);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* AI Instructions Box */
+.ai-instructions {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196F3;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+[data-theme="dark"] .ai-instructions {
+    background-color: #1a2942;
+    border-left-color: #42a5f5;
+}
+
+.ai-instructions p:first-child {
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.ai-instructions ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.ai-instructions li {
+    margin-bottom: 0.5rem;
+}
+
+.ai-instructions code {
+    background-color: var(--header-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
 /* Footer Styles */
 .site-footer {
     background-color: var(--header-bg);
