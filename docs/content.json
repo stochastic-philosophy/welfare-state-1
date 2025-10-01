@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sivu1",
+    "title": "Ensimmäinen artikkelini",
+    "file": "content/sivu1.md"
+  },
+  {
+    "id": "sivu2",
+    "title": "Toinen artikkeli",
+    "file": "content/sivu2.md"
+  },
+  {
+    "id": "sivu3",
+    "title": "Kolmas artikkeli",
+    "file": "content/sivu3.md"
+  }
+]
