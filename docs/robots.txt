@@ -13,7 +13,13 @@ Allow: /content.json
 Allow: /static.html
 Allow: /index.html
 
-# Sitemap (jos luot sellaisen)
+# JavaScipt
+Allow: /js/*.js
+
+# CSS
+Allow: /css/*.css
+
+# Sitemap
 Sitemap: https://stochastic-philosophy.github.io/welfare-state-1/sitemap.xml
 
 # Crawl-Delay for politeness (optional)
