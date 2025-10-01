@@ -11,62 +11,67 @@
         {
           "id": "osa-1",
           "title": "Osa 1: Yhteiskunnallisen vakauden perustat",
-          "description": "Tarkastelee hyvinvointivaltion roolia yhteiskunnallisen vakauden ylläpitäjänä erityisesti vauraiden kansalaisten näkökulmasta. Argumentoi, että hyvinvointivaltio on paradoksaalisesti juuri niiden ihmisten perustavanlaatuinen turvallisuustekijä, jotka usein vastustavat sitä voimakkaimmin. Sisältää historiallista analyysia vallankumouksista ja kriiseistä.",
+          "description": "Tarkastelee hyvinvointivaltion roolia yhteiskunnallisen vakauden ylläpitäjänä erityisesti vauraiden kansalaisten näkökulmasta. Argumentoi, että hyvinvointivaltio on paradoksaalisesti juuri niiden ihmisten perustavanlaatuinen turvallisuustekijä, jotka usein vastustavat sitä voimakkaimmin. Sisältää historiallista analyysia vallankumouksista ja kriiseistä sekä nykyaikaista analyysia Yhdysvaltojen ja Euroopan kehityksestä.",
           "chapters": [
             {
               "title": "Johdanto ja rajaukset",
               "description": "Esittelee tekstin lähtökohdat ja tunnustaa avoimesti argumentatiivisen luonteen. Määrittelee hyvinvointivaltion käsitteen viittaamaan erityisesti pohjoismaiseen malliin.",
-              "file": "content/yhteiskunta_sopimus_v2_osa1.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa1.md"
             },
             {
               "title": "Lyhytnäköisen itsekkyyden paradoksi",
               "description": "Esittelee IMF:n tunnustaman yhteyden eriarvoisuuden ja taloudellisen riskin välillä. Analysoi, miksi lyhyen aikavälin itsekkäät valinnat voivat horjuttaa yhteiskunnallista perustaa pitkällä aikavälillä.",
-              "file": "content/yhteiskunta_sopimus_v2_osa1.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa1.md"
             },
             {
               "title": "Ranskan vallankumous: Monitekijäinen kriisi",
               "description": "Tutkii Ranskan vallankumousta (1789) esimerkkinä monimutkaisesta kriisistä, jossa verotuksen epäoikeudenmukaisuus, äärimmäinen eriarvoisuus ja muut tekijät yhdistyivät. Korostaa, ettei kyse ollut yksinkertaisesta 'köyhät vastaan rikkaat' -konfliktista.",
-              "file": "content/yhteiskunta_sopimus_v2_osa1.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa1.md"
             },
             {
               "title": "Venäjän vallankumous: Sodan paljastama heikkous",
               "description": "Analysoi Venäjän vallankumouksia 1917 osoittamaan, miten äärimmäinen eriarvoisuus yhdistettynä sotaan ja poliittiseen sortoon johti tsaarijärjestelmän romahtamiseen. Painottaa tekijöiden monitekijäisyyttä.",
-              "file": "content/yhteiskunta_sopimus_v2_osa1.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa1.md"
             },
             {
               "title": "1930-luvun Saksa: Säästöpolitiikan tuhoisa kierre",
               "description": "Tarjoaa varoittavan esimerkin siitä, miten taloudellinen kriisi ja erityisesti säästöpolitiikka loivat hedelmällisen maaperän radikalismille. Osoittaa tuoreen tutkimuksen perusteella, että säästötoimet kiihdyttivät natsipuolueen kannatusta.",
-              "file": "content/yhteiskunta_sopimus_v2_osa1.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa1.md"
             },
             {
               "title": "Nyky-Yhdysvallat: Eriarvoisuuden seuraukset reaaliajassa",
               "description": "Tarkastelee Yhdysvaltoja modernina esimerkkinä siitä, miten pitkäaikainen eriarvoisuuden kasvu voi heikentää yhteiskunnallista vakautta. Dokumentoi eläketurvakriisin ja poliittisen polarisaation kasvun.",
-              "file": "content/yhteiskunta_sopimus_v2_osa2.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa2.md"
+            },
+            {
+              "title": "Euroopan hiljainen seuranta: uusliberalismin leviäminen",
+              "description": "Osoittaa, että vaikka Yhdysvallat on selvempi esimerkki, Eurooppa on hiljalleen seurannut samaa polkua. Dokumentoi progressiivisen verotuksen heikentymisen, julkisten palvelujen yksityistämisen ja tuloerojen kasvun. Käsittelee Suomea tapausesimerkkinä: eriarvoisuuden kasvu 1990-luvun puolivälistä lähtien, koulutuksen resurssien heikkeneminen ja palveluiden saatavuuden eriytyminen. Korostaa, että nämä trendit eivät ole 'luonnollisia' vaan seurausta tietoisista poliittisista valinnoista 1990-luvulta lähtien.",
+              "file": "content/yhteiskunta_sopimus_v3_osa2.md"
             },
             {
               "title": "Hyvinvointivaltio vakauden rakentajana",
               "description": "Analysoi, mitä onnistuneet hyvinvointivaltiot ovat tehneet oikein. Tarkastelee pohjoismaista mallia ja sen kolmea keskeistä funktiota: yhteiskuntarauha, poliittinen vakaus ja taloudellinen vakaus.",
-              "file": "content/yhteiskunta_sopimus_v2_osa2.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa2.md"
             },
             {
               "title": "Yhteisten alueiden tragedia ja sen ratkaisu",
               "description": "Soveltaa taloustieteen klassista ongelmaa hyvinvointivaltio-kysymykseen. Argumentoi, että vaikka verojen välttäminen voi olla yksilöllisesti rationaalista, se johtaa kollektiiviseen tappioon kun kaikki toimivat samoin.",
-              "file": "content/yhteiskunta_sopimus_v2_osa2.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa2.md"
             },
             {
               "title": "Itsesuojeluvaisto hyvinvointivaltion perustana",
               "description": "Esittää, että vahvin argumentti hyvinvointivaltion puolesta on kylmän rationaalinen itsesuojeluvaisto: halu varmistaa turvallinen ja vakaa yhteiskunta omille jälkeläisille. Viittaa Piketty'n tutkimukseen 1914-1980 'suuresta uudelleenjaosta'.",
-              "file": "content/yhteiskunta_sopimus_v2_osa3.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa3.md"
             },
             {
               "title": "Pakosuunnitelmien todellisuus",
               "description": "Käsittelee ajatusta siitä, että varakkaat voisivat 'paeta' yhteiskunnallisen epävakauden seurauksilta. Osoittaa tämän strategian perustavanlaatuiset ongelmat: globalisaatio, nopeat murrokset ja eristettyjen kuplien sokaiseva vaikutus.",
-              "file": "content/yhteiskunta_sopimus_v2_osa3.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa3.md"
             },
             {
               "title": "Johtopäätökset",
               "description": "Kokoaa yhteen analyysin keskeiset havainnot: hyvinvointivaltio ei ole 'rikkaiden riistoa' vaan rikkaiden perustavanlaatuinen turvallisuustekijä. Esittää lopullisen kysymyksen: haluavatko tämän hetken varakkaat olla viimeinen vauraiden sukupolvi historiassa?",
-              "file": "content/yhteiskunta_sopimus_v2_osa3.md"
+              "file": "content/yhteiskunta_sopimus_v3_osa3.md"
             }
           ]
         },
