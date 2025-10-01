@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main pages -->
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/index.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/static.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Content structure -->
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content.json</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Kokonaisuus A: Osa 1 - Yhteiskunnallisen vakauden perustat -->
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Kokonaisuus A: Osa 2 - Politiikan oppimishaaste -->
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Kokonaisuus A: Osa 3 - Innovaatio ja laajapohjainen koulutus -->
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Kokonaisuus B: Hyvinvointivaltion hajoamisen anatomia -->
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa1.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa2.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa3.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Kokonaisuus C: Moraaliset ja psykologiset juuret -->
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa1.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa2.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa3.md</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>
