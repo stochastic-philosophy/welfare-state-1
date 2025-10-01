@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-theme="light">
+    <div id="consentModal" class="modal">
+        <div class="modal-content">
+            <h2>Evästekäytäntö</h2>
+            <p>Haluatko tallentaa teema-asetuksesi selaimen välimuistiin? Tämä parantaa käyttökokemustasi, sillä valintasi säilyy sivustovierailujesi välillä.</p>
+            <div class="modal-buttons">
+                <button onclick="handleConsent(true)">Kyllä, tallenna</button>
+                <button onclick="handleConsent(false)">Ei, älä tallenna</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="header-left">
             <h1>Hyvinvointivaltion analyysi - Staattinen näkymä</h1>
@@ -25,19 +36,8 @@
         <div class="static-intro">
             <h2>Hyvinvointivaltion analyysi: Kokonaisuus</h2>
             <p class="description">Kattava analyysi hyvinvointivaltiosta kolmesta näkökulmasta: perustelut ja toimivuus, systemaattinen heikentäminen, sekä keskustelun moraaliset ja psykologiset juuret.</p>
-            
-            <div style="background: #f0f7ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1.5rem 0; border-radius: 4px;">
-                <p style="margin: 0 0 0.5rem 0;"><strong>🤖 Tekoälyille ja web crawlereille - Tärkeää:</strong></p>
-                <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-                    <li><strong>URL-rakenne:</strong> Kaikki dokumentit ovat muotoa: <code>https://stochastic-philosophy.github.io/welfare-state-1/content/[tiedostonimi].md</code></li>
-                    <li><strong>Useat luvut, yksi tiedosto:</strong> Yksi .md-tiedosto sisältää useita lukuja. Esim. "Johdanto ja rajaukset", "Lyhytnäköisen itsekkyyden paradoksi" ja muut ovat kaikki samassa <code>yhteiskunta_sopimus_v2_osa1.md</code> tiedostossa.</li>
-                    <li><strong>Tiedostonimet ovat täsmällisiä:</strong> Käytä tarkalleen alla näytettyjä tiedostonimiä (esim. <code>yhteiskunta_sopimus_v2_osa1.md</code>, EI <code>yhteiskunta-sopimus-v2-osa1.md</code>)</li>
-                    <li><strong>Luvun sisällön lukeminen:</strong> Hae tiedosto URL:lla ja etsi luvun otsikko (markdown ## tai ###) sisällöstä</li>
-                </ul>
-            </div>
-
-            <p class="info-note">💡 <strong>Käyttäjille:</strong> Tämä sivu sisältää suorat linkit kaikkiin markdown-dokumentteihin. Kopioi URL ja anna se tekoälylle, joka voi lukea sisällön ja keskustella siitä kanssasi.</p>
-            <p class="base-url-info">🔗 <strong>Pohja-URL:</strong> <code>https://stochastic-philosophy.github.io/welfare-state-1/content/</code></p>
+            <p class="info-note">💡 <strong>Tekoälynäkymä:</strong> Tämä sivu sisältää suorat linkit kaikkiin markdown-dokumentteihin. Kopioi URL ja anna se tekoälylle, joka voi lukea sisällön ja keskustella siitä kanssasi.</p>
+            <p class="base-url-info">🔗 <strong>Pohja-URL:</strong> <code>https://stochastic-philosophy.github.io/welfare-state-1/</code></p>
         </div>
 
         <div class="static-toc">
@@ -49,7 +49,7 @@
                 <!-- OSA 1 -->
                 <div class="part-block">
                     <h4 class="part-title">Osa 1: Yhteiskunnallisen vakauden perustat</h4>
-                    <p class="part-description">Tarkastelee hyvinvointivaltion roolia yhteiskunnallisen vakauden ylläpitäjänä erityisesti vauraiden kansalaisten näkökulmasta. Argumentoi, että hyvinvointivaltio on paradoksaalisesti juuri niiden ihmisten perustavanlaatuinen turvallisuustekijä, jotka usein vastustavat sitä voimakkaimmin. Sisältää historiallista analyysia vallankumouksista ja kriiseistä sekä nykyaikaista analyysia Yhdysvaltojen ja Euroopan kehityksestä.</p>
+                    <p class="part-description">Tarkastelee hyvinvointivaltion roolia yhteiskunnallisen vakauden ylläpitäjänä erityisesti vauraiden kansalaisten näkökulmasta. Argumentoi, että hyvinvointivaltio on paradoksaalisesti juuri niiden ihmisten perustavanlaatuinen turvallisuustekijä, jotka usein vastustavat sitä voimakkaimmin. Sisältää historiallista analyysia vallankumouksista ja kriiseistä.</p>
 
                     <ul class="chapter-list">
                         <li>
@@ -57,7 +57,7 @@
                             <p class="description">Esittelee tekstin lähtökohdat ja tunnustaa avoimesti argumentatiivisen luonteen. Määrittelee hyvinvointivaltion käsitteen viittaamaan erityisesti pohjoismaiseen malliin.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -65,7 +65,7 @@
                             <p class="description">Esittelee IMF:n tunnustaman yhteyden eriarvoisuuden ja taloudellisen riskin välillä. Analysoi, miksi lyhyen aikavälin itsekkäät valinnat voivat horjuttaa yhteiskunnallista perustaa pitkällä aikavälillä.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -73,7 +73,7 @@
                             <p class="description">Tutkii Ranskan vallankumousta (1789) esimerkkinä monimutkaisesta kriisistä, jossa verotuksen epäoikeudenmukaisuus, äärimmäinen eriarvoisuus ja muut tekijät yhdistyivät. Korostaa, ettei kyse ollut yksinkertaisesta 'köyhät vastaan rikkaat' -konfliktista.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -81,7 +81,7 @@
                             <p class="description">Analysoi Venäjän vallankumouksia 1917 osoittamaan, miten äärimmäinen eriarvoisuus yhdistettynä sotaan ja poliittiseen sortoon johti tsaarijärjestelmän romahtamiseen. Painottaa tekijöiden monitekijäisyyttä.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -89,7 +89,7 @@
                             <p class="description">Tarjoaa varoittavan esimerkin siitä, miten taloudellinen kriisi ja erityisesti säästöpolitiikka loivat hedelmällisen maaperän radikalismille. Osoittaa tuoreen tutkimuksen perusteella, että säästötoimet kiihdyttivät natsipuolueen kannatusta.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa1.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -97,15 +97,7 @@
                             <p class="description">Tarkastelee Yhdysvaltoja modernina esimerkkinä siitä, miten pitkäaikainen eriarvoisuuden kasvu voi heikentää yhteiskunnallista vakautta. Dokumentoi eläketurvakriisin ja poliittisen polarisaation kasvun.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Euroopan hiljainen seuranta: uusliberalismin leviäminen</strong>
-                            <p class="description">Osoittaa, että vaikka Yhdysvallat on selvempi esimerkki, Eurooppa on hiljalleen seurannut samaa polkua. Dokumentoi progressiivisen verotuksen heikentymisen, julkisten palvelujen yksityistämisen ja tuloerojen kasvun. Käsittelee Suomea tapausesimerkkinä: eriarvoisuuden kasvu 1990-luvun puolivälistä lähtien, koulutuksen resurssien heikkeneminen ja palveluiden saatavuuden eriytyminen. Korostaa, että nämä trendit eivät ole 'luonnollisia' vaan seurausta tietoisista poliittisista valinnoista 1990-luvulta lähtien.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -113,7 +105,7 @@
                             <p class="description">Analysoi, mitä onnistuneet hyvinvointivaltiot ovat tehneet oikein. Tarkastelee pohjoismaista mallia ja sen kolmea keskeistä funktiota: yhteiskuntarauha, poliittinen vakaus ja taloudellinen vakaus.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -121,7 +113,7 @@
                             <p class="description">Soveltaa taloustieteen klassista ongelmaa hyvinvointivaltio-kysymykseen. Argumentoi, että vaikka verojen välttäminen voi olla yksilöllisesti rationaalista, se johtaa kollektiiviseen tappioon kun kaikki toimivat samoin.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa2.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -129,7 +121,7 @@
                             <p class="description">Esittää, että vahvin argumentti hyvinvointivaltion puolesta on kylmän rationaalinen itsesuojeluvaisto: halu varmistaa turvallinen ja vakaa yhteiskunta omille jälkeläisille. Viittaa Piketty'n tutkimukseen 1914-1980 'suuresta uudelleenjaosta'.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -137,7 +129,7 @@
                             <p class="description">Käsittelee ajatusta siitä, että varakkaat voisivat 'paeta' yhteiskunnallisen epävakauden seurauksilta. Osoittaa tämän strategian perustavanlaatuiset ongelmat: globalisaatio, nopeat murrokset ja eristettyjen kuplien sokaiseva vaikutus.</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md</a></p>
                             </div>
                         </li>
                         <li>
@@ -145,7 +137,7 @@
                             <p class="description">Kokoaa yhteen analyysin keskeiset havainnot: hyvinvointivaltio ei ole 'rikkaiden riistoa' vaan rikkaiden perustavanlaatuinen turvallisuustekijä. Esittää lopullisen kysymyksen: haluavatko tämän hetken varakkaat olla viimeinen vauraiden sukupolvi historiassa?</p>
                             <div class="file-link-box">
                                 <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md</a></p>
+                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v2_osa3.md</a></p>
                             </div>
                         </li>
                     </ul>
@@ -422,100 +414,6 @@
         </div>
     </main>
 
-    <footer class="site-footer">
-    <div class="footer-content">
-        <div class="footer-section">
-            <p class="footer-text">
-                <strong>Sisällön luonti:</strong> Tekstit ideoitu ja kehitetty 
-                <a href="mailto:stochasticphilosopher@gmail.com" class="footer-link">Stochastic Philosopherin</a> 
-                näkemysten pohjalta. Argumentit ja sisältö generoitu <strong>Claude Sonnet 4.5</strong> -tekoälyn avulla.
-            </p>
-        </div>
-        
-        <div class="footer-section">
-            <p class="footer-text">
-                <strong>Yksityisyys:</strong> Tämä sivusto tallentaa ainoastaan teemavalintasi (vaalea/tumma) 
-                selaimeesi, jos annat siihen luvan. Emme kerää muita tietoja. 
-                Katso <a href="#" onclick="showConsentModal(); return false;" class="footer-link">evästeasetukset</a>.
-            </p>
-        </div>
-        
-        <div class="footer-section footer-bottom">
-            <p class="copyright">
-                © <span id="currentYear"></span> Stochastic Philosopher. 
-                <a href="mailto:stochasticphilosopher@gmail.com" class="footer-link">stochasticphilosopher@gmail.com</a>
-            </p>
-        </div>
-    </div>
-</footer>
-
-<script>
-// Update copyright year automatically
-document.getElementById('currentYear').textContent = new Date().getFullYear();
-</script>
-
-<style>
-.site-footer {
-    background-color: var(--header-bg);
-    border-top: 2px solid var(--border-color);
-    padding: 30px 20px 20px 20px;
-    margin-top: 60px;
-    font-size: 0.9rem;
-}
-
-.footer-content {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    margin-bottom: 20px;
-}
-
-.footer-section:last-child {
-    margin-bottom: 0;
-}
-
-.footer-text {
-    line-height: 1.7;
-    color: var(--text-color);
-    opacity: 0.9;
-}
-
-.footer-link {
-    color: var(--link-color);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-    text-align: center;
-}
-
-.copyright {
-    color: var(--text-color);
-    opacity: 0.8;
-    font-size: 0.85rem;
-}
-
-@media (max-width: 768px) {
-    .site-footer {
-        padding: 20px 15px 15px 15px;
-        font-size: 0.85rem;
-    }
-    
-    .footer-section {
-        margin-bottom: 15px;
-    }
-}
-</style>
-
     <script>
         // Only theme toggle - no content loading
         const CONSENT_KEY = 'theme-consent';
@@ -556,7 +454,15 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
             document.getElementById('themeIcon').textContent = theme === 'light' ? '🌙' : '☀️';
         }
 
+        function updateCopyrightYear() {
+            const yearElement = document.getElementById('currentYear');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        }
+
         loadTheme();
+        updateCopyrightYear();
     </script>
 </body>
 </html>
