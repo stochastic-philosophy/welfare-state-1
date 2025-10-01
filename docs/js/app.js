@@ -1,3 +1,6 @@
+// SPA Application Logic
+// Only used by index.html
+
 // Initialize markdown-it
 const md = window.markdownit({
     html: true,
@@ -9,91 +12,13 @@ const md = window.markdownit({
 let contentData = null;
 let allPages = [];
 let currentPageIndex = -1;
-let consentGiven = null;
-
-const CONSENT_KEY = 'theme-consent';
-const THEME_KEY = 'theme-preference';
 
 // Initialize the application
 async function init() {
-    checkConsent();
+    // Consent and footer initialized by their own modules
     await loadContentData();
     handleRoute();
     window.addEventListener('hashchange', handleRoute);
-}
-
-// Theme management
-function checkConsent() {
-    try {
-        const savedConsent = localStorage.getItem(CONSENT_KEY);
-        if (savedConsent !== null) {
-            consentGiven = savedConsent === 'true';
-            if (consentGiven) {
-                loadTheme();
-            }
-        } else {
-            showConsentModal();
-        }
-    } catch (e) {
-        console.warn('LocalStorage ei ole käytettävissä:', e);
-        consentGiven = false;
-    }
-}
-
-function showConsentModal() {
-    document.getElementById('consentModal').style.display = 'block';
-}
-
-function handleConsent(consent) {
-    consentGiven = consent;
-    document.getElementById('consentModal').style.display = 'none';
-    
-    try {
-        localStorage.setItem(CONSENT_KEY, consent.toString());
-        if (consent) {
-            saveTheme(document.body.getAttribute('data-theme'));
-        }
-    } catch (e) {
-        console.warn('LocalStorage tallennus epäonnistui:', e);
-    }
-}
-
-function loadTheme() {
-    try {
-        const savedTheme = localStorage.getItem(THEME_KEY);
-        if (savedTheme) {
-            document.body.setAttribute('data-theme', savedTheme);
-            updateThemeIcon(savedTheme);
-        }
-    } catch (e) {
-        console.warn('Teeman lataus epäonnistui:', e);
-    }
-}
-
-function saveTheme(theme) {
-    if (consentGiven) {
-        try {
-            localStorage.setItem(THEME_KEY, theme);
-        } catch (e) {
-            console.warn('Teeman tallennus epäonnistui:', e);
-        }
-    }
-}
-
-function toggleTheme() {
-    const currentTheme = document.body.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    document.body.setAttribute('data-theme', newTheme);
-    updateThemeIcon(newTheme);
-    saveTheme(newTheme);
-    
-    if (consentGiven === null) {
-        showConsentModal();
-    }
-}
-
-function updateThemeIcon(theme) {
-    document.getElementById('themeIcon').textContent = theme === 'light' ? '🌙' : '☀️';
 }
 
 // Content loading
@@ -332,18 +257,3 @@ function showError(message) {
 
 // Start the application
 init();
-
-// Update copyright year
-function updateCopyrightYear() {
-    const yearElement = document.getElementById('currentYear');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-}
-
-// Call it when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', updateCopyrightYear);
-} else {
-    updateCopyrightYear();
-}
