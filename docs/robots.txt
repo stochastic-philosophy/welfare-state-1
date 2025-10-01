@@ -1,0 +1,20 @@
+# robots.txt for welfare-state-1
+
+User-agent: *
+Allow: /
+
+# Markdown content files
+Allow: /content/*.md
+
+# JSON structure
+Allow: /content.json
+
+# Static pages
+Allow: /static.html
+Allow: /index.html
+
+# Sitemap (jos luot sellaisen)
+Sitemap: https://stochastic-philosophy.github.io/welfare-state-1/sitemap.xml
+
+# Crawl-Delay for politeness (optional)
+Crawl-delay: 1
