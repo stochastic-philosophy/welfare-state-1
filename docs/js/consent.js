@@ -13,29 +13,31 @@ function initConsent() {
 function checkConsent() {
     try {
         const savedConsent = localStorage.getItem(CONSENT_KEY);
+        
         if (savedConsent !== null) {
             consentGiven = savedConsent === 'true';
-            // Only load theme if consent was given
+            
             if (consentGiven === true) {
+                // User has given consent - load saved theme
                 loadTheme();
             } else {
-                // Apply default theme (light) if no consent
+                // User has denied consent - apply default theme
                 applyDefaultTheme();
             }
         } else {
-            // No consent saved - show modal and apply default theme
+            // No consent saved - this is first visit
+            consentGiven = null;
             applyDefaultTheme();
-            showConsentModal();
+            // Show modal after a short delay
+            setTimeout(showConsentModal, 500);
         }
     } catch (e) {
-        console.warn('LocalStorage ei ole käytettävissä:', e);
         consentGiven = false;
         applyDefaultTheme();
     }
 }
 
 function applyDefaultTheme() {
-    // Apply light theme as default
     document.body.setAttribute('data-theme', 'light');
     updateThemeIcon('light');
 }
@@ -59,71 +61,54 @@ function handleConsent(consent) {
     hideConsentModal();
     
     try {
+        // First save the consent decision
         localStorage.setItem(CONSENT_KEY, consent.toString());
         
         if (consent === true) {
             // User gave consent - save current theme
             const currentTheme = document.body.getAttribute('data-theme') || 'light';
-            saveTheme(currentTheme);
+            localStorage.setItem(THEME_KEY, currentTheme);
         } else {
-            // User denied consent - remove all stored data for this site
-            clearSiteData();
+            // User denied consent - remove all stored data
+            localStorage.removeItem(CONSENT_KEY);
+            localStorage.removeItem(THEME_KEY);
         }
     } catch (e) {
-        console.warn('LocalStorage tallennus epäonnistui:', e);
         consentGiven = false;
-    }
-}
-
-function clearSiteData() {
-    try {
-        // Remove all data stored by this site
-        localStorage.removeItem(CONSENT_KEY);
-        localStorage.removeItem(THEME_KEY);
-        console.log('Kaikki sivuston tallennetut tiedot poistettu');
-    } catch (e) {
-        console.warn('Tietojen poisto epäonnistui:', e);
     }
 }
 
 function loadTheme() {
     try {
-        const savedConsent = localStorage.getItem(CONSENT_KEY);
-        if (savedConsent === 'true') {
-            const savedTheme = localStorage.getItem(THEME_KEY);
-            if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
-                document.body.setAttribute('data-theme', savedTheme);
-                updateThemeIcon(savedTheme);
-            } else {
-                // No valid theme saved, apply default
-                applyDefaultTheme();
-            }
+        const savedTheme = localStorage.getItem(THEME_KEY);
+        
+        if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
+            document.body.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+        } else {
+            applyDefaultTheme();
         }
     } catch (e) {
-        console.warn('Teeman lataus epäonnistui:', e);
         applyDefaultTheme();
-    }
-}
-
-function saveTheme(theme) {
-    if (consentGiven === true) {
-        try {
-            localStorage.setItem(THEME_KEY, theme);
-        } catch (e) {
-            console.warn('Teeman tallennus epäonnistui:', e);
-        }
     }
 }
 
 function toggleTheme() {
     const currentTheme = document.body.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    // Apply the new theme immediately
     document.body.setAttribute('data-theme', newTheme);
     updateThemeIcon(newTheme);
     
-    // Only save theme if consent has been given
+    // Handle consent
     if (consentGiven === true) {
-        saveTheme(newTheme);
+        // User has already given consent - save the theme
+        try {
+            localStorage.setItem(THEME_KEY, newTheme);
+        } catch (e) {
+            // Silently fail
+        }
     } else if (consentGiven === null) {
         // No consent yet - ask for it
         showConsentModal();
@@ -140,23 +125,7 @@ function updateThemeIcon(theme) {
 
 // Function to show consent modal from footer link
 function showConsentModalFromFooter() {
-    // Clear any existing timeout that might hide the modal
-    if (window.consentModalTimeout) {
-        clearTimeout(window.consentModalTimeout);
-    }
     showConsentModal();
-}
-
-// Function to handle consent modal visibility toggle
-function toggleConsentModal() {
-    const modal = document.getElementById('consentModal');
-    if (modal) {
-        if (modal.style.display === 'block') {
-            hideConsentModal();
-        } else {
-            showConsentModalFromFooter();
-        }
-    }
 }
 
 // Export functions for global access
@@ -164,47 +133,12 @@ window.ConsentManager = {
     init: initConsent,
     show: showConsentModalFromFooter,
     hide: hideConsentModal,
-    toggle: toggleConsentModal,
-    clearData: clearSiteData,
     handleConsent: handleConsent,
     hasConsent: () => consentGiven === true
 };
 
-// Auto-hide modal after 30 seconds if no interaction (optional)
-function setupAutoHide() {
-    const modal = document.getElementById('consentModal');
-    if (modal) {
-        let autoHideTimeout;
-        
-        const resetAutoHide = () => {
-            if (autoHideTimeout) {
-                clearTimeout(autoHideTimeout);
-            }
-            autoHideTimeout = setTimeout(() => {
-                if (modal.style.display === 'block' && consentGiven === null) {
-                    // User hasn't made a choice - treat as denial
-                    handleConsent(false);
-                }
-            }, 30000); // 30 seconds
-        };
-        
-        // Reset timeout when mouse enters modal
-        modal.addEventListener('mouseenter', resetAutoHide);
-        modal.addEventListener('click', resetAutoHide);
-        
-        // Start auto-hide timer when modal is shown
-        const observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                if (mutation.attributeName === 'style' && 
-                    modal.style.display === 'block') {
-                    resetAutoHide();
-                }
-            });
-        });
-        
-        observer.observe(modal, { attributes: true });
-    }
-}
+// Initialize immediately when script loads
+initConsent();
 
-// Initialize auto-hide when DOM is ready
-document.addEventListener('DOMContentLoaded', setupAutoHide);
+// Also initialize when DOM is ready (backup)
+document.addEventListener('DOMContentLoaded', initConsent);
