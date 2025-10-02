@@ -105,10 +105,14 @@ function handleRoute() {
         const pageId = hashParts[0];
         const headingId = hashParts.length > 1 ? hashParts[1] : null;
         
-        // Set current page in PageNavigation
-        if (window.PageNavigation && window.PageNavigation.setCurrentPage(pageId)) {
-            const page = window.PageNavigation.getCurrentPage();
-            showPage(page, headingId);
+        // Find the page info from content.json
+        const pageInfo = findPageById(pageId);
+        if (pageInfo) {
+            // Set current file in PageNavigation
+            if (window.PageNavigation) {
+                window.PageNavigation.setCurrentFile(pageInfo.file);
+            }
+            showPage(pageInfo, headingId);
         } else {
             showError('Sivua ei löytynyt');
         }
@@ -119,7 +123,7 @@ function handleRoute() {
 function showTableOfContents() {
     // Reset page navigation
     if (window.PageNavigation) {
-        window.PageNavigation.currentPageIndex = -1;
+        window.PageNavigation.currentFile = null;
         window.PageNavigation.updateHeaderButtons();
     }
     
@@ -140,6 +144,42 @@ function showTableOfContents() {
     }
     
     document.getElementById('contentArea').innerHTML = html;
+}
+
+// Find page info by page ID
+function findPageById(pageId) {
+    if (!contentData || !contentData.sections) return null;
+    
+    for (const section of contentData.sections) {
+        if (section.parts) {
+            for (const part of section.parts) {
+                if (part.id === pageId && part.file) {
+                    return {
+                        id: part.id,
+                        title: part.title,
+                        file: part.file,
+                        sectionTitle: section.title
+                    };
+                }
+                if (part.chapters) {
+                    for (let i = 0; i < part.chapters.length; i++) {
+                        const chapter = part.chapters[i];
+                        const chapterId = `${part.id}-chapter-${i}`;
+                        if (chapterId === pageId) {
+                            return {
+                                id: chapterId,
+                                title: chapter.title,
+                                file: chapter.file,
+                                sectionTitle: section.title,
+                                partTitle: part.title
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return null;
 }
 
 // Render a section recursively
