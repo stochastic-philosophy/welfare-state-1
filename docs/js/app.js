@@ -10,13 +10,11 @@ const md = window.markdownit({
 
 // Global state
 let contentData = null;
-let allPages = [];
-let currentPageIndex = -1;
 let scrollNavigationLoaded = false;
+let pageNavigationLoaded = false;
 
 // Initialize the application
 async function init() {
-    // Consent and footer initialized by their own modules
     await loadContentData();
     handleRoute();
     window.addEventListener('hashchange', handleRoute);
@@ -29,12 +27,41 @@ async function loadContentData() {
         if (!response.ok) throw new Error('Sisällysluettelon lataus epäonnistui');
         contentData = await response.json();
         
-        // Load scroll navigation module
+        // Load navigation modules
+        await loadPageNavigation();
         await loadScrollNavigation();
         
-        buildPagesList();
+        // Initialize page navigation with content data
+        if (window.PageNavigation) {
+            window.PageNavigation.init(contentData);
+        }
     } catch (error) {
         showError('Virhe sisällysluettelon latauksessa: ' + error.message);
+    }
+}
+
+// Load page navigation module dynamically
+async function loadPageNavigation() {
+    if (pageNavigationLoaded) return;
+    
+    try {
+        const script = document.createElement('script');
+        script.src = 'js/page-navigation.js';
+        
+        return new Promise((resolve, reject) => {
+            script.onload = () => {
+                pageNavigationLoaded = true;
+                resolve();
+            };
+            
+            script.onerror = () => {
+                reject(new Error('Page-navigation.js:n lataus epäonnistui'));
+            };
+            
+            document.head.appendChild(script);
+        });
+    } catch (error) {
+        console.error('Virhe page-navigation.js:n lataamisessa:', error);
     }
 }
 
@@ -43,15 +70,12 @@ async function loadScrollNavigation() {
     if (scrollNavigationLoaded) return;
     
     try {
-        // Create script element
         const script = document.createElement('script');
         script.src = 'js/scroll-navigation.js';
         
-        // Return a promise that resolves when the script is loaded
         return new Promise((resolve, reject) => {
             script.onload = () => {
                 scrollNavigationLoaded = true;
-                // Initialize the scroll navigation
                 if (window.ScrollNavigation) {
                     window.ScrollNavigation.init();
                 }
@@ -69,39 +93,6 @@ async function loadScrollNavigation() {
     }
 }
 
-// Build flat list of all pages for navigation
-function buildPagesList() {
-    allPages = [];
-    
-    if (!contentData || !contentData.sections) return;
-    
-    contentData.sections.forEach(section => {
-        if (section.parts) {
-            section.parts.forEach(part => {
-                if (part.file) {
-                    allPages.push({
-                        id: part.id,
-                        title: part.title,
-                        file: part.file,
-                        type: 'part'
-                    });
-                } else if (part.chapters) {
-                    part.chapters.forEach((chapter, index) => {
-                        allPages.push({
-                            id: `${part.id}-chapter-${index}`,
-                            title: chapter.title,
-                            file: chapter.file,
-                            type: 'chapter',
-                            chapterIndex: index,
-                            partId: part.id
-                        });
-                    });
-                }
-            });
-        }
-    });
-}
-
 // Routing
 function handleRoute() {
     const hash = window.location.hash.slice(1);
@@ -114,10 +105,10 @@ function handleRoute() {
         const pageId = hashParts[0];
         const headingId = hashParts.length > 1 ? hashParts[1] : null;
         
-        const pageIndex = allPages.findIndex(p => p.id === pageId);
-        if (pageIndex !== -1) {
-            currentPageIndex = pageIndex;
-            showPage(allPages[pageIndex], headingId);
+        // Set current page in PageNavigation
+        if (window.PageNavigation && window.PageNavigation.setCurrentPage(pageId)) {
+            const page = window.PageNavigation.getCurrentPage();
+            showPage(page, headingId);
         } else {
             showError('Sivua ei löytynyt');
         }
@@ -126,8 +117,11 @@ function handleRoute() {
 
 // Display table of contents
 function showTableOfContents() {
-    currentPageIndex = -1;
-    updateNavButtons();
+    // Reset page navigation
+    if (window.PageNavigation) {
+        window.PageNavigation.currentPageIndex = -1;
+        window.PageNavigation.updateHeaderButtons();
+    }
     
     if (!contentData) {
         showError('Sisällysluettelo ei ole saatavilla');
@@ -171,7 +165,6 @@ function renderPart(part) {
     html += '<p class="part-description">' + part.description + '</p>';
     
     if (part.file) {
-        // Direct file reference - show as single item with buttons
         html += '<div class="chapter-item">';
         html += '<div class="chapter-title">';
         html += '<span>' + part.title + '</span>';
@@ -182,7 +175,6 @@ function renderPart(part) {
         html += '</div>';
         html += '</div>';
     } else if (part.chapters) {
-        // Has chapters - show all with their descriptions
         html += '<ul class="chapter-list">';
         part.chapters.forEach((chapter, index) => {
             const chapterId = `${part.id}-chapter-${index}`;
@@ -214,27 +206,37 @@ function createHeadingId(title) {
         .replace(/[ä]/g, 'a')
         .replace(/[ö]/g, 'o')
         .replace(/[å]/g, 'a')
-        .replace(/[^\w\s-]/g, '') // Remove special characters
-        .replace(/\s+/g, '-') // Replace spaces with hyphens
-        .replace(/-+/g, '-') // Replace multiple hyphens with single
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
         .trim();
 }
 
 // Show a page with markdown content
 async function showPage(page, headingId = null) {
-    updateNavButtons();
+    // Update header navigation buttons
+    if (window.PageNavigation) {
+        window.PageNavigation.updateHeaderButtons();
+    }
     
     try {
         const response = await fetch(page.file);
         if (!response.ok) throw new Error('Tiedoston lataus epäonnistui');
-        let content = await response.text();
+        const content = await response.text();
         
-        // Process content to add IDs to headings if needed
+        // Render markdown to HTML
+        let html = md.render(content);
+        
+        // Process HTML to add IDs to headings
         if (window.ScrollNavigation) {
-            content = window.ScrollNavigation.processContentHeadings(content);
+            html = window.ScrollNavigation.processContentHeadings(html);
         }
         
-        const html = md.render(content);
+        // Add page navigation (header and footer with page numbers)
+        if (window.PageNavigation) {
+            html = window.PageNavigation.addNavigationToContent(html);
+        }
+        
         document.getElementById('contentArea').innerHTML = '<div class="content">' + html + '</div>';
         
         // Scroll to top initially
@@ -243,13 +245,12 @@ async function showPage(page, headingId = null) {
         // Handle hash for heading after content is loaded
         if (window.ScrollNavigation) {
             if (headingId) {
-                // Scroll to specific heading
                 setTimeout(() => {
                     const headingElement = document.getElementById(headingId);
                     if (headingElement) {
                         window.ScrollNavigation.scrollToHeading(headingElement);
                     } else {
-                        // Try to find heading by text if ID doesn't match
+                        // Try to find heading by text
                         const headings = document.querySelectorAll('h1, h2, h3');
                         for (let i = 0; i < headings.length; i++) {
                             const heading = headings[i];
@@ -263,7 +264,6 @@ async function showPage(page, headingId = null) {
                     }
                 }, 300);
             } else {
-                // Handle URL hash for heading
                 window.ScrollNavigation.handleHashForHeading();
             }
         }
@@ -272,39 +272,22 @@ async function showPage(page, headingId = null) {
     }
 }
 
-// Navigation
-function updateNavButtons() {
-    const homeBtn = document.getElementById('homeBtn');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    
-    if (currentPageIndex === -1) {
-        homeBtn.style.display = 'none';
-        prevBtn.style.display = 'none';
-        nextBtn.style.display = 'none';
-    } else {
-        homeBtn.style.display = 'inline-block';
-        prevBtn.style.display = 'inline-block';
-        nextBtn.style.display = 'inline-block';
-        
-        prevBtn.disabled = currentPageIndex === 0;
-        nextBtn.disabled = currentPageIndex === allPages.length - 1;
+// Navigation wrapper functions for header buttons
+function navigateHome() {
+    if (window.PageNavigation) {
+        window.PageNavigation.navigateHome();
     }
 }
 
-function navigateHome() {
-    window.location.hash = '';
-}
-
 function navigatePrev() {
-    if (currentPageIndex > 0) {
-        window.location.hash = allPages[currentPageIndex - 1].id;
+    if (window.PageNavigation) {
+        window.PageNavigation.navigatePrevious();
     }
 }
 
 function navigateNext() {
-    if (currentPageIndex < allPages.length - 1) {
-        window.location.hash = allPages[currentPageIndex + 1].id;
+    if (window.PageNavigation) {
+        window.PageNavigation.navigateNext();
     }
 }
 
