@@ -1,4 +1,4 @@
-// Consent and Theme Management
+// Consent and Theme Management consent.js
 // Shared between index.html and static.html
 
 const CONSENT_KEY = 'theme-consent';
