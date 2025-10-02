@@ -91,7 +91,9 @@ function buildPagesList() {
                             id: `${part.id}-chapter-${index}`,
                             title: chapter.title,
                             file: chapter.file,
-                            type: 'chapter'
+                            type: 'chapter',
+                            chapterIndex: index,
+                            partId: part.id
                         });
                     });
                 }
@@ -115,17 +117,7 @@ function handleRoute() {
         const pageIndex = allPages.findIndex(p => p.id === pageId);
         if (pageIndex !== -1) {
             currentPageIndex = pageIndex;
-            showPage(allPages[pageIndex]);
-            
-            // If there's a heading ID, scroll to it after page loads
-            if (headingId && window.ScrollNavigation) {
-                setTimeout(() => {
-                    const headingElement = document.getElementById(headingId);
-                    if (headingElement) {
-                        window.ScrollNavigation.scrollToHeading(headingElement);
-                    }
-                }, 500);
-            }
+            showPage(allPages[pageIndex], headingId);
         } else {
             showError('Sivua ei löytynyt');
         }
@@ -193,12 +185,16 @@ function renderPart(part) {
         // Has chapters - show all with their descriptions
         html += '<ul class="chapter-list">';
         part.chapters.forEach((chapter, index) => {
+            const chapterId = `${part.id}-chapter-${index}`;
+            const headingId = createHeadingId(chapter.title);
+            const fullHash = `${chapterId}#${headingId}`;
+            
             html += '<li class="chapter-item">';
             html += '<div class="chapter-title">';
             html += '<span>' + chapter.title + '</span>';
             html += '<div>';
             html += '<button class="download-btn" onclick="downloadFile(\'' + chapter.file + '\', \'' + sanitizeFilename(chapter.title) + '.md\')">📥 Lataa</button>';
-            html += '<button class="download-btn view-btn" onclick="viewPage(\'' + part.id + '-chapter-' + index + '\')">👁️ Näytä</button>';
+            html += '<button class="download-btn view-btn" onclick="viewPage(\'' + fullHash + '\')">👁️ Näytä</button>';
             html += '</div>';
             html += '</div>';
             html += '<p class="chapter-description">' + chapter.description + '</p>';
@@ -211,8 +207,21 @@ function renderPart(part) {
     return html;
 }
 
+// Create a heading ID from title text
+function createHeadingId(title) {
+    return title
+        .toLowerCase()
+        .replace(/[ä]/g, 'a')
+        .replace(/[ö]/g, 'o')
+        .replace(/[å]/g, 'a')
+        .replace(/[^\w\s-]/g, '') // Remove special characters
+        .replace(/\s+/g, '-') // Replace spaces with hyphens
+        .replace(/-+/g, '-') // Replace multiple hyphens with single
+        .trim();
+}
+
 // Show a page with markdown content
-async function showPage(page) {
+async function showPage(page, headingId = null) {
     updateNavButtons();
     
     try {
@@ -228,12 +237,35 @@ async function showPage(page) {
         const html = md.render(content);
         document.getElementById('contentArea').innerHTML = '<div class="content">' + html + '</div>';
         
-        // Scroll to top
+        // Scroll to top initially
         window.scrollTo(0, 0);
         
         // Handle hash for heading after content is loaded
         if (window.ScrollNavigation) {
-            window.ScrollNavigation.handleHashForHeading();
+            if (headingId) {
+                // Scroll to specific heading
+                setTimeout(() => {
+                    const headingElement = document.getElementById(headingId);
+                    if (headingElement) {
+                        window.ScrollNavigation.scrollToHeading(headingElement);
+                    } else {
+                        // Try to find heading by text if ID doesn't match
+                        const headings = document.querySelectorAll('h1, h2, h3');
+                        for (let i = 0; i < headings.length; i++) {
+                            const heading = headings[i];
+                            const headingTextId = createHeadingId(heading.textContent);
+                            if (headingTextId === headingId) {
+                                heading.id = headingId;
+                                window.ScrollNavigation.scrollToHeading(heading);
+                                break;
+                            }
+                        }
+                    }
+                }, 300);
+            } else {
+                // Handle URL hash for heading
+                window.ScrollNavigation.handleHashForHeading();
+            }
         }
     } catch (error) {
         showError('Virhe tiedoston "' + page.file + '" latauksessa: ' + error.message);
