@@ -100,14 +100,17 @@ function processContentHeadings(content) {
 function handleHashForHeading() {
     const hash = window.location.hash;
     if (hash && hash.length > 1) {
-        const headingId = hash.substring(1);
-        const headingElement = document.getElementById(headingId);
-        
-        if (headingElement) {
-            // Wait a bit for content to fully render
-            setTimeout(() => {
-                scrollToHeading(headingElement);
-            }, 300);
+        const hashParts = hash.split('#');
+        if (hashParts.length > 1) {
+            const headingId = hashParts[1];
+            const headingElement = document.getElementById(headingId);
+            
+            if (headingElement) {
+                // Wait a bit for content to fully render
+                setTimeout(() => {
+                    scrollToHeading(headingElement);
+                }, 300);
+            }
         }
     }
 }
