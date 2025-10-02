@@ -152,10 +152,12 @@
         </div>
     </footer>
     
-    <!-- Load critical modules first -->
+    <!-- Load all modules in correct order before app.js -->
     <script src="js/consent.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/scroll-navigation.js"></script>
-    <!-- Then load app.js - router handles other modules -->
+    <script src="js/page-navigation.js"></script>
+    <!-- Finally load app.js -->
     <script src="js/app.js"></script>
 </body>
 </html>
