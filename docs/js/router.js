@@ -26,15 +26,14 @@ const Router = {
     },
 
     // Get modules to load based on page type
-    // NOTE: consent.js is loaded directly in HTML before app.js
+    // NOTE: consent.js and scroll-navigation.js loaded directly in HTML
     getModulesForPage() {
         const commonModules = [
             { name: 'footer', path: 'js/footer.js' }
         ];
 
         const indexModules = [
-            { name: 'page-navigation', path: 'js/page-navigation.js' },
-            { name: 'scroll-navigation', path: 'js/scroll-navigation.js' }
+            { name: 'page-navigation', path: 'js/page-navigation.js' }
         ];
 
         if (this.pageType === 'static') {
@@ -73,9 +72,6 @@ const Router = {
             script.onload = () => {
                 this.loadedModules.add(module.name);
                 console.log(`Router: Loaded ${module.name}`);
-                
-                // Initialize module if it has init function
-                this.initializeModule(module.name);
                 resolve();
             };
             
@@ -86,19 +82,6 @@ const Router = {
             
             document.head.appendChild(script);
         });
-    },
-
-    // Initialize module after loading
-    initializeModule(moduleName) {
-        switch(moduleName) {
-            case 'scroll-navigation':
-                if (window.ScrollNavigation && window.ScrollNavigation.init) {
-                    window.ScrollNavigation.init();
-                }
-                break;
-            // footer.js auto-initializes
-            // page-navigation.js initializes with content data later
-        }
     },
 
     // Check if module is loaded
