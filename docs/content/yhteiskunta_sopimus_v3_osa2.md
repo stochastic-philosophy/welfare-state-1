@@ -54,6 +54,24 @@ Kun tarkastelemme Suomen nykyisiä ongelmia – PISA-tulosten laskua, terveydenh
 
 Kun tarkastelemme näitä historiallisia ja nykyaikaisia esimerkkejä, nousee esiin tärkeä kysymys: mitä ne maat ovat tehneet oikein, jotka ovat välttäneet sekä äärimmäisen eriarvoisuuden että yhteiskunnallisen epävakauden?
 
+### Ennaltaehkäisy on halvempaa kuin korjaaminen
+
+Hyvinvointivaltion taloudellista rationaalisuutta ei tule ymmärtää vain makrotaloudellisena vakautena, vaan myös välittöminä kustannussäästöinä. On olemassa joukko ihmisiä, jotka systemaattisista syistä – pitkäaikaistyöttömyys, terveysongelmat, koulutuspuute, syrjintä – eivät löydä työpaikkaa nykyisiltä työmarkkinoilta. Tämä ei ole heidän syytään eikä arvostelmaa heidän arvostaan ihmisinä, vaan työmarkkinoiden rakenteellinen tosiasia.
+
+Kun nämä ihmiset elävät jatkuvassa taloudellisessa epävarmuudessa ja stressissä, seuraukset ovat kalliita yhteiskunnalle:
+
+**Terveyskustannukset:** Krooninen taloudellinen stressi johtaa sekä fyysisiin että psyykkisiin terveysongelmiin. Mullainathan ja Shafirin tutkimus osoittaa, että niukkuus "varastaa" kognitiivista kapasiteettia – kun ihminen joutuu jatkuvasti miettimään perusasioiden riittämistä, hänellä ei ole henkisiä resursseja muuhun (Mullainathan & Shafir, 2013). Tämä johtaa huonompiin päätöksiin, lisääntyneisiin terveysongelmiin ja korkeampiin hoitokustannuksiin.
+
+Kanadan Mincome-kokeilu (1974-1979) osoitti konkreettisesti tämän yhteyden: perustulon saajilla oli 8,5% vähemmän sairaalavisittejä erityisesti mielenterveys- ja tapaturma-aiheisista syistä (Forget, 2011). Parempi taloudellinen turva ei siis ainoastaan parantanut hyvinvointia – se vähensi suoraan terveydenhuollon kustannuksia.
+
+**Konkreettinen esimerkki:** Suomen Housing First -malli tarjoaa selkeän esimerkin siitä, miten ennaltaehkäisy on yhteiskunnalle edullisempaa kuin reaktiivinen toiminta. Y-Säätiön kustannusanalyysin mukaan asunnottoman henkilön aiheuttamat yhteiskunnalliset kustannukset (päivystykset, poliisitoimet, vankilakulut, sosiaalipalvelut) ovat noin 30,000-40,000 euroa vuodessa. Kun asunnoton saa asunnon ja tukipalvelut, kokonaiskustannukset laskevat noin 15,000-20,000 euroon vuodessa (Y-Säätiö, 2017). Tämä ei ole vain inhimillistä – se on myös taloudellisesti järkevää.
+
+**Byrokratian kustannukset:** Riittämätön perusturva luo byrokratiaa. Kun tukia on monia erilaisia, kaikkiin liittyy hakemuksia, päätöksiä, valituksia ja seurantaa. Tämä sitoo resursseja sekä viranomaisten että tukea tarvitsevien ajasta ja energiasta.
+
+**Sosiaaliset kustannukset:** Pitkittynyt taloudellinen stressi vaikuttaa perheisiin. Tutkimus osoittaa, että taloudellinen epävarmuus lisää parisuhdeongelmia, vaikuttaa negatiivisesti vanhemmuuteen ja heikentää lasten koulumenestystä (Mani et al., 2013). Nämä vaikutukset siirtyvät seuraavaan sukupolveen.
+
+**Yhteys sisäiseen motivaatioon:** Riittävä perusturva ei ainoastaan vähennä kustannuksia – se voi myös parantaa ihmisten toimintakykyä. Kun krooninen stressi vähenee, ihmiset pystyvät paremmin päivittämään taitojaan, etsimään aktiivisesti töitä (ei pelkästään pakosta vaan sisäisestä halusta), tekemään pitkän aikavälin suunnitelmia ja osallistumaan yhteisöön tuottavasti. Tämä ei tarkoita, että kaikki työllistyisivät välittömästi, mutta se luo paremmat edellytykset optimaaliselle toiminnalle.
+
 ### Pohjoismaiset kokemukset
 
 Pohjoismaat rakensivat 1900-luvun kuluessa mallin, joka yhdistää tehokkaan markkinatalouden vahvaan hyvinvointivaltioon. Tämä ei ollut sattumaa. Ruotsin ja Norjan eliitit ymmärsivät 1900-luvun alussa Venäjän vallankumouksen jälkeen, että oli viisaampaa maksaa korkeita veroja kuin menettää kaikki omaisuutensa yhteiskunnallisessa kaaoksessa (Esping-Andersen, 1990). Tämä oli tietoinen valinta vakauden puolesta.
