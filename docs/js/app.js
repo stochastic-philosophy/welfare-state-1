@@ -1,20 +1,25 @@
 // SPA Application Logic
 // Only used by index.html
-// Uses page-navigation.js for page loading
+
+// Initialize markdown-it
+const md = window.markdownit({
+    html: true,
+    linkify: true,
+    typographer: true
+});
 
 // Global state
 let contentData = null;
 let allPages = [];
 let currentPageIndex = -1;
+let scrollNavigationLoaded = false;
 
 // Initialize the application
 async function init() {
+    // Consent and footer initialized by their own modules
     await loadContentData();
-    // Use the enhanced route handler from page-navigation.js
-    window.PageNavigation.handleRouteWithAnchor();
-    window.addEventListener('hashchange', () => {
-        window.PageNavigation.handleRouteWithAnchor();
-    });
+    handleRoute();
+    window.addEventListener('hashchange', handleRoute);
 }
 
 // Content loading
@@ -23,9 +28,44 @@ async function loadContentData() {
         const response = await fetch('content.json');
         if (!response.ok) throw new Error('Sisällysluettelon lataus epäonnistui');
         contentData = await response.json();
+        
+        // Load scroll navigation module
+        await loadScrollNavigation();
+        
         buildPagesList();
     } catch (error) {
         showError('Virhe sisällysluettelon latauksessa: ' + error.message);
+    }
+}
+
+// Load scroll navigation module dynamically
+async function loadScrollNavigation() {
+    if (scrollNavigationLoaded) return;
+    
+    try {
+        // Create script element
+        const script = document.createElement('script');
+        script.src = 'js/scroll-navigation.js';
+        
+        // Return a promise that resolves when the script is loaded
+        return new Promise((resolve, reject) => {
+            script.onload = () => {
+                scrollNavigationLoaded = true;
+                // Initialize the scroll navigation
+                if (window.ScrollNavigation) {
+                    window.ScrollNavigation.init();
+                }
+                resolve();
+            };
+            
+            script.onerror = () => {
+                reject(new Error('Scroll-navigation.js:n lataus epäonnistui'));
+            };
+            
+            document.head.appendChild(script);
+        });
+    } catch (error) {
+        console.error('Virhe scroll-navigation.js:n lataamisessa:', error);
     }
 }
 
@@ -51,14 +91,45 @@ function buildPagesList() {
                             id: `${part.id}-chapter-${index}`,
                             title: chapter.title,
                             file: chapter.file,
-                            type: 'chapter',
-                            anchor: chapter.anchor // Support for chapter anchors
+                            type: 'chapter'
                         });
                     });
                 }
             });
         }
     });
+}
+
+// Routing
+function handleRoute() {
+    const hash = window.location.hash.slice(1);
+    
+    if (!hash) {
+        showTableOfContents();
+    } else {
+        // Check if hash contains a heading reference (e.g., "page-id#heading-id")
+        const hashParts = hash.split('#');
+        const pageId = hashParts[0];
+        const headingId = hashParts.length > 1 ? hashParts[1] : null;
+        
+        const pageIndex = allPages.findIndex(p => p.id === pageId);
+        if (pageIndex !== -1) {
+            currentPageIndex = pageIndex;
+            showPage(allPages[pageIndex]);
+            
+            // If there's a heading ID, scroll to it after page loads
+            if (headingId && window.ScrollNavigation) {
+                setTimeout(() => {
+                    const headingElement = document.getElementById(headingId);
+                    if (headingElement) {
+                        window.ScrollNavigation.scrollToHeading(headingElement);
+                    }
+                }, 500);
+            }
+        } else {
+            showError('Sivua ei löytynyt');
+        }
+    }
 }
 
 // Display table of contents
@@ -119,33 +190,18 @@ function renderPart(part) {
         html += '</div>';
         html += '</div>';
     } else if (part.chapters) {
-        // Has chapters - show all with their descriptions and section links
+        // Has chapters - show all with their descriptions
         html += '<ul class="chapter-list">';
         part.chapters.forEach((chapter, index) => {
-            const chapterId = `${part.id}-chapter-${index}`;
             html += '<li class="chapter-item">';
             html += '<div class="chapter-title">';
             html += '<span>' + chapter.title + '</span>';
             html += '<div>';
             html += '<button class="download-btn" onclick="downloadFile(\'' + chapter.file + '\', \'' + sanitizeFilename(chapter.title) + '.md\')">📥 Lataa</button>';
-            html += '<button class="download-btn view-btn" onclick="viewPage(\'' + chapterId + '\')">👁️ Näytä</button>';
+            html += '<button class="download-btn view-btn" onclick="viewPage(\'' + part.id + '-chapter-' + index + '\')">👁️ Näytä</button>';
             html += '</div>';
             html += '</div>';
             html += '<p class="chapter-description">' + chapter.description + '</p>';
-            
-            // Add section links if provided in content.json
-            if (chapter.sections && chapter.sections.length > 0) {
-                html += '<div class="section-links">';
-                html += '<span class="section-links-label">Hyppää:</span>';
-                chapter.sections.forEach(sectionLink => {
-                    const anchorId = window.PageNavigation.generateHeadingId(sectionLink.title);
-                    html += '<button class="section-link-btn" onclick="navigateToSection(\'' + chapterId + '\', \'' + anchorId + '\')">';
-                    html += sectionLink.title;
-                    html += '</button>';
-                });
-                html += '</div>';
-            }
-            
             html += '</li>';
         });
         html += '</ul>';
@@ -155,7 +211,36 @@ function renderPart(part) {
     return html;
 }
 
-// Navigation functions
+// Show a page with markdown content
+async function showPage(page) {
+    updateNavButtons();
+    
+    try {
+        const response = await fetch(page.file);
+        if (!response.ok) throw new Error('Tiedoston lataus epäonnistui');
+        let content = await response.text();
+        
+        // Process content to add IDs to headings if needed
+        if (window.ScrollNavigation) {
+            content = window.ScrollNavigation.processContentHeadings(content);
+        }
+        
+        const html = md.render(content);
+        document.getElementById('contentArea').innerHTML = '<div class="content">' + html + '</div>';
+        
+        // Scroll to top
+        window.scrollTo(0, 0);
+        
+        // Handle hash for heading after content is loaded
+        if (window.ScrollNavigation) {
+            window.ScrollNavigation.handleHashForHeading();
+        }
+    } catch (error) {
+        showError('Virhe tiedoston "' + page.file + '" latauksessa: ' + error.message);
+    }
+}
+
+// Navigation
 function updateNavButtons() {
     const homeBtn = document.getElementById('homeBtn');
     const prevBtn = document.getElementById('prevBtn');
@@ -193,11 +278,6 @@ function navigateNext() {
 
 function viewPage(pageId) {
     window.location.hash = pageId;
-}
-
-// Navigate to specific section within a page
-function navigateToSection(pageId, anchorId) {
-    window.PageNavigation.navigateToPage(pageId, anchorId);
 }
 
 // File download
