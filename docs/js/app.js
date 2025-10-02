@@ -6,13 +6,12 @@ const App = {
     pageType: null,
     contentData: null,
     md: null,
-    isReady: false,
 
     // Initialize application
     async init() {
         console.log('App: Initializing...');
         
-        // Show loading indicator
+        // Show loading
         this.showLoading();
         
         // Initialize markdown-it
@@ -23,10 +22,10 @@ const App = {
         });
         
         try {
-            // Load router first
+            // Load router
             await this.loadRouter();
             
-            // Initialize router and wait for all modules
+            // Initialize router
             const routerReady = await window.Router.init();
             
             if (!routerReady) {
@@ -42,14 +41,12 @@ const App = {
                 await this.initStaticPage();
             }
             
-            this.isReady = true;
             this.hideLoading();
             console.log('App: Initialization complete');
             
         } catch (error) {
             console.error('App: Initialization failed:', error);
-            this.showError('Sovelluksen lataus epäonnistui. Yritä päivittää sivu.');
-            this.hideLoading();
+            this.showError('Sovelluksen lataus epäonnistui: ' + error.message);
         }
     },
 
@@ -83,7 +80,6 @@ const App = {
             };
             
             script.onerror = () => {
-                console.error('App: Failed to load router');
                 reject(new Error('Failed to load router.js'));
             };
             
@@ -98,8 +94,8 @@ const App = {
         // Load content data
         await this.loadContentData();
         
-        // Wait for page-navigation to be loaded
-        await this.waitForModule('page-navigation');
+        // Wait a moment for page-navigation to load
+        await new Promise(resolve => setTimeout(resolve, 100));
         
         // Initialize page navigation with content data
         if (window.PageNavigation) {
@@ -114,27 +110,10 @@ const App = {
     // Initialize static.html page
     async initStaticPage() {
         console.log('App: Initializing static page');
-        // Static page needs no additional logic
-        // Just clear loading indicator
+        // Just clear loading
         const contentArea = document.getElementById('contentArea');
         if (contentArea && contentArea.querySelector('.loading-container')) {
             contentArea.innerHTML = '';
-        }
-    },
-
-    // Wait for a module to be loaded
-    async waitForModule(moduleName) {
-        const maxWait = 5000; // 5 seconds max
-        const checkInterval = 50; // Check every 50ms
-        let waited = 0;
-        
-        while (!window.Router.isModuleLoaded(moduleName) && waited < maxWait) {
-            await new Promise(resolve => setTimeout(resolve, checkInterval));
-            waited += checkInterval;
-        }
-        
-        if (waited >= maxWait) {
-            console.warn(`App: Timeout waiting for ${moduleName}`);
         }
     },
 
@@ -146,18 +125,12 @@ const App = {
             this.contentData = await response.json();
             console.log('App: Content data loaded');
         } catch (error) {
-            this.showError('Virhe sisällysluettelon latauksessa: ' + error.message);
             throw error;
         }
     },
 
     // Handle routing (index.html only)
     handleRoute() {
-        if (!this.isReady) {
-            console.log('App: Not ready yet, deferring route');
-            return;
-        }
-        
         const hash = window.location.hash.slice(1);
         
         if (!hash) {
@@ -179,7 +152,7 @@ const App = {
         }
     },
 
-    // Show table of contents (index.html only)
+    // Show table of contents
     showTableOfContents() {
         if (window.PageNavigation) {
             window.PageNavigation.currentFile = null;
@@ -273,9 +246,10 @@ const App = {
             if (!response.ok) throw new Error('Tiedoston lataus epäonnistui');
             const content = await response.text();
             
+            // Render markdown
             let html = this.md.render(content);
             
-            // Process headings only if ScrollNavigation is loaded
+            // Process headings (scroll-navigation loaded in HTML, always available)
             if (window.ScrollNavigation && window.ScrollNavigation.processContentHeadings) {
                 html = window.ScrollNavigation.processContentHeadings(html);
             }
@@ -296,7 +270,7 @@ const App = {
                     if (headingElement) {
                         window.ScrollNavigation.scrollToHeading(headingElement);
                     } else {
-                        // Try to find heading by text
+                        // Try to find by text
                         const headings = document.querySelectorAll('h1, h2, h3');
                         for (let i = 0; i < headings.length; i++) {
                             const heading = headings[i];
@@ -309,8 +283,6 @@ const App = {
                         }
                     }
                 }, 300);
-            } else if (window.ScrollNavigation) {
-                window.ScrollNavigation.handleHashForHeading();
             }
         } catch (error) {
             this.showError('Virhe tiedoston "' + page.file + '" latauksessa: ' + error.message);
@@ -353,7 +325,7 @@ const App = {
         return null;
     },
 
-    // Utility: Create heading ID
+    // Create heading ID
     createHeadingId(title) {
         return title
             .toLowerCase()
@@ -366,7 +338,7 @@ const App = {
             .trim();
     },
 
-    // Utility: Sanitize filename
+    // Sanitize filename
     sanitizeFilename(title) {
         return title
             .toLowerCase()
@@ -383,7 +355,7 @@ const App = {
     }
 };
 
-// Global navigation functions (for onclick handlers)
+// Global functions
 function navigateHome() {
     if (window.PageNavigation) {
         window.PageNavigation.navigateHome();
@@ -426,7 +398,7 @@ async function downloadFile(filepath, filename) {
     }
 }
 
-// Start application when DOM is ready
+// Start
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => App.init());
 } else {
