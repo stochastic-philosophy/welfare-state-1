@@ -1,6 +1,90 @@
 # Innovaatio ja laajapohjainen koulutus - Osa 3
 
-## Koulutuksen markkinoistuminen: Kriittinen tarkastelu
+## Sisäinen motivaatio ja innovaation psykologiset perustat
+
+### Implisiittinen vastaväite
+
+Kun argumentoidaan julkisen koulutuksen ja tutkimuksen puolesta, kohdataan usein implisiittinen kysymys: "Jos ihmiset saavat riittävät tulot ja turvan, eivätkö he laiskistu? Eikö tarvita 'keppiä ja porkkanaa' motivoimaan tuottavuuteen ja innovaatioon?"
+
+Tämä kysymys perustuu oletukseen, että ihmiset ovat luonnostaan passivoituvia olentoja, jotka toimivat vain ulkoisen pakon tai palkkion motivoimina. Empiirinen todellisuus on monimutkaisempi ja kiinnostavampi.
+
+### Itsemääräämisteoria: Kolme psykologista perustarvetta
+
+Psykologit Edward Deci ja Richard Ryan ovat tutkineet laajasti ihmisen motivaatiota kehittämässään Self-Determination Theory (SDT) -viitekehyksessä. Heidän tutkimuksensa osoittaa, että ihmisillä on kolme synnynnäistä psykologista perustarvetta, joiden tyydyttäminen johtaa sisäiseen motivaatioon ja hyvinvointiin (Ryan & Deci, 2000):
+
+1. **Autonomia (Autonomy)** – vapaus päättää mitä tekee, miten tekee ja milloin tekee
+2. **Pätevyys (Competence/Mastery)** – halu tulla paremmaksi jossain, hallita taitoja
+3. **Yhteisöllisyys (Relatedness)** – yhteys muihin ihmisiin, osa yhteisöä
+
+Nämä tarpeet eivät ole kulttuurisesti opittuja vaan biologisesti perusteltuja. Kun ne täyttyvät, ihmiset ovat luonnostaan uteliaita, aktiivisia ja tuottavia – ilman ulkoista pakkoa.
+
+### Ulkoisten palkkioiden vaarat: Crowding-out -efekti
+
+Laaja meta-analyysi, joka kattoi 128 tutkimusta, osoittaa että suoritusperusteiset palkkiot voivat **heikentää** sisäistä motivaatiota luovissa ja monimutkaisissa tehtävissä (Deci, Koestner & Ryan, 1999). Tämä "crowding-out" -efekti tarkoittaa että:
+
+- Jos ihminen on alun perin sisäisesti kiinnostunut asiasta
+- Ja hänelle aletaan maksaa ulkoista palkkiota siitä
+- Hän saattaa alkaa tehdä sitä VAIN palkkion vuoksi
+- Ja sisäinen kiinnostus hiipuu
+
+Tämä ei tarkoita että raha ei motivoisi – toki motivoi yksinkertaisissa, mekaanisissa tehtävissä. Mutta **monimutkaisissa, luovuutta vaativissa tehtävissä** (kuten tutkimus, innovaatio, ongelmanratkaisu) sisäinen motivaatio on usein voimakkaampi ja kestävämpi kuin ulkoinen.
+
+Daniel Pinkin teos *Drive* (2009) popularisoi nämä havainnot yritysmaailmaan. Hänen keskeinen argumenttinsa on, että 2000-luvun luova ja konseptuaalinen työ vaatii sisäistä motivaatiota. Vanha "jos-teet-niin-saat" -malli toimii vain yksinkertaisissa tehtävissä, mutta innovaatiossa ja luovuudessa se on jopa **haitallista**.
+
+### Arkiesimerkki: Käsityöläisten vapaaehtoinen toimeliaisuus
+
+Ilmiö ei rajoitu akateemiseen maailmaan tai korkeaan älyllisyyteen. Monet käsityöläiset – puusepät, sähkömiehet, putkimiehet – nikkaroivat vapaa-ajallaankin, auttavat kavereiden remonteissa, kehittävät taitojaan ilman taloudellista motiivia.
+
+He voivat tehdä tätä koska heillä on vakituinen työ (taloudellinen turva), riittävät tulot (ei jatkuvaa stressiä) ja vapaa-aikaa (ei tarvetta tehdä useaa työtä). Tämä kuvaa samaa mekanismia: kun perustarpeet on tyydytetty, ihmiset **haluavat** käyttää taitojaan, kehittyä, olla hyödyllisiä. Tämä ei ole innovaatiota samassa mielessä kuin tieteellinen läpimurto, mutta se osoittaa että "keppi ja porkkana" EI ole ainoa tapa saada ihmiset toimimaan tuottavasti.
+
+### Laajempi ilmiö: Kollektiivinen luovuus ilman taloudellista motiivia
+
+Sama ilmiö näkyy laajemmassa mittakaavassa:
+
+**Open source -yhteisöt:** Linux, Python, Wikipedia – miljoonat ihmiset tuottavat valtavaa arvoa ilman rahallista korvausta. Miksi? Koska se on mielekästä (purpose), he oppivat ja kehittyvät (mastery), he kuuluvat yhteisöön (relatedness) ja heillä on vapaus päättää (autonomy).
+
+Clay Shirkyn käsite "cognitive surplus" kuvaa tätä ilmiötä: kun ihmiset ovat taloudellisesti turvattuja JA heillä on vapaa-aikaa, he KÄYTTÄVÄT kognitiivisen ylijäämänsä tuottavasti – ei laiskotteluun (Shirky, 2010). Wikipedia, avoimen lähdekoodin projektit ja lukemattomat muut yhteisölliset tuotannot syntyvät tästä ylijäämästä.
+
+**Maker-kulttuuri:** Ihmiset jakavat ilmaiseksi 3D-printattavia suunnitelmia, Arduino-koodia, korjausohjeita. Ei siksi että "pitäisi" vaan koska se on antoisaa, opettavaista ja yhteisöllistä.
+
+**Tieteellinen tutkimus:** Monet tutkijat työskentelevät pitkiä päiviä, eivät ensisijaisesti palkan vuoksi (yksityisellä sektorilla tienaisivat enemmän) vaan koska haluavat ymmärtää maailmaa (uteliaisuus), nauttivat ongelmanratkaisusta (mastery), haluavat edistää tietoa (purpose) ja kuuluvat tiedeyhteisöön (relatedness).
+
+### Stressi tuhoaa kognitiivista kapasiteettia
+
+Robert Sapolskyn neurobiologinen tutkimus vahvistaa: krooninen stressi (esim. jatkuva huoli toimeentulosta) heikentää työmuistia, päätöksentekokykyä, pitkän aikavälin suunnittelua, luovaa ajattelua ja riskinottokykyä (Sapolsky, 2023).
+
+Mullainathan & Shafirin tutkimus "scarcity-efektistä" osoittaa että niukkuus "varastaa" huomiota ja kognitiivista kapasiteettia (Mullainathan & Shafir, 2013). Kun ihminen joutuu jatkuvasti huolehtimaan perusasioista, hänellä ei ole henkisiä resursseja luovaan ajatteluun tai pitkän aikavälin suunnitteluun.
+
+**Hyvinvointivaltio luo kontekstin**, jossa stressi on matalampi (turva), kognitiivinen kapasiteetti vapautuu, ihmiset voivat ajatella pidemmälle ja luova ajattelu sekä riskinotto mahdollistuvat.
+
+Tämä pätee kaikkiin, ei vain tutkijoihin. Myös ne ihmiset, jotka eivät koskaan tule innovoimaan tieteellisesti, hyötyvät tästä. Riittävä perusturva vähentää terveydenhuollon tarvetta (vähemmän stressiä → parempi terveys), parantaa kykyä päivittää taitoja ja työllistyä, mahdollistaa osallistumisen yhteisöön ja luo yleisesti paremmat edellytykset toimia optimaalisesti.
+
+### Yhteys perustutkimukseen ja innovaatioon
+
+Perustutkimus – josta innovaatiot syntyvät vuosikymmeniä myöhemmin – vaatii erityisesti pitkäaikaista sitoutumista (ei kvartaalitaloudellista tulosvastuuta), vapautta tutkia "hyödyttömiä" asioita (joista tulee hyödyllisiä 20-50 vuoden päästä) ja taloudellista turvaa (tenure-järjestelmä, ei prekaarit sopimukset).
+
+Näissä olosuhteissa tutkijat voivat toimia sisäisen motivaationsa ohjaamina: uteliaisuus ohjaa tutkimuskysymyksiä, halu ymmärtää syvemmin motivoi pitkäjänteiseen työhön ja yhteisöllinen tiedonrakennus luo tukea.
+
+Kun Academic Freedom Index laskee Suomessa (Volkswagen Foundation, 2025) ja resursseja leikataan, kärsii juuri tämä sisäinen motivaatio. Tutkijat pakotetaan miettimään lyhyen aikavälin rahoitusta ja "hyödyllisyyttä" sen sijaan että he voisivat vapaasti tutkia sitä, mikä heitä kiinnostaa. Tämä ei ole vain harmillista – se on suoraan haitallista innovaatiolle.
+
+### Kriittinen huomio: Ei täydellinen malli
+
+On tärkeää tunnustaa että eivät kaikki ihmiset ole sisäisesti motivoituneita kaikissa tilanteissa, ulkoiset palkkiot (palkka) ovat tärkeitä – ihmisten pitää saada elää, ja tämä ei ole "joko-tai" vaan "molempia-ja".
+
+Pointti on: **Keppi ja porkkana eivät ole ainoa tapa** saada ihmiset toimimaan tuottavasti. Ja monimutkaisissa, luovuutta vaativissa tehtävissä ne voivat olla jopa haitallisia. Sisäinen motivaatio on voimakkaampi moottori innovaatiolle kuin ulkoinen pakko.
+
+### Yhteys hyvinvointivaltion kokonaisargumenttiin
+
+Tämä selittää miksi "ihmiset ylittivät itsensä hyvinvointivaltioissakin" – tai oikeastaan juuri sen takia:
+
+1. **Taloudellinen turva vapautti** ihmiset ajattelemaan pidemmälle, ottamaan riskejä
+2. **Julkinen koulutus antoi** taidot ja tiedon
+3. **Sisäinen motivaatio ohjasi** ihmisiä käyttämään taitojaan optimaalisesti
+4. **Tutkimus ja innovaatio** seurasivat luonnollisesti tästä yhdistelmästä
+
+Kun perustarpeet turvataan ja koulutus on laajasti saatavilla, ihmisten luontainen uteliaisuus ja halu kehittyä valjastetaan yhteiskunnan hyväksi – ei pakolla, vaan mahdollisuuksien luomisella. Tämä on hyvinvointivaltion piilo-vahvuus: se ei ainoastaan tuo turvallisuutta tai oikeudenmukaisuutta, vaan se **optimoi inhimillisen potentiaalin** luomalla olosuhteet, joissa sisäinen motivaatio voi kukoistaa.
+
+## Kulutuksen markkinoistuminen: Kriittinen tarkastelu
 
 ### Käsitteelliset erot: yksityishyödyke vs. kollektiivinen hyöty
 
@@ -135,6 +219,8 @@ AQA (2024). "Finland & PISA – A fall from grace but still a high performer?" H
 
 Austin, R. D., Devin, L., & Sullivan, E. E. (2012). "Accidental Innovation: Supporting Valuable Unpredictability in the Creative Process." *Organization Science*, 23(5), 1505-1522. https://doi.org/10.1287/orsc.1110.0681
 
+Deci, E. L., Koestner, R., & Ryan, R. M. (1999). "A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation." *Psychological Bulletin*, 125(6), 627-668. DOI: 10.1037/0033-2909.125.6.627
+
 Finnish National Agency for Education (2024). "PISA results reflect broader changes in Finnish society." Haettu osoitteesta: https://www.oph.fi/en/blog/pisa-results-reflect-broader-changes-finnish-society
 
 Fordham Institute (2024). "The rise and fall of Finland mania, part two: Why did scores plummet?" Haettu osoitteesta: https://fordhaminstitute.org/national/commentary/rise-and-fall-finland-mania-part-two-why-did-scores-plummet
@@ -147,6 +233,8 @@ Medium/YC Felin (2023). "Finland's PISA Decline Dissected with Educational Resea
 
 Moser, P., Voena, A., & Waldinger, F. (2014). "German Jewish Émigrés and U.S. Invention." NBER Working Paper 19962. [Mainittu lähteessä Kerr, 2016]
 
+Mullainathan, S., & Shafir, E. (2013). *Scarcity: Why Having Too Little Means So Much*. New York: Times Books.
+
 Nature Communications (2024). "How popularising higher education affects economic growth and poverty alleviation: empirical evidence from 38 countries." Haettu osoitteesta: https://www.nature.com/articles/s41599-024-03013-5
 
 OECD (2016). *Innovating Education and Educating for Innovation: The Power of Digital Technologies and Skills*. OECD Publishing. Haettu osoitteesta: https://www.oecd.org/content/dam/oecd/en/publications/reports/2016/09/innovating-education-and-educating-for-innovation_g1g710fd/9789264265097-en.pdf
@@ -155,11 +243,19 @@ OECD Education GPS (2024). "Finland - Student performance (PISA 2022)." Haettu o
 
 Page, S. E. (2017). *The Diversity Bonus: How Great Teams Pay Off in the Knowledge Economy*. Princeton University Press.
 
+Pink, D. H. (2009). *Drive: The Surprising Truth About What Motivates Us*. New York: Riverhead Books.
+
+Ryan, R. M., & Deci, E. L. (2000). "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being." *American Psychologist*, 55(1), 68-78.
+
 Sahlberg, P. (2012). "Two Finnish Icons: Education and Nokia." Haettu osoitteesta: https://pasisahlberg.com/two-finnish-icons-education-and-nokia/
 
 Santa Fe Institute (2017). "Page's 'The Diversity Bonus' makes the business case for diverse teams." Haettu osoitteesta: https://www.santafe.edu/news-center/news/pages-diversity-bonus-makes-business-case-diverse-teams
 
+Sapolsky, R. M. (2023). *Determined: Life Without Free Will*. New York: Penguin Press.
+
 ScienceDirect (2022). "Does the Cream Always Rise to the Top? The Misallocation of Talent in Innovation." *Journal of Monetary Economics*. https://doi.org/10.1016/j.jmoneco.2022.09.001
+
+Shirky, C. (2010). *Cognitive Surplus: Creativity and Generosity in a Connected Age*. New York: Penguin Press.
 
 Springer (2020). "Finland: Success Through Equity—The Trajectories in PISA Performance." Haettu osoitteesta: https://link.springer.com/chapter/10.1007/978-3-030-59031-4_6
 
