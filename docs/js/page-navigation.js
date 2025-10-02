@@ -1,125 +1,164 @@
 // Page Navigation Module
-// Handles page navigation, page numbers, and coordinates with scroll-navigation
+// Handles page navigation, page numbers based on unique files
 
 const PageNavigation = {
-    allPages: [],
-    currentPageIndex: -1,
+    allUniqueFiles: [],  // Unique file paths in order
+    currentFile: null,
     contentData: null,
 
     // Initialize with content data
     init(contentData) {
         this.contentData = contentData;
-        this.buildPagesList();
+        this.buildUniqueFilesList();
     },
 
-    // Build flat list of all pages from content.json
-    buildPagesList() {
-        this.allPages = [];
+    // Build list of unique files in order from content.json
+    buildUniqueFilesList() {
+        const filesInOrder = [];
+        const seenFiles = new Set();
         
         if (!this.contentData || !this.contentData.sections) return;
         
+        // Collect all file paths in order, preserving first occurrence
         this.contentData.sections.forEach(section => {
             if (section.parts) {
                 section.parts.forEach(part => {
                     if (part.file) {
-                        this.allPages.push({
-                            id: part.id,
-                            title: part.title,
-                            file: part.file,
-                            type: 'part',
-                            sectionTitle: section.title
-                        });
-                    } else if (part.chapters) {
-                        part.chapters.forEach((chapter, index) => {
-                            this.allPages.push({
-                                id: `${part.id}-chapter-${index}`,
-                                title: chapter.title,
-                                file: chapter.file,
-                                type: 'chapter',
-                                sectionTitle: section.title,
-                                partTitle: part.title
+                        if (!seenFiles.has(part.file)) {
+                            filesInOrder.push({
+                                file: part.file,
+                                title: part.title,
+                                sectionTitle: section.title
                             });
+                            seenFiles.add(part.file);
+                        }
+                    } else if (part.chapters) {
+                        part.chapters.forEach(chapter => {
+                            if (!seenFiles.has(chapter.file)) {
+                                filesInOrder.push({
+                                    file: chapter.file,
+                                    title: chapter.title,
+                                    sectionTitle: section.title,
+                                    partTitle: part.title
+                                });
+                                seenFiles.add(chapter.file);
+                            }
                         });
                     }
                 });
             }
         });
+        
+        this.allUniqueFiles = filesInOrder;
     },
 
-    // Get current page info
-    getCurrentPage() {
-        if (this.currentPageIndex >= 0 && this.currentPageIndex < this.allPages.length) {
-            return this.allPages[this.currentPageIndex];
-        }
-        return null;
+    // Get file info by file path
+    getFileInfo(filePath) {
+        return this.allUniqueFiles.find(f => f.file === filePath);
     },
 
-    // Get page by ID
-    getPageById(pageId) {
-        return this.allPages.find(p => p.id === pageId);
+    // Get file index by file path
+    getFileIndex(filePath) {
+        return this.allUniqueFiles.findIndex(f => f.file === filePath);
     },
 
-    // Get page index by ID
-    getPageIndexById(pageId) {
-        return this.allPages.findIndex(p => p.id === pageId);
-    },
-
-    // Set current page
-    setCurrentPage(pageId) {
-        const index = this.getPageIndexById(pageId);
+    // Set current file
+    setCurrentFile(filePath) {
+        const index = this.getFileIndex(filePath);
         if (index !== -1) {
-            this.currentPageIndex = index;
+            this.currentFile = filePath;
             return true;
         }
         return false;
     },
 
-    // Get page numbers
+    // Get current file info
+    getCurrentFileInfo() {
+        if (this.currentFile) {
+            return this.getFileInfo(this.currentFile);
+        }
+        return null;
+    },
+
+    // Get page numbers (based on unique files)
     getPageNumbers() {
-        const current = this.currentPageIndex + 1;
-        const total = this.allPages.length;
+        if (!this.currentFile) return { current: 0, total: this.allUniqueFiles.length };
+        
+        const current = this.getFileIndex(this.currentFile) + 1;
+        const total = this.allUniqueFiles.length;
         return { current, total };
     },
 
     // Check if has previous page
     hasPrevious() {
-        return this.currentPageIndex > 0;
+        if (!this.currentFile) return false;
+        return this.getFileIndex(this.currentFile) > 0;
     },
 
     // Check if has next page
     hasNext() {
-        return this.currentPageIndex < this.allPages.length - 1;
+        if (!this.currentFile) return false;
+        const index = this.getFileIndex(this.currentFile);
+        return index < this.allUniqueFiles.length - 1;
     },
 
-    // Get previous page
-    getPreviousPage() {
-        if (this.hasPrevious()) {
-            return this.allPages[this.currentPageIndex - 1];
-        }
-        return null;
+    // Get previous file
+    getPreviousFile() {
+        if (!this.hasPrevious()) return null;
+        const currentIndex = this.getFileIndex(this.currentFile);
+        return this.allUniqueFiles[currentIndex - 1];
     },
 
-    // Get next page
-    getNextPage() {
-        if (this.hasNext()) {
-            return this.allPages[this.currentPageIndex + 1];
+    // Get next file
+    getNextFile() {
+        if (!this.hasNext()) return null;
+        const currentIndex = this.getFileIndex(this.currentFile);
+        return this.allUniqueFiles[currentIndex + 1];
+    },
+
+    // Find first chapter/part that uses this file
+    findChapterIdForFile(filePath) {
+        if (!this.contentData || !this.contentData.sections) return null;
+        
+        for (const section of this.contentData.sections) {
+            if (section.parts) {
+                for (const part of section.parts) {
+                    if (part.file === filePath) {
+                        return part.id;
+                    }
+                    if (part.chapters) {
+                        for (let i = 0; i < part.chapters.length; i++) {
+                            const chapter = part.chapters[i];
+                            if (chapter.file === filePath) {
+                                return `${part.id}-chapter-${i}`;
+                            }
+                        }
+                    }
+                }
+            }
         }
         return null;
     },
 
     // Navigate to previous page
     navigatePrevious() {
-        const prev = this.getPreviousPage();
+        const prev = this.getPreviousFile();
         if (prev) {
-            window.location.hash = prev.id;
+            const chapterId = this.findChapterIdForFile(prev.file);
+            if (chapterId) {
+                window.location.hash = chapterId;
+            }
         }
     },
 
     // Navigate to next page
     navigateNext() {
-        const next = this.getNextPage();
+        const next = this.getNextFile();
         if (next) {
-            window.location.hash = next.id;
+            const chapterId = this.findChapterIdForFile(next.file);
+            if (chapterId) {
+                window.location.hash = chapterId;
+            }
         }
     },
 
@@ -134,7 +173,7 @@ const PageNavigation = {
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         
-        if (this.currentPageIndex === -1) {
+        if (!this.currentFile) {
             homeBtn.style.display = 'none';
             prevBtn.style.display = 'none';
             nextBtn.style.display = 'none';
@@ -151,9 +190,9 @@ const PageNavigation = {
     // Create page navigation footer
     createPageFooter() {
         const numbers = this.getPageNumbers();
-        const currentPage = this.getCurrentPage();
+        const fileInfo = this.getCurrentFileInfo();
         
-        if (!currentPage) return '';
+        if (!fileInfo) return '';
 
         const prevDisabled = !this.hasPrevious() ? 'disabled' : '';
         const nextDisabled = !this.hasNext() ? 'disabled' : '';
@@ -162,7 +201,7 @@ const PageNavigation = {
             <div class="page-navigation-footer">
                 <div class="page-info">
                     <div class="page-number">Sivu ${numbers.current} / ${numbers.total}</div>
-                    <div class="page-title">${currentPage.title}</div>
+                    <div class="page-title">${fileInfo.title}</div>
                 </div>
                 <div class="page-nav-buttons">
                     <button onclick="PageNavigation.navigatePrevious()" ${prevDisabled} class="page-nav-btn">
@@ -182,15 +221,15 @@ const PageNavigation = {
     // Create page navigation header (for top of content)
     createPageHeader() {
         const numbers = this.getPageNumbers();
-        const currentPage = this.getCurrentPage();
+        const fileInfo = this.getCurrentFileInfo();
         
-        if (!currentPage) return '';
+        if (!fileInfo) return '';
 
         return `
             <div class="page-navigation-header">
                 <div class="page-breadcrumb">
-                    ${currentPage.sectionTitle}
-                    ${currentPage.partTitle ? ' → ' + currentPage.partTitle : ''}
+                    ${fileInfo.sectionTitle}
+                    ${fileInfo.partTitle ? ' → ' + fileInfo.partTitle : ''}
                 </div>
                 <div class="page-number-small">Sivu ${numbers.current} / ${numbers.total}</div>
             </div>
