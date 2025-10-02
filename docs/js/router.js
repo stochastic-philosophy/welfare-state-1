@@ -26,9 +26,9 @@ const Router = {
     },
 
     // Get modules to load based on page type
+    // NOTE: consent.js is loaded directly in HTML before app.js
     getModulesForPage() {
         const commonModules = [
-            { name: 'consent', path: 'js/consent.js' },
             { name: 'footer', path: 'js/footer.js' }
         ];
 
@@ -96,7 +96,7 @@ const Router = {
                     window.ScrollNavigation.init();
                 }
                 break;
-            // consent.js and footer.js auto-initialize
+            // footer.js auto-initializes
             // page-navigation.js initializes with content data later
         }
     },
