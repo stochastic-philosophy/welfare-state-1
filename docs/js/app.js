@@ -6,39 +6,69 @@ const App = {
     pageType: null,
     contentData: null,
     md: null,
+    isReady: false,
 
     // Initialize application
     async init() {
         console.log('App: Initializing...');
         
-        // Initialize markdown-it (only needed for index.html but harmless for static)
+        // Show loading indicator
+        this.showLoading();
+        
+        // Initialize markdown-it
         this.md = window.markdownit({
             html: true,
             linkify: true,
             typographer: true
         });
         
-        // Load router first - it will load all required modules
-        await this.loadRouter();
-        
-        // Initialize router
-        const routerReady = await window.Router.init();
-        
-        if (!routerReady) {
-            console.error('App: Router initialization failed');
-            return;
+        try {
+            // Load router first
+            await this.loadRouter();
+            
+            // Initialize router and wait for all modules
+            const routerReady = await window.Router.init();
+            
+            if (!routerReady) {
+                throw new Error('Router initialization failed');
+            }
+            
+            this.pageType = window.Router.pageType;
+            
+            // Page-specific initialization
+            if (this.pageType === 'index') {
+                await this.initIndexPage();
+            } else {
+                await this.initStaticPage();
+            }
+            
+            this.isReady = true;
+            this.hideLoading();
+            console.log('App: Initialization complete');
+            
+        } catch (error) {
+            console.error('App: Initialization failed:', error);
+            this.showError('Sovelluksen lataus epäonnistui. Yritä päivittää sivu.');
+            this.hideLoading();
         }
-        
-        this.pageType = window.Router.pageType;
-        
-        // Page-specific initialization
-        if (this.pageType === 'index') {
-            await this.initIndexPage();
-        } else {
-            await this.initStaticPage();
+    },
+
+    // Show loading spinner
+    showLoading() {
+        const contentArea = document.getElementById('contentArea');
+        if (contentArea) {
+            contentArea.innerHTML = `
+                <div class="loading-container">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-text">Ladataan...</p>
+                </div>
+            `;
         }
-        
-        console.log('App: Initialization complete');
+    },
+
+    // Hide loading spinner
+    hideLoading() {
+        // Loading will be replaced by content
     },
 
     // Load router module
@@ -68,6 +98,9 @@ const App = {
         // Load content data
         await this.loadContentData();
         
+        // Wait for page-navigation to be loaded
+        await this.waitForModule('page-navigation');
+        
         // Initialize page navigation with content data
         if (window.PageNavigation) {
             window.PageNavigation.init(this.contentData);
@@ -82,7 +115,27 @@ const App = {
     async initStaticPage() {
         console.log('App: Initializing static page');
         // Static page needs no additional logic
-        // consent.js and footer.js are already initialized by router
+        // Just clear loading indicator
+        const contentArea = document.getElementById('contentArea');
+        if (contentArea && contentArea.querySelector('.loading-container')) {
+            contentArea.innerHTML = '';
+        }
+    },
+
+    // Wait for a module to be loaded
+    async waitForModule(moduleName) {
+        const maxWait = 5000; // 5 seconds max
+        const checkInterval = 50; // Check every 50ms
+        let waited = 0;
+        
+        while (!window.Router.isModuleLoaded(moduleName) && waited < maxWait) {
+            await new Promise(resolve => setTimeout(resolve, checkInterval));
+            waited += checkInterval;
+        }
+        
+        if (waited >= maxWait) {
+            console.warn(`App: Timeout waiting for ${moduleName}`);
+        }
     },
 
     // Load content data from JSON
@@ -100,6 +153,11 @@ const App = {
 
     // Handle routing (index.html only)
     handleRoute() {
+        if (!this.isReady) {
+            console.log('App: Not ready yet, deferring route');
+            return;
+        }
+        
         const hash = window.location.hash.slice(1);
         
         if (!hash) {
@@ -217,10 +275,12 @@ const App = {
             
             let html = this.md.render(content);
             
-            if (window.ScrollNavigation) {
+            // Process headings only if ScrollNavigation is loaded
+            if (window.ScrollNavigation && window.ScrollNavigation.processContentHeadings) {
                 html = window.ScrollNavigation.processContentHeadings(html);
             }
             
+            // Add page navigation
             if (window.PageNavigation) {
                 html = window.PageNavigation.addNavigationToContent(html);
             }
@@ -229,28 +289,28 @@ const App = {
             
             window.scrollTo(0, 0);
             
-            if (window.ScrollNavigation) {
-                if (headingId) {
-                    setTimeout(() => {
-                        const headingElement = document.getElementById(headingId);
-                        if (headingElement) {
-                            window.ScrollNavigation.scrollToHeading(headingElement);
-                        } else {
-                            const headings = document.querySelectorAll('h1, h2, h3');
-                            for (let i = 0; i < headings.length; i++) {
-                                const heading = headings[i];
-                                const headingTextId = this.createHeadingId(heading.textContent);
-                                if (headingTextId === headingId) {
-                                    heading.id = headingId;
-                                    window.ScrollNavigation.scrollToHeading(heading);
-                                    break;
-                                }
+            // Handle scrolling to heading
+            if (window.ScrollNavigation && headingId) {
+                setTimeout(() => {
+                    const headingElement = document.getElementById(headingId);
+                    if (headingElement) {
+                        window.ScrollNavigation.scrollToHeading(headingElement);
+                    } else {
+                        // Try to find heading by text
+                        const headings = document.querySelectorAll('h1, h2, h3');
+                        for (let i = 0; i < headings.length; i++) {
+                            const heading = headings[i];
+                            const headingTextId = this.createHeadingId(heading.textContent);
+                            if (headingTextId === headingId) {
+                                heading.id = headingId;
+                                window.ScrollNavigation.scrollToHeading(heading);
+                                break;
                             }
                         }
-                    }, 300);
-                } else {
-                    window.ScrollNavigation.handleHashForHeading();
-                }
+                    }
+                }, 300);
+            } else if (window.ScrollNavigation) {
+                window.ScrollNavigation.handleHashForHeading();
             }
         } catch (error) {
             this.showError('Virhe tiedoston "' + page.file + '" latauksessa: ' + error.message);
