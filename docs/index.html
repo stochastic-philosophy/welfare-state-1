@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
 </head>
+    script>
+    // Testaa modalin näyttämistä 1 sekunnin kuluttua
+    setTimeout(function() {
+        const modal = document.getElementById('consentModal');
+        if (modal && modal.style.display !== 'block') {
+            modal.style.display = 'block';
+        }
+    }, 1000);
+</script>
 <body data-theme="light">
     <div id="consentModal" class="modal">
         <div class="modal-content">
