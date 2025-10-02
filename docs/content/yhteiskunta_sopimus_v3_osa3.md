@@ -56,6 +56,8 @@ Figes, O. (1996). *A People's Tragedy: The Russian Revolution*. London: Jonathan
 
 Fitzpatrick, S. (2017). *The Russian Revolution* (4th ed.). Oxford: Oxford University Press.
 
+Forget, E. L. (2011). "The Town with No Poverty: The Health Effects of a Canadian Guaranteed Annual Income Field Experiment." *Canadian Public Policy*, 37(3), 283-305.
+
 Galofré-Vilà, G., Meissner, C. M., McKee, M., & Stuckler, D. (2019). "Austerity and the Rise of the Nazi Party." *Journal of Economic History*, 79(2). DOI: 10.3386/w24106
 
 Giommoni, T., Tabellini, M., & Loumeau, G. (2025). "Extractive taxation and the French Revolution." Harvard Business School Working Paper. [Viitattu: CEPR, 2025]
@@ -76,7 +78,11 @@ Lindert, P. H., & Nafziger, S. (2014). "Russian Inequality on the Eve of Revolut
 
 Lumen Learning (n.d.). "Rising Discontent in Russia." *History of Western Civilization II*. Haettu osoitteesta: https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/rising-discontent-in-russia/
 
+Mani, A., Mullainathan, S., Shafir, E., & Zhao, J. (2013). "Poverty Impedes Cognitive Function." *Science*, 341(6149), 976-980.
+
 Marttila, T. (2013). *The Culture of Enterprise in Neoliberalism: Specters of Entrepreneurship*. London: Routledge.
+
+Mullainathan, S., & Shafir, E. (2013). *Scarcity: Why Having Too Little Means So Much*. New York: Times Books.
 
 OECD (2015). *In It Together: Why Less Inequality Benefits All*. Paris: OECD Publishing.
 
@@ -107,6 +113,8 @@ Wikipedia (2024). "Weimar Republic." Haettu October 1, 2025, osoitteesta: https:
 Wikipedia (2025). "Tax rates in Europe." Haettu October 2, 2025, osoitteesta: https://en.wikipedia.org/wiki/Tax_rates_in_Europe
 
 Wikipedia (n.d.). "Welfare in Finland." Haettu October 2, 2025, osoitteesta: https://en.wikipedia.org/wiki/Welfare_in_Finland
+
+Y-Säätiö (2017). *Housing First -mallin kustannusvaikuttavuus*. Helsinki: Y-Säätiö. Haettu osoitteesta: https://ysaatio.fi/
 
 ---
 
