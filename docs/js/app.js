@@ -1,4 +1,4 @@
-// SPA Application Logic
+// SPA Application Logic app.js
 // Only used by index.html
 
 // Initialize markdown-it
