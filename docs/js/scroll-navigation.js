@@ -1,4 +1,4 @@
-// Scroll Navigation Module
+// Scroll Navigation Module scroll-navigation.js
 // Handles scrolling to specific headings within markdown content
 
 let isScrollNavigationLoaded = false;
