@@ -1,5 +1,5 @@
 // Apufunktio slugien luontiin
-function slugify(text) {
+const slugify = (text) {
   return text.toString().toLowerCase()
     .replace(/ä/g, 'a')
     .replace(/ö/g, 'o')
@@ -10,3 +10,5 @@ function slugify(text) {
     .replace(/^-+/, '')
     .replace(/-+$/, '');
 }
+
+export { slugify }
