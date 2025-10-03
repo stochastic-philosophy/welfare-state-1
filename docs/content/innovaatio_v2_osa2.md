@@ -18,6 +18,75 @@ Erityisen merkittävää on, että Nokia hyötyi suoraan Suomen julkisista koulu
 
 Huipussaan Nokia maksoi 23% kaikista yhtiöveroista Suomessa ja tuotti 20% kaikista viennistä. Yhtiö oli suoraan vastuussa yli 2%:sta kaikista työpaikoista ja epäsuorasti paljon suuremmasta määrästä (thisisFINLAND, 2022).
 
+### Julkisen tutkimuksen perustavanlaatuinen rooli: Globaali perspektiivi
+
+Nokian tapaus ei ole ainutlaatuinen poikkeus vaan esimerkki laajemmasta ilmiöstä: lähes kaikki merkittävät teknologiset innovaatiot perustuvat vuosikymmeniä aiemmin tehtyyn, julkisesti rahoitettuun perustutkimukseen. Tämä yhteys on niin systemaattinen, että sen kiistäminen vaatii historiallisen todellisuuden sivuuttamista.
+
+#### iPhone: Julkisen tutkimuksen sinfonia
+
+Taloustieteilijä Mariana Mazzucato on dokumentoinut teoksessaan *The Entrepreneurial State* (2013) perusteellisesti, miten modernit "yksityisen sektorin innovaatiot" rakentuvat lähes yksinomaan julkisesti rahoitetun tutkimuksen varaan. Hänen tunnetuin esimerkkinä on iPhone, jota usein pidetään yksityisen innovaation mestariteoksena.
+
+Mazzucaton analyysi paljastaa, että iPhone:n 12 keskeistä teknologiaa ovat KAIKKI peräisin julkisesti rahoitetusta tutkimuksesta (Mazzucato, 2013):
+
+- **Internet:** DARPA (Defense Advanced Research Projects Agency, Yhdysvaltain puolustusministeriö)
+- **GPS:** Yhdysvaltain armeija ja puolustusministeriö
+- **Kosketusnäytöt:** CIA ja NSF (National Science Foundation)
+- **Siri (ääniavustaja):** DARPA
+- **Mikroelektroniikka:** Armeijan rahoittama tutkimus 1950-60-luvuilla
+- **Litiumioniakut:** Energiaministeriön tutkimus
+- **Nestekidenäytöt (LCD):** NSF ja armeijan rahoitus
+- **Signaalinkäsittely (DSP):** Armeijan rahoitus
+- **HTTP ja HTML:** CERN (julkinen tutkimuslaitos)
+- **Matkapuhelintekniologia:** Julkisesti rahoitetut telekommunikaatiotutkimukset
+
+Apple ei "keksinyt" näitä teknologioita. Se **integroi** ne käyttäjäystävälliseksi tuotteeksi, mikä itsessään on arvokasta, mutta perustavanlaatuinen tutkimus – joka oli riskialtista, pitkäaikaista ja ilman välitöntä kaupallista sovellusta – tehtiin julkisella rahalla vuosikymmeniä aiemmin.
+
+#### Miksi yksityinen sektori ei tee perustutkimusta?
+
+Tämä ei ole moraalinen tuomio yksityisestä sektorista. Kyse on rakenteellisesta logiikasta:
+
+**Perustutkimuksen ominaisuudet:**
+- **Pitkä aikaväli:** Tulokset 20-50 vuoden päässä
+- **Suuri epävarmuus:** Ei tiedetä mitkä tutkimusalueet tuottavat tuloksia
+- **Ei-omistettavuus:** Perustutkimuksen tulokset ovat julkisia, niitä ei voi patentoida
+- **Korkea riski:** Useimmat tutkimuslinjat eivät johda kaupallisiin sovelluksiin
+
+**Yksityisen sektorin kannustimet:**
+- Kvartaalitaloudellinen tulosvastuu sijoittajille
+- Lyhyen aikavälin tuottoprosentti
+- Tarve omistaa tulokset (patentit, liikesalaisuudet)
+- Välittömästi kaupallistettavat sovellukset
+
+Nämä eivät kohtaa. Yksityinen sektori tekee **soveltavaa tutkimusta** (development) ja **tuotteistusta**, mutta **perustutkimus** (research) jää systemaattisesti alirahoitetuksi ilman julkista sektoria. Tämä on klassinen esimerkki markkinahäiriöstä (market failure), jossa yhteiskunnallisesti arvokas toiminta ei toteudu markkinamekanismeilla.
+
+#### CERN ja World Wide Web: Odottamaton sivutuote
+
+Toinen konkreettinen esimerkki on World Wide Web. Se syntyi CERN:ssä (European Organization for Nuclear Research) 1989-1991, kun Tim Berners-Lee ja hänen tiiminsä kehittivät järjestelmän jolla tutkijat voisivat jakaa tietoa helposti (CERN, n.d.).
+
+CERN on puhtaasti julkisesti rahoitettu perustutkimusorganisaatio, joka tutkii hiukkasfysiikkaa. World Wide Web oli **sivutuote** – ei alkuperäinen tavoite. Kukaan yksityinen yritys ei olisi rahoittanut hiukkasfysiikan tutkimusta siinä toivossa että se johtaisi internetin kehittymiseen, koska yhteys oli täysin odottamaton.
+
+Ja silti: WWW:n taloudelliset vaikutukset ovat olleet **triljoonia dollareita**. Koko modernin internettalouden perusta – Google, Amazon, Facebook, verkkokauppa, sosiaalinen media – rakentuu CERN:n julkisesti rahoitetun perustutkimuksen sivutuotteelle.
+
+#### Yhteys Suomen tapaukseen
+
+Nokia seurasi täsmälleen samaa kaavaa pienemmässä mittakaavassa. Se ei "keksinyt" matkapuhelinteknologiaa tyhjästä vaan:
+- Hyödynsi suomalaisten yliopistojen tutkimusta (julkinen rahoitus)
+- Rekrytoi julkisesti koulutettuja insinöörejä (julkinen koulutus)
+- Rakensi globaalien, julkisesti rahoitettujen telekomstandardien päälle (GSM)
+- Käytti julkisia tutkimuslaitoksia yhteistyökumppaneina
+
+Ero on vain skaalassa: iPhone globaalisti, Nokia Suomessa. Mutta mekanismi on identtinen: **yksityinen sektori kaupallistaa sen, mitä julkinen sektori on vuosikymmeniä tutkinut.**
+
+#### Implikaatiot politiikalle
+
+Tämä analyysi tekee selväksi, että argumentti "leikkaamme tutkimuksesta, yritykset hoitavat innovaation" on perustavanlaatuisesti virheellinen. Yritykset EIVÄT hoida perustutkimusta, koska se ei ole niiden kannattavaa eikä niiden tehtävä markkinataloudessa.
+
+Jos julkinen perustutkimus kuihtuu, innovaatioputki kuivuu 20-40 vuoden viiveellä. Emme näe vaikutuksia välittömästi, mikä tekee leikkauksista poliittisesti houkuttelevia – mutta pitkän aikavälin vaikutukset ovat tuhoisia.
+
+Kun nykyisin leikataan yliopistojen perusrahoituksesta, akateemista vapautta rajoitetaan ja tutkijoita pakotetaan lyhyen aikavälin projektirahastoon, tuhotaan juuri sitä ekosysteemiä joka tuotti Nokian – ja joka voisi tuottaa seuraavan suuren innovaation.
+
+Tämä ei ole ideologinen väite vaan empiirinen tosiasia, jonka Mazzucato ja lukuisat muut taloushistorioitsijat ovat dokumentoineet: **julkinen sektori on ollut ja on edelleen innovaation perustavanlaatuinen mahdollistaja, ei este.**
+
 ### PISA-menestys ja sen taustalla olevat tekijät
 
 2000-luvun alussa Suomi saavutti huippusijoituksia OECD:n PISA-tutkimuksessa. Vuonna 2003 Suomi oli ensimmäinen matematiikassa keskiarvolla 544, kun seuraavat maat sijoittuivat välille 490-530 (Springer, 2020). Tämä menestys ei ollut sattumaa vaan pitkäjänteisten koulutuspanostusten tulos.
