@@ -7,7 +7,7 @@ import { HomeController, SectionController, ChapterController } from './controll
 document.addEventListener('DOMContentLoaded', async () => {
   let tocData;
   try {
-    const response = await fetch('content.json');
+    const response = await fetch('documents.json');
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
