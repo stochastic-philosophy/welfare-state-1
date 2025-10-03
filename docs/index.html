@@ -57,16 +57,16 @@
                 .then(() => {
                     document.getElementById('app').innerHTML += `
                         <div class="status success">✅ VAIHE 3: router.js latautui!</div>
-                        <div class="status info">📦 Ladataan controllers.js...</div>
+                        <div class="status info">📦 Ladataan controllers3.js...</div>
                     `;
 
-                    // VAIHE 4: Kokeillaan ladata controllers
-                    return import('./controllers.js');
+                    // VAIHE 4: Kokeillaan ladata controllers3
+                    return import('./controllers3.js');
                 })
                 .then(() => {
                     document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 4: controllers.js latautui!</div>
-                        <div class="status info">📦 Ladataan content.json...</div>
+                        <div class="status success">✅ VAIHE 4: controllers4.js latautui!</div>
+                        <div class="status info">📦 Ladataan documents.json...</div>
                     `;
 
                     // VAIHE 5: Kokeillaan ladata content.json
