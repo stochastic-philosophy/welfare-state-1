@@ -72,6 +72,72 @@ Kanadan Mincome-kokeilu (1974-1979) osoitti konkreettisesti tämän yhteyden: pe
 
 **Yhteys sisäiseen motivaatioon:** Riittävä perusturva ei ainoastaan vähennä kustannuksia – se voi myös parantaa ihmisten toimintakykyä. Kun krooninen stressi vähenee, ihmiset pystyvät paremmin päivittämään taitojaan, etsimään aktiivisesti töitä (ei pelkästään pakosta vaan sisäisestä halusta), tekemään pitkän aikavälin suunnitelmia ja osallistumaan yhteisöön tuottavasti. Tämä ei tarkoita, että kaikki työllistyisivät välittömästi, mutta se luo paremmat edellytykset optimaaliselle toiminnalle.
 
+### Globaali näyttö: Perustulokokeilut ja stressin vähenemisen laajat vaikutukset
+
+Suomen perustulokokeilun lisäksi maailmalla on tehty lukuisia rahansiirrto-ohjelmia, jotka tarjoavat yhdenmukaista näyttöä siitä, että taloudellisen turvan lisääminen ei ainoastaan vähennä stressiä yksilötasolla, vaan tuottaa mitattavia hyötyjä koko yhteiskunnalle.
+
+#### Kenian GiveDirectly: Maailman suurin UBI-tutkimus
+
+Vuodesta 2017 lähtien GiveDirectly on toteuttanut maailman laajinta ja pisimpikestoista perustulokokeilua Keniassa. Kokeilu kattaa noin 295 kylää ja yli 20,000 ihmistä, joista osa saa perustuloa 12 vuoden ajan. Ensimmäiset tulokset kahden vuoden jälkeen ovat merkittäviä (Egger et al., 2022; GiveDirectly, 2023):
+
+**Taloudelliset vaikutukset:**
+- Yritystoiminta lisääntyi merkittävästi – erityisesti ei-maatalouden sektorilla
+- Työmäärä ei vähentynyt, mutta siirtyi palkkatyöstä yrittäjyyteen
+- Kertamaksut olivat tehokkainta yritystoiminnalle – mielenkiintoisesti pitkäaikaisen perustulon saajat muunsivat kuukausimaksunsa itse kertasummiksi "rotating savings clubs" -järjestelmällä
+
+**Hyvinvointivaikutukset:**
+- Ruokaturva parani kaikissa ryhmissä verrattuna kontrolliryhmään
+- Fyysinen ja psyykkinen terveys paranivat
+- COVID-19-pandemian aikana perustulon saajat selvisivät merkittävästi paremmin kuin ne, jotka eivät saaneet tukea (Banerjee et al., 2020)
+
+Kriittistä on, että tutkimus kumosi klassisen kritiikin: ihmiset eivät "laiskistuneet" vaan **lisäsivät riskejä ottavaa toimintaa** (yrittäjyys), koska heillä oli turvaverkko (MIT Sloan, 2020).
+
+#### Pitkän aikavälin vaikutukset lapsiin
+
+Useat tutkimukset osoittavat, että taloudellinen tuki perheille vaikuttaa erityisen voimakkaasti lasten kehitykseen – ja nämä vaikutukset kantavat aikuisuuteen asti:
+
+**Yhdysvallat, Mothers' Pension -ohjelma (1911-1935):**
+Tutkijat seurasivat hakijoita ja heidän lapsiaan yli 80 vuoden ajan. Tulokset olivat dramaattisia: mieslapsilla, joiden perheet saivat tukea, oli vuoden pidempi elinajanodote, he saivat 0,34 vuotta enemmän koulutusta, olivat puolet harvemmin alipainoisia ja heidän tulonsa aikuisena olivat 14% korkeammat kuin hylättyjen hakijoiden lapsilla (Aizer et al., 2016).
+
+**Colombia, Meksiko ja Etelä-Afrikka:**
+Laaja tutkimus osoitti, että jokainen vuosi altistumista rahansiirrto-ohjelmille lapsuudessa oli yhteydessä 4% vähentyneeseen todennäköisyyteen kokea masennusoireita nuorena aikuisena (Kilburn et al., 2025). Vaikka efekti on pieni yksilötasolla, väestötasolla se on merkittävä.
+
+**Honduras:**
+Pitkäaikaisseuranta osoitti että altistuminen rahansiirrto-ohjelmalle kouluiässä lisäsi keskiasteen suorittamista yli 50% ja todennäköisyyttä päästä yliopistoon merkittävästi (Molina Millán et al., 2019).
+
+**Baby's First Years -tutkimus (Yhdysvallat):**
+Satunnaistettu kontrolloitu tutkimus osoitti, että jo vuoden ikäisillä vauvoilla, joiden äidit saivat $333/kk, oli enemmän korkean taajuuden aivoaktiviteettia verrattuna niihin, joiden äidit saivat $20/kk. Tämän tyyppinen aivoaktiviteetti on yhdistetty parempiin kognitiivisiin taitoihin myöhemmin (Noble et al., 2021). (Huomio: neljän vuoden tulokset eivät vielä osoittaneet merkitseviä eroja kognitiossa, mutta tutkimus jatkuu.)
+
+#### Miksi tämä on relevanttia yhteiskunnalle laajemmin?
+
+Nämä tulokset osoittavat, että stressin väheneminen ei ole vain yksilön hyvinvointikysymys vaan **yhteiskunnallinen investointi**:
+
+1. **Terveyskustannukset laskevat:** Kanadan Mincome-kokeilussa oli 8,5% vähemmän sairaalavisittejä. Alaska Permanent Fund Dividend -tutkimus osoittaa että joka dividendidollari lapselle tuottaa yli dollarin tulevaisuuden terveydenhuoltosäästöjä (Jones & Marinescu, 2022).
+
+2. **Lapset menestyvät paremmin:** Kun vanhempien stressi vähenee, lapset käyvät enemmän koulussa, kehittyvät paremmin ja menestyvät aikuisena – tämä on suora investointi tulevaan työvoimaan ja innovaatiokykyyn.
+
+3. **Yrittäjyys lisääntyy:** Vastoin pelkoja "laiskistumisesta", taloudellinen turva LISÄÄ riskinottoa ja yritystoimintaa. Tämä on johdonmukainen löydös Keniasta, Namibiasta ja monista muista maista.
+
+4. **Rikollisuus vähenee:** Alaska Permanent Fund Dividend -tutkimus osoittaa, että vuosittaisen maksun jälkeen omaisuusrikollisuus vähenee tilapäisesti (Watson et al., 2020).
+
+5. **Sukupolvenvälinen vaikutus:** Vanhempien saama tuki vaikuttaa lasten koko elämänkaareen – he elävät pidempään, menestyvät paremmin, ansaitsevat enemmän. Tämä ei ole vain moraalinen voitto vaan taloudellinen tuotto yhteiskunnalle.
+
+#### Kriittinen huomautus: Mitä EI tiedetä
+
+On tärkeää olla rehellinen siitä, mitä tutkimus EI vielä osoita:
+
+- **Suoraa yhteyttä "innovaatioon"** (tieteellinen läpimurto) ei ole mitattu – kokeilut keskittyvät perushyvinvointiin, työllistymiseen ja terveyteen.
+- **Pitkän aikavälin vaikutukset** (20+ vuotta) ovat vielä epävarmoja useimmille kokeiluille.
+- **Korkean tulotason maissa** data on rajallisempaa kuin kehitysmaissa (vaikkakin Alaska ja eräät Yhdysvaltain kokeilut tarjoavat dataa).
+
+Kuitenkin: mekanismit ovat selkeitä ja yhdenmukaisia. Kun stressi vähenee → kognitiivinen kapasiteetti vapautuu → ihmiset pystyvät tekemään parempia päätöksiä, investoimaan tulevaisuuteen ja ottamaan harkittuja riskejä. Tämä näkyy yrittäjyytenä Keniassa, parempana koulumenestyksenä Hondurasissa ja pidempänä elinikänä Yhdysvalloissa.
+
+#### Yhteys sisäiseen motivaatioon
+
+Nämä tulokset tukevat vahvasti aikaisempaa argumenttiamme sisäisestä motivaatiosta: kun perustarpeet on turvattu ja stressi vähenee, ihmiset eivät "laiskistu" vaan **aktivoituvat**. He perustavat yrityksiä, investoivat lasten koulutukseen, parantavat terveyttään ja osallistuvat yhteisöön.
+
+Sama mekanismi pätee tutkijoihin ja muihin korkeasti koulutettuihin: kun taloudellinen stressi vähenee, he voivat keskittyä luovaan työhön, pitkän aikavälin tutkimukseen ja riskialttiisiin mutta potentiaalisesti läpimurtaviin ideoihin – sen sijaan että heidän pitäisi huolehtia lyhyen aikavälin rahoituksesta ja selviytymisestä.
+
 ### Pohjoismaiset kokemukset
 
 Pohjoismaat rakensivat 1900-luvun kuluessa mallin, joka yhdistää tehokkaan markkinatalouden vahvaan hyvinvointivaltioon. Tämä ei ollut sattumaa. Ruotsin ja Norjan eliitit ymmärsivät 1900-luvun alussa Venäjän vallankumouksen jälkeen, että oli viisaampaa maksaa korkeita veroja kuin menettää kaikki omaisuutensa yhteiskunnallisessa kaaoksessa (Esping-Andersen, 1990). Tämä oli tietoinen valinta vakauden puolesta.
