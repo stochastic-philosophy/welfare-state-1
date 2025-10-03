@@ -2,7 +2,8 @@
 // 1. Tuodaan tarvittavat luokat ja kirjastot omista tiedostoistaan
 import { Router } from './router.js';
 import { HomeController } from './home-controller.js';
-import { SectionController, ChapterController } from './controllers.js';
+import { SectionController } from './section-controller.js';
+import { ChapterController } from './chapter-controller.js';
 
 // Apufunktio virheiden näyttämiseen sivulla
 function showError(message, details = '') {
