@@ -72,6 +72,74 @@ AFI-projekti perustuu yli 2,197 maa-asiantuntijan arviointeihin ympäri maailman
 
 Tämä kehitys on huolestuttava, sillä akateeminen vapaus on innovaation peruspilari. Kun tutkijat ja opettajat kokevat paineita itsesensuuriin tai hallinnolliseen kontrollin, rohkeat uudet ideat kärsivät.
 
+### Prekarisointi ja sisäisen motivaation tuhoaminen
+
+Akateemisen vapauden lasku ei ole ainoastaan abstrakti "vapaus"-kysymys – se linkittyy suoraan tutkijoiden ja opettajien **kykyyn tehdä työtään optimaalisesti**. Kun tarkastelemme resurssileikkausten vaikutuksia psykologisten mekanismien kautta, ymmärrämme miksi "tehostaminen" on todellisuudessa systeemin tuhoamista.
+
+#### Lyhyen aikavälin rahoitus tuhoaa pitkän aikavälin ajattelun
+
+Kun tutkimusrahoitus siirtyy yhä enemmän lyhytaikaisiin projekteihin ja tutkijat joutuvat hakemaan rahoitusta jatkuvasti 1-3 vuoden sykleissä, seuraukset ovat:
+
+**Kognitiivinen kuormitus:** Tutkijan aika menee rahoitushakemusten kirjoittamiseen sen sijaan että hän voisi keskittyä tutkimukseen. Tämä ei ole triviaalinen haitta – emme puhu "muutamasta tunnista" vaan kymmenistä tai sadoista tunneista vuodessa, jotka menevät byrokratiaan.
+
+**Stressi:** Jatkuva epävarmuus tulevasta rahoituksesta luo kroonista stressiä. Kuten Kokonaisuus A:n "Sisäinen motivaatio" -osiossa todettiin, krooninen stressi heikentää työmuistia, päätöksentekokykyä ja luovaa ajattelua (Sapolsky, 2023). Tutkija, joka miettii jatkuvasti "saanko rahoitusta ensi vuonna?", ei voi ajatella vapaasti "mikä on tärkeä tutkimuskysymys?".
+
+**Lyhytnäköisyys:** Kun tutkija tietää, että hänen projektinsa kestää vain 2-3 vuotta, hän ei voi ryhtyä kunnianhimoisiin, pitkäaikaisiin tutkimuslinjoihin. Sen sijaan hän valitsee "varmoja", nopeasti julkaistavissa olevia aiheita. Tämä on rationaalinen sopeutuminen rahoitusympäristöön, mutta se **tuhoaa juuri sen tyyppiset projektit, jotka johtavat läpimurtoihin**.
+
+#### Prekarisointi: määräaikaiset sopimukset ja niiden seuraukset
+
+Yliopistot ja tutkimuslaitokset käyttävät yhä enemmän määräaikaisia sopimuksia pysyvien virkojen sijaan. Tämä on virallisesti "joustavuutta", mutta tosiasiassa se on **prekarisointi** – työntekijöiden asettaminen jatkuvaan epävarmuuteen.
+
+**Vaikutukset sisäiseen motivaatioon:**
+
+Kuten Kokonaisuus A:n "Innovaatio ja koulutus" -osiossa todettiin, itsemääräämisteoria (SDT) tunnistaa kolme psykologista perustarvetta: autonomia, pätevyys ja yhteisöllisyys (Ryan & Deci, 2000). Prekarisointi loukkaa KAIKKIA kolmea:
+
+- **Autonomia kärsii:** Määräaikaisessa sopimuksessa oleva tutkija ei uskalla ottaa riskejä tai tutkia kiistanalaisia aiheita, koska hän tarvitsee hyviä tuloksia seuraavaa sopimusta varten
+- **Pätevyys kärsii:** Jatkuva epävarmuus ja stressi heikentävät suorituskykyä – ei siksi että ihminen olisi "huonompi tutkija" vaan siksi että stressi syö kognitiivista kapasiteettia
+- **Yhteisöllisyys kärsii:** Kun tutkijat vaihtuvat jatkuvasti (3 vuoden sopimukset), pitkäaikaisten tutkimusryhmien rakentaminen on vaikeaa
+
+**Seuraus:** Prekarisointi ei tuota "joustavuutta" ja "tehokkuutta" vaan **tuhoaa juuri sen sisäisen motivaation**, joka on innovaation ydin.
+
+#### Yhteys Kokonaisuus A:n argumenttiin
+
+Kokonaisuus A:n "Innovaatio ja koulutus" -osio argumentoi, että sisäinen motivaatio on perustutkimuksen ja innovaation moottori. Se toimii kuitenkin vain kun:
+- Taloudellinen turva on riittävä (tenure, pitkäaikaiset sopimukset)
+- Akateeminen vapaus on todellinen (ei tiukkaa kontrollia tai sensuurin uhkaa)
+- Stressi on hallittavissa (ei jatkuvaa epävarmuutta rahoituksesta)
+
+Resurssileikkaukset ja prekarisointi TUHOAVAT juuri nämä edellytykset. Tämä ei ole "tehostamista" vaan **systeemin tuhoamista**.
+
+#### Empiirinen näyttö: miten tämä näkyy käytännössä
+
+Tutkimus osoittaa että:
+
+**Määräaikaiset sopimukset vähentävät julkaisumääriä:** Prekaarit tutkijat julkaisevat vähemmän kuin vakituiset, ei koska he olisivat vähemmän lahjakkaita, vaan koska he käyttävät aikansa työpaikan hakemiseen ja stressinhallintaan (Teelken & Deem, 2013).
+
+**Lyhyen aikavälin rahoitus vähentää riskiä:** Tutkijat valitsevat turvallisempia aiheita lyhytaikaisen rahoituksen kontekstissa, mikä vähentää läpimurtavien löydösten todennäköisyyttä (Franzoni & Rossi-Hansberg, 2023).
+
+**Akateemisen vapauden lasku korreloi innovaation laskun kanssa:** Academic Freedom Indexin lasku Suomessa on tapahtunut samaan aikaan kun innovaatioindikaattorit ovat heikentyneet.
+
+#### Vaihtoehto: Bell Labs -malli
+
+Bell Labs (1925-1983) on klassinen esimerkki siitä, miten pitkän aikavälin turva tuottaa innovaatioita:
+- Tutkijat olivat käytännössä "eliniässä" (tenure for corporate scientists)
+- Heillä oli vapaus tutkia "hyödyttömiä" asioita
+- Ei kvartaalitaloudellista tulosvastuuta
+
+**Tulokset:** Transistori, laser, Unix-käyttöjärjestelmä, C-ohjelmointikieli – kaikki syntyi ympäristössä, jossa tutkijat saivat ajatella pitkälle ilman jatkuvaa painetta välittömiin tuloksiin.
+
+Modernit yliopistot tekevät päinvastaista: lyhennetään sopimuksia, lisätään tulosvastuuta, vaaditaan "vaikuttavuutta" lyhyellä aikavälillä. Tämä ei ole Bell Labs -malli vaan sen **vastainen malli** – ja seuraukset näkyvät.
+
+#### Johtopäätös: "Tehostaminen" on systeemin tuhoamista
+
+Kun puhutaan "yliopiston tehostamisesta" ja "tuottavuuden lisäämisestä", tosiasiassa:
+- Lisätään byrokratiaa (rahoitushakemukset, raportointi)
+- Lisätään stressiä (prekaarit sopimukset, jatkuva epävarmuus)
+- Vähennetään akateemista vapautta (kontrolli, sensuurin uhka)
+- Pakotetaan lyhyen aikavälin ajatteluun (projektirahoitus)
+
+Kaikki nämä TUHOAVAT sisäistä motivaatiota, joka on innovaation ydin. Tämä ei ole "tehostamista" vaan systeemin tuhoamista – yhtä varmasti kuin lentokoneen siivestä kappaleiden poistaminen "tehostaa" painoa mutta tuhoaa lentokyvyn.
+
 ## Innovaatiorahoituksen paradoksi: vain valtiot kykenevät rahoittamaan todellista innovaatiota
 
 ### Mazzucaton teesi: "The Entrepreneurial State"
