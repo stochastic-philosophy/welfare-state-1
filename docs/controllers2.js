@@ -1,4 +1,4 @@
-// controllers.js
+// controllers2.js
 // 1. Tuodaan marked-kirjasto suoraan CDN:stä ES-moduulina
 import { marked } from 'https://cdn.jsdelivr.net/npm/marked/marked.esm.js';
 
