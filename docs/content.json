@@ -295,7 +295,8 @@
             },
             {
               "title": "Koulutuksen erityistapaus",
-              "description": "Analysoi koulutusmenojen kehitystä ja PISA-tulosten laskua osoittaen, että resurssileikkaukset johtavat tulosten heikkenemiseen - joka sitten virheellisesti tulkitaan 'mallin epäonnistumiseksi'."v
+              "description": "Analysoi koulutusmenojen kehitystä ja PISA-tulosten laskua osoittaen, että resurssileikkaukset johtavat tulosten heikkenemiseen - joka sitten virheellisesti tulkitaan 'mallin epäonnistumiseksi'.",
+              "file": "content/hyvinvointivaltio_b_osa2.md"
             },
             {
               "title": "Sosiaaliturvajärjestelmän rapautuminen",
