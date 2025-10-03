@@ -1,4 +1,4 @@
-// app4.js
+// app.js
 // 1. Tuodaan tarvittavat luokat ja kirjastot omista tiedostoistaan
 import { Router } from './router.js';
 import { HomeController, SectionController, ChapterController } from './controllers.js';
