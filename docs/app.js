@@ -4,11 +4,6 @@
 import { Router } from './router.js';
 import { HomeController, SectionController, PartController, ChapterController } from './controllers.js';
 
-// ---- AIEMPI KOODISI TÄHÄN ----
-document.addEventListener('DOMContentLoaded', () => {
-    // ...muu koodi...
-});
-
 // 2. Sovelluksen käynnistysfunktio
 document.addEventListener('DOMContentLoaded', async () => {
   let tocData;
