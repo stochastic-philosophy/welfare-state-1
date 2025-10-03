@@ -56,15 +56,22 @@ https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopi
 ### Rakenne
 ```
 docs/
-├── index.html          # Interaktiivinen SPA ihmiskäyttäjille
-├── static.html         # Staattinen näkymä tekoälyille
-├── content.json        # Sisällysluettelon data (sisältää baseUrl)
+├── index.html            # Interaktiivinen SPA ihmiskäyttäjille
+├── static.html           # Staattinen näkymä tekoälyille
+├── content.json          # Sisällysluettelon data (sisältää baseUrl)
+├── robots.txt            # Tekoälyä ja muita botteja varten oikeudet
+├── sitemap.xml           # Keskeiset sisällöt
 ├── css/
-│   └── styles.css      # Tyylit molemmille sivuille
+│   └── styles.css        # Tyylit molemmille sivuille
 ├── js/
-│   └── app.js          # SPA-logiikka (vain index.html)
+│   ├── app.js            # SPA-logiikka (vain index.html)
+│   ├── consent.js        # Teemavalinta
+│   ├── footer.js         # Footerin vuosiluvun dynaamiseksi
+│   ├── page-navigation   # Navigointi sivujen välillä
+│   ├── router.js         # Sijainti sivuilla
+│   └── scroll-navigation # Linkitys sisäänluettelosta klikattuihin otsikoihin
 └── content/
-    └── *.md            # Markdown-dokumentit
+    └── *.md              # Markdown-dokumentit
 ```
 
 ### Ominaisuudet
