@@ -1,4 +1,7 @@
 // home-controller.js
+
+import { slugify } from './utils.js'
+
 export class HomeController {
   constructor(router, tocData) {
     this.router = router;
