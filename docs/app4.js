@@ -14,9 +14,9 @@ function showError(message, details = '') {
       <hr>
       <h3>Tarkistuslista:</h3>
       <ol>
-        <li>Onko <code>content.json</code> tiedosto olemassa?</li>
-        <li>Onko <code>content/</code> kansio olemassa?</li>
-        <li>Ovatko markdown-tiedostot <code>content/</code> kansiossa?</li>
+        <li>Onko <code>documents.json</code> tiedosto olemassa?</li>
+        <li>Onko <code>documents/</code> kansio olemassa?</li>
+        <li>Ovatko markdown-tiedostot <code>documents/</code> kansiossa?</li>
         <li>Onko GitHub Pages päällä?</li>
       </ol>
     </div>
