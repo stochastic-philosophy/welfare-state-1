@@ -1,7 +1,7 @@
-// app4.js
+// app.js
 // 1. Tuodaan tarvittavat luokat ja kirjastot omista tiedostoistaan
 import { Router } from './router.js';
-import { HomeController, SectionController, ChapterController } from './controllers2.js';
+import { HomeController, SectionController, ChapterController } from './controllers.js';
 
 // Apufunktio virheiden näyttämiseen sivulla
 function showError(message, details = '') {
