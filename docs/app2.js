@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     tocData = await response.json();
   } catch (error) {
     console.error("Datan lataus epäonnistui:", error);
-    document.getElementById('app').innerHTML = "<h1>Virhe</h1><p>Sisällysluettelon lataus epäonnistui. Tarkista, että content.json-tiedosto on olemassa.</p>";
+    document.getElementById('app').innerHTML = "<h1>Virhe</h1><p>Sisällysluettelon lataus epäonnistui. Tarkista, että documents.json-tiedosto on olemassa.</p>";
     return;
   }
 
