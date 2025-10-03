@@ -241,6 +241,8 @@ Mokyr, J. (2009). *The Enlightened Economy: An Economic History of Britain 1700-
 
 Nature Communications (2024). "How popularising higher education affects economic growth and poverty alleviation: empirical evidence from 38 countries." Haettu osoitteesta: https://www.nature.com/articles/s41599-024-03013-5
 
+OECD (2015). *The ABC of Gender Equality in Education: Aptitude, Behaviour, Confidence*. Paris: OECD Publishing. (Sisältää analyysin koulutusinvestointien ja talouskasvun yhteydestä)
+
 OECD (2016). *Innovating Education and Educating for Innovation: The Power of Digital Technologies and Skills*. OECD Publishing. Haettu osoitteesta: https://www.oecd.org/content/dam/oecd/en/publications/reports/2016/09/innovating-education-and-educating-for-innovation_g1g710fd/9789264265097-en.pdf
 
 OECD Education GPS (2024). "Finland - Student performance (PISA 2022)." Haettu osoitteesta: https://gpseducation.oecd.org/CountryProfile?primaryCountry=FIN
@@ -266,6 +268,8 @@ Shirky, C. (2010). *Cognitive Surplus: Creativity and Generosity in a Connected 
 Springer (2020). "Finland: Success Through Equity—The Trajectories in PISA Performance." Haettu osoitteesta: https://link.springer.com/chapter/10.1007/978-3-030-59031-4_6
 
 Statista (2024). "PISA student performance in Finland from 2000 to 2022." Haettu osoitteesta: https://www.statista.com/statistics/986919/pisa-student-performance-by-field-and-score-finland/
+
+Suomen virallinen tilasto (SVT). *Kansantalouden tilinpito* [verkkojulkaisu]. Helsinki: Tilastokeskus. Haettu osoitteesta: http://www.stat.fi/til/vtp/index.html
 
 thisisFINLAND (2022). "Nokia's tradition of adaptability." Haettu osoitteesta: https://finland.fi/business-innovation/nokias-tradition-of-adaptability/
 
