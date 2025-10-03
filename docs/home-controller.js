@@ -1,5 +1,5 @@
 // home-controller.js
-class HomeController {
+export class HomeController {
   constructor(router, tocData) {
     this.router = router;
     this.tocData = tocData;
