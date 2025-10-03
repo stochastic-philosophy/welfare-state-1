@@ -61,23 +61,23 @@
                     `;
 
                     // VAIHE 4: Kokeillaan ladata controllers
-                    return import('./controllers.js');
+                    return import('./controllers2.js');
                 })
                 .then(() => {
                     document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 4: controllers.js latautui!</div>
+                        <div class="status success">✅ VAIHE 4: controllers2.js latautui!</div>
                         <div class="status info">📦 Ladataan content.json...</div>
                     `;
 
                     // VAIHE 5: Kokeillaan ladata content.json
-                    return fetch('content.json');
+                    return fetch('documents.json');
                 })
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                     }
                     document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 5: content.json löytyi!</div>
+                        <div class="status success">✅ VAIHE 5: documents.json löytyi!</div>
                         <div class="status info">📦 Parsitaan JSON...</div>
                     `;
                     return response.json();
