@@ -8,7 +8,7 @@ import { HomeController, SectionController, PartController, ChapterController } 
 document.addEventListener('DOMContentLoaded', async () => {
   let tocData;
   try {
-    const response = await fetch('data.json'); // Varmista, että tiedoston nimi on oikein
+    const response = await fetch('content.json'); // Varmista, että tiedoston nimi on oikein
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
