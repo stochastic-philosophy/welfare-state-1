@@ -1,7 +1,7 @@
 // app.js
 // 1. Tuodaan tarvittavat luokat ja kirjastot omista tiedostoistaan
 import { Router } from './router.js';
-import { HomeController, SectionController, PartController, ChapterController } from './controllers.js';
+import { HomeController, SectionController, ChapterController } from './controllers.js';
 
 // 2. Sovelluksen käynnistysfunktio
 document.addEventListener('DOMContentLoaded', async () => {
@@ -30,18 +30,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 5. Luodaan kontrollerien instanssit ja annetaan niille router + data
   const homeController = new HomeController(router, tocData);
   const sectionController = new SectionController(router, tocData);
-  const partController = new PartController(router, tocData);
   const chapterController = new ChapterController(router, tocData);
 
   // 6. Asetetaan controllerit controllers-objektiin
   controllers.HomeController = () => homeController;
   controllers.SectionController = () => sectionController;
-  controllers.PartController = () => partController;
   controllers.ChapterController = () => chapterController;
 
   // 7. Määritellään reitit (tarkimmasta yleisimpään)
-  router.addRoute('/:section/:part/:chapter', 'ChapterController', 'show');
-  router.addRoute('/:section/:part', 'PartController', 'show');
+  router.addRoute('/:section/:chapter', 'ChapterController', 'show');
   router.addRoute('/:section', 'SectionController', 'show');
   router.addRoute('', 'HomeController', 'index');
 
