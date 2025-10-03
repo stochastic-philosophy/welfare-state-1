@@ -1,140 +1,27 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyvinvointivaltion analyysi - Testi</title>
+    <title>Dokumentaatio-arkisto</title>
     <style>
-        body { 
-            font-family: sans-serif; 
-            line-height: 1.6; 
-            max-width: 800px; 
-            margin: 2rem auto; 
-            padding: 1rem;
-            background: #f5f5f5;
-        }
-        .status {
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 5px;
-            border-left: 4px solid #666;
-        }
-        .error { background: #fee; border-color: #c00; }
-        .success { background: #efe; border-color: #0a0; }
-        .info { background: #eef; border-color: #00a; }
-        code { 
-            background: #fff; 
-            padding: 2px 6px; 
-            border-radius: 3px;
-            border: 1px solid #ddd;
-        }
+        /* Tyylit pysyvät samoina */
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 1rem; }
+        h1 { border-bottom: 2px solid #ccc; }
+        h2 { border-bottom: 1px solid #eee; }
+        nav a { margin-right: 1rem; }
+        section { margin-bottom: 2rem; }
+        .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .chapter-nav .nav-link { text-decoration: none; color: #007bff; }
+        .chapter-nav .nav-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Lataus-testi</h1>
-    <div id="app">
-        <div class="status info">📦 Ladataan sisältöä...</div>
-    </div>
+    <main id="app">
+        Ladataan sisältöä...
+    </main>
 
-    <script>
-        // VAIHE 1: Testataan että JavaScript toimii YLIPÄÄTÄÄN
-        document.getElementById('app').innerHTML = `
-            <div class="status success">✅ VAIHE 1: JavaScript toimii!</div>
-            <div class="status info">📦 Testataan ES6 moduuleja...</div>
-        `;
-    </script>
-
-    <script type="module">
-        // VAIHE 2: Testataan että ES6 moduulit toimivat
-        try {
-            document.getElementById('app').innerHTML += `
-                <div class="status success">✅ VAIHE 2: ES6 moduulit toimivat!</div>
-                <div class="status info">📦 Ladataan router.js...</div>
-            `;
-
-            // VAIHE 3: Kokeillaan ladata router
-            import('./router.js')
-                .then(() => {
-                    document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 3: router.js latautui!</div>
-                        <div class="status info">📦 Ladataan controllers3.js...</div>
-                    `;
-
-                    // VAIHE 4: Kokeillaan ladata controllers3
-                    return import('./controllers3.js');
-                })
-                .then(() => {
-                    document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 4: controllers4.js latautui!</div>
-                        <div class="status info">📦 Ladataan documents.json...</div>
-                    `;
-
-                    // VAIHE 5: Kokeillaan ladata documents.json
-                    return fetch('documents.json');
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                    }
-                    document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 5: documents.json löytyi!</div>
-                        <div class="status info">📦 Parsitaan JSON...</div>
-                    `;
-                    return response.json();
-                })
-                .then(data => {
-                    document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 6: JSON parsittu onnistuneesti!</div>
-                        <div class="status success">
-                            <h3>📊 Sisältö:</h3>
-                            <ul>
-                                <li><strong>Otsikko:</strong> ${data.title || 'Ei otsikkoa'}</li>
-                                <li><strong>Osioita:</strong> ${data.sections ? data.sections.length : 0}</li>
-                            </ul>
-                            ${data.sections ? data.sections.map(s => 
-                                `<div style="margin: 1rem 0; padding: 0.5rem; background: white; border-radius: 3px;">
-                                    <strong>${s.title}</strong><br>
-                                    <small>Lukuja: ${s.chapters ? s.chapters.length : 0}</small>
-                                </div>`
-                            ).join('') : ''}
-                        </div>
-                        <hr>
-                        <h2>🎉 Kaikki testit läpäisty!</h2>
-                        <p>Jos näet tämän viestin, kaikki tiedostot latautuvat oikein.</p>
-                        <p><strong>Voit nyt käyttää normaalia app2.js tiedostoa.</strong></p>
-                    `;
-                })
-                .catch(error => {
-                    document.getElementById('app').innerHTML += `
-                        <div class="status error">
-                            <h3>❌ VIRHE!</h3>
-                            <p><strong>Virheilmoitus:</strong></p>
-                            <code>${error.message}</code>
-                            <hr>
-                            <h4>Mahdolliset syyt:</h4>
-                            <ul>
-                                <li>Tiedosto puuttuu tai nimi on väärin</li>
-                                <li>Tiedosto on väärässä kansiossa</li>
-                                <li>GitHub Pages ei ole päällä</li>
-                                <li>Syntax-virhe tiedostossa</li>
-                            </ul>
-                            <hr>
-                            <p><strong>Stack trace:</strong></p>
-                            <pre style="background: white; padding: 0.5rem; overflow: auto;">${error.stack || 'Ei saatavilla'}</pre>
-                        </div>
-                    `;
-                });
-
-        } catch (error) {
-            document.getElementById('app').innerHTML += `
-                <div class="status error">
-                    <h3>❌ KRIITTINEN VIRHE VAIHEESSA 2!</h3>
-                    <p>ES6 moduulit eivät toimi.</p>
-                    <p><strong>Virhe:</strong> ${error.message}</p>
-                </div>
-            `;
-        }
-    </script>
+    <!-- Vain yksi skriptitag, joka lataa sovelluksen -->
+    <script type="module" src="app.js"></script>
 </body>
 </html>
-```
