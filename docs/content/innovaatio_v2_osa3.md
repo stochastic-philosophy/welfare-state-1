@@ -219,6 +219,8 @@ AQA (2024). "Finland & PISA – A fall from grace but still a high performer?" H
 
 Austin, R. D., Devin, L., & Sullivan, E. E. (2012). "Accidental Innovation: Supporting Valuable Unpredictability in the Creative Process." *Organization Science*, 23(5), 1505-1522. https://doi.org/10.1287/orsc.1110.0681
 
+Cornell University, INSEAD, & WIPO (eri vuodet). *The Global Innovation Index*. Geneva: World Intellectual Property Organization. Haettu osoitteesta: https://www.globalinnovationindex.org/
+
 Deci, E. L., Koestner, R., & Ryan, R. M. (1999). "A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation." *Psychological Bulletin*, 125(6), 627-668. DOI: 10.1037/0033-2909.125.6.627
 
 Finnish National Agency for Education (2024). "PISA results reflect broader changes in Finnish society." Haettu osoitteesta: https://www.oph.fi/en/blog/pisa-results-reflect-broader-changes-finnish-society
@@ -234,6 +236,8 @@ Medium/YC Felin (2023). "Finland's PISA Decline Dissected with Educational Resea
 Moser, P., Voena, A., & Waldinger, F. (2014). "German Jewish Émigrés and U.S. Invention." NBER Working Paper 19962. [Mainittu lähteessä Kerr, 2016]
 
 Mullainathan, S., & Shafir, E. (2013). *Scarcity: Why Having Too Little Means So Much*. New York: Times Books.
+
+Mokyr, J. (2009). *The Enlightened Economy: An Economic History of Britain 1700-1850*. New Haven: Yale University Press.
 
 Nature Communications (2024). "How popularising higher education affects economic growth and poverty alleviation: empirical evidence from 38 countries." Haettu osoitteesta: https://www.nature.com/articles/s41599-024-03013-5
 
@@ -255,6 +259,8 @@ Sapolsky, R. M. (2023). *Determined: Life Without Free Will*. New York: Penguin 
 
 ScienceDirect (2022). "Does the Cream Always Rise to the Top? The Misallocation of Talent in Innovation." *Journal of Monetary Economics*. https://doi.org/10.1016/j.jmoneco.2022.09.001
 
+Shapin, S., & Schaffer, S. (1985). *Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental Life*. Princeton: Princeton University Press.
+
 Shirky, C. (2010). *Cognitive Surplus: Creativity and Generosity in a Connected Age*. New York: Penguin Press.
 
 Springer (2020). "Finland: Success Through Equity—The Trajectories in PISA Performance." Haettu osoitteesta: https://link.springer.com/chapter/10.1007/978-3-030-59031-4_6
@@ -264,6 +270,8 @@ Statista (2024). "PISA student performance in Finland from 2000 to 2022." Haettu
 thisisFINLAND (2022). "Nokia's tradition of adaptability." Haettu osoitteesta: https://finland.fi/business-innovation/nokias-tradition-of-adaptability/
 
 Volkswagen Foundation (2025). "Academic Freedom Index 2025: Academic freedom has declined in 34 countries." Haettu osoitteesta: https://www.volkswagenstiftung.de/en/news/news/academic-freedom-index-2025-academic-freedom-has-declined-34-countries
+
+Wootton, D. (2015). *The Invention of Science: A New History of the Scientific Revolution*. London: Allen Lane.
 
 ---
 
