@@ -219,6 +219,8 @@ AQA (2024). "Finland & PISA – A fall from grace but still a high performer?" H
 
 Austin, R. D., Devin, L., & Sullivan, E. E. (2012). "Accidental Innovation: Supporting Valuable Unpredictability in the Creative Process." *Organization Science*, 23(5), 1505-1522. https://doi.org/10.1287/orsc.1110.0681
 
+CERN (n.d.). "The birth of the Web." Haettu osoitteesta: https://home.cern/science/computing/birth-web
+
 Cornell University, INSEAD, & WIPO (eri vuodet). *The Global Innovation Index*. Geneva: World Intellectual Property Organization. Haettu osoitteesta: https://www.globalinnovationindex.org/
 
 Deci, E. L., Koestner, R., & Ryan, R. M. (1999). "A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation." *Psychological Bulletin*, 125(6), 627-668. DOI: 10.1037/0033-2909.125.6.627
@@ -230,6 +232,10 @@ Fordham Institute (2024). "The rise and fall of Finland mania, part two: Why did
 Huang, Y., Li, K., & Li, P. (2023). "Innovation ecosystems and national talent competitiveness: A country-based comparison using fsQCA." *Technological Forecasting and Social Change*, 193. https://doi.org/10.1016/j.techfore.2023.122632
 
 Kerr, W. R. (2016). "The Gift of Global Talent: Innovation Policy and the Economy." NBER Working Paper 22699. Haettu osoitteesta: http://klenow.com/HHJK.pdf
+
+Mazzucato, M. (2013). *The Entrepreneurial State: Debunking Public vs. Private Sector Myths*. London: Anthem Press.
+
+Mazzucato, M. (2015). "The Entrepreneurial State: Debunking the Public vs. Private Myth in Risk and Innovation." In *The Entrepreneurial State: Debunking Public vs. Private Sector Myths* (revised edition). New York: PublicAffairs.
 
 Medium/YC Felin (2023). "Finland's PISA Decline Dissected with Educational Research Insights." Haettu osoitteesta: https://medium.com/@yc.felin/finlands-pisa-decline-dissected-with-research-insights-9988336e8abe
 
