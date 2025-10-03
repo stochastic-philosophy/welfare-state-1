@@ -1,4 +1,4 @@
-// controllers.js - MINIMAALINEN TESTIVERSIO
+// controllers3.js - MINIMAALINEN TESTIVERSIO
 
 // Apufunktio
 function slugify(text) {
