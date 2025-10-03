@@ -122,7 +122,7 @@ Tutkimus osoittaa että:
 #### Vaihtoehto: Bell Labs -malli
 
 Bell Labs (1925-1983) on klassinen esimerkki siitä, miten pitkän aikavälin turva tuottaa innovaatioita:
-- Tutkijat olivat käytännössä "eliniässä" (tenure for corporate scientists)
+- Tutkijat olivat käytännössä "eliniäikäisessä" työsuhteessa (tenure for corporate scientists)
 - Heillä oli vapaus tutkia "hyödyttömiä" asioita
 - Ei kvartaalitaloudellista tulosvastuuta
 
