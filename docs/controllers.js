@@ -1,20 +1,19 @@
-// controllers.js
-// 1. Tuodaan marked-kirjasto suoraan CDN:stä ES-moduulina
-import { marked } from 'https://cdn.jsdelivr.net/npm/marked/marked.esm.js';
+// controllers.js - MINIMAALINEN TESTIVERSIO
 
-// --- Apufunktio - KORJATTU TUKEMAAN ÄÄKKÖSIÄ ---
+// Apufunktio
 function slugify(text) {
   return text.toString().toLowerCase()
-    .normalize('NFD')                    // Normalisoi merkit
-    .replace(/[\u0300-\u036f]/g, '')     // Poista aksentit (mutta säilytä ääkköset)
-    .replace(/[^a-zäöå0-9\s-]/g, '')     // Säilytä vain kirjaimet (inkl. ääkköset), numerot, välilyönnit ja viivat
-    .replace(/\s+/g, '-')                // Välilyönnit viivoiksi
-    .replace(/\-\-+/g, '-')              // Monta viivaa yhdeksi
-    .replace(/^-+/, '')                  // Poista viiva alusta
-    .replace(/-+$/, '');                 // Poista viiva lopusta
+    .replace(/ä/g, 'a')
+    .replace(/ö/g, 'o')
+    .replace(/å/g, 'a')
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
 }
 
-// --- HomeController ---
+// HomeController
 class HomeController {
   constructor(router, tocData) {
     this.router = router;
@@ -36,7 +35,7 @@ class HomeController {
   }
 }
 
-// --- SectionController ---
+// SectionController
 class SectionController {
   constructor(router, tocData) {
     this.router = router;
@@ -48,17 +47,7 @@ class SectionController {
     const section = this.tocData.sections.find(s => slugify(s.title) === sectionSlug);
     
     if (!section) {
-      return `
-        <h1>Osiota ei löytynyt</h1>
-        <p>Etsitty slug: <code>${sectionSlug}</code></p>
-        <p>Saatavilla olevat osiot:</p>
-        <ul>
-          ${this.tocData.sections.map(s => 
-            `<li>${s.title} → <code>${slugify(s.title)}</code></li>`
-          ).join('')}
-        </ul>
-        <p><a href="#/">← Takaisin alkuun</a></p>
-      `;
+      return `<h1>Osiota ei löytynyt</h1><p>Etsitty: ${sectionSlug}</p><p><a href="#/">Takaisin</a></p>`;
     }
 
     let html = `<h1>${section.title}</h1>`;
@@ -71,12 +60,12 @@ class SectionController {
     });
     
     html += '</ul></nav>';
-    html += `<p><a href="#/">← Takaisin alkuun</a></p>`;
+    html += `<p><a href="#/">← Takaisin</a></p>`;
     return html;
   }
 }
 
-// --- ChapterController ---
+// ChapterController - ILMAN MARKED-KIRJASTOA
 class ChapterController {
   constructor(router, tocData) {
     this.router = router;
@@ -88,69 +77,68 @@ class ChapterController {
     const chapterSlug = params.chapter;
     
     const section = this.tocData.sections.find(s => slugify(s.title) === sectionSlug);
-    if (!section) return this.notFound(sectionSlug, chapterSlug);
+    if (!section) {
+      return `<h1>Osiota ei löytynyt</h1><p><a href="#/">Takaisin</a></p>`;
+    }
     
     const chapterIndex = section.chapters.findIndex(c => slugify(c.title) === chapterSlug);
-    if (chapterIndex === -1) return this.notFound(sectionSlug, chapterSlug, section);
+    if (chapterIndex === -1) {
+      return `<h1>Lukua ei löytynyt</h1><p><a href="#/${sectionSlug}">Takaisin</a></p>`;
+    }
     
     const chapter = section.chapters[chapterIndex];
     
     try {
       const response = await fetch(chapter.file);
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        throw new Error(`HTTP ${response.status}`);
       }
       const markdown = await response.text();
-      const contentHtml = marked.parse(markdown);
       
-      let html = '<article>';
-      html += this.createNavigation(section, chapterIndex);
-      html += contentHtml;
-      html += this.createNavigation(section, chapterIndex);
-      html += '</article>';
+      // Yksinkertainen markdown -> HTML (ilman kirjastoa)
+      let html = markdown
+        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>')
+        .replace(/^\- (.+)$/gm, '<li>$1</li>')
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/<li>/g, '<ul><li>')
+        .replace(/<\/li>(?!<li>)/g, '</li></ul>');
       
-      return html;
+      html = '<p>' + html + '</p>';
+      
+      let output = '<article>';
+      output += this.createNav(section, chapterIndex);
+      output += html;
+      output += this.createNav(section, chapterIndex);
+      output += '</article>';
+      
+      return output;
     } catch (error) {
-      return `
-        <h1>Virhe</h1>
-        <p><strong>Luvun lataus epäonnistui</strong></p>
-        <p>Tiedosto: <code>${chapter.file}</code></p>
-        <p>Virhe: ${error.message}</p>
-        <hr>
-        <h3>Tarkista:</h3>
-        <ol>
-          <li>Onko tiedosto olemassa oikeassa paikassa?</li>
-          <li>Onko tiedoston nimi kirjoitettu oikein?</li>
-          <li>Onko <code>content/</code> kansio olemassa?</li>
-        </ol>
-        <p><a href="#/${sectionSlug}">← Takaisin osioon</a> | <a href="#/">Alkuun</a></p>
-      `;
+      return `<h1>Virhe</h1><p>Lataus epäonnistui: ${error.message}</p><p>Tiedosto: ${chapter.file}</p>`;
     }
   }
 
-  createNavigation(section, currentChapterIndex) {
+  createNav(section, index) {
     const sectionSlug = slugify(section.title);
     const chapters = section.chapters;
     
     let nav = '<div class="chapter-nav">';
     
-    // Edellinen luku
-    if (currentChapterIndex > 0) {
-      const prevChapter = chapters[currentChapterIndex - 1];
-      const prevSlug = slugify(prevChapter.title);
-      nav += `<a href="#/${sectionSlug}/${prevSlug}" class="nav-link">← ${prevChapter.title}</a>`;
+    if (index > 0) {
+      const prev = chapters[index - 1];
+      nav += `<a href="#/${sectionSlug}/${slugify(prev.title)}">← ${prev.title}</a>`;
     } else {
       nav += '<span></span>';
     }
     
-    // Takaisin osioon
-    nav += `<a href="#/${sectionSlug}" class="nav-link">↑ Takaisin</a>`;
+    nav += `<a href="#/${sectionSlug}">↑ Takaisin</a>`;
     
-    // Seuraava luku
-    if (currentChapterIndex < chapters.length - 1) {
-      const nextChapter = chapters[currentChapterIndex + 1];
-      const nextSlug = slugify(nextChapter.title);
-      nav += `<a href="#/${sectionSlug}/${nextSlug}" class="nav-link">${nextChapter.title} →</a>`;
+    if (index < chapters.length - 1) {
+      const next = chapters[index + 1];
+      nav += `<a href="#/${sectionSlug}/${slugify(next.title)}">${next.title} →</a>`;
     } else {
       nav += '<span></span>';
     }
@@ -158,23 +146,6 @@ class ChapterController {
     nav += '</div>';
     return nav;
   }
-
-  notFound(sectionSlug, chapterSlug, section = null) {
-    let html = '<h1>Lukua ei löytynyt</h1>';
-    html += `<p>Etsitty: <code>${sectionSlug}/${chapterSlug}</code></p>`;
-    
-    if (section) {
-      html += '<p>Saatavilla olevat luvut tässä osiossa:</p><ul>';
-      section.chapters.forEach(ch => {
-        html += `<li>${ch.title} → <code>${slugify(ch.title)}</code></li>`;
-      });
-      html += '</ul>';
-    }
-    
-    html += '<p><a href="#/">Takaisin alkuun</a></p>';
-    return html;
-  }
 }
 
-// 2. Viedään kaikki controller-luokat
 export { HomeController, SectionController, ChapterController };
