@@ -1,0 +1,48 @@
+{
+  "title": "Hyvinvointivaltion analyysi",
+  "sections": [
+    {
+      "title": "Yhteiskunnallisen vakauden perustat",
+      "chapters": [
+        {
+          "title": "Johdanto",
+          "file": "content/01-johdanto.md"
+        },
+        {
+          "title": "Eriarvoisuuden riskit",
+          "file": "content/02-eriarvoisuus.md"
+        },
+        {
+          "title": "Historialliset esimerkit",
+          "file": "content/03-historia.md"
+        }
+      ]
+    },
+    {
+      "title": "Politiikan oppimishaaste",
+      "chapters": [
+        {
+          "title": "Miksi politiikka ei opi",
+          "file": "content/04-oppiminen.md"
+        },
+        {
+          "title": "Ideologian voitto",
+          "file": "content/05-ideologia.md"
+        }
+      ]
+    },
+    {
+      "title": "Innovaatio ja koulutus",
+      "chapters": [
+        {
+          "title": "Lahjakkuuden ennustamattomuus",
+          "file": "content/06-lahjakkuus.md"
+        },
+        {
+          "title": "Koulutuspanostukset",
+          "file": "content/07-koulutus.md"
+        }
+      ]
+    }
+  ]
+}
