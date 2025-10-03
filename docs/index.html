@@ -61,11 +61,11 @@
                     `;
 
                     // VAIHE 4: Kokeillaan ladata controllers
-                    return import('./controllers2.js');
+                    return import('./controllers.js');
                 })
                 .then(() => {
                     document.getElementById('app').innerHTML += `
-                        <div class="status success">✅ VAIHE 4: controllers2.js latautui!</div>
+                        <div class="status success">✅ VAIHE 4: controllers.js latautui!</div>
                         <div class="status info">📦 Ladataan content.json...</div>
                     `;
 
