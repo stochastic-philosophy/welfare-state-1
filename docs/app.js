@@ -1,9 +1,9 @@
-// app.js
-// 1. Tuodaan tarvittavat luokat ja kirjastot omista tiedostoistaan
+// app2.js
+// Tuodaan tarvittavat luokat erillisistä tiedostoista
 import { Router } from './router.js';
-import { HomeController } from './home-controller.js';
-import { SectionController } from './section-controller.js';
-import { ChapterController } from './chapter-controller.js';
+import { HomeController } from './HomeController.js';
+import { SectionController } from './SectionController.js';
+import { ChapterController } from './ChapterController.js';
 
 // Apufunktio virheiden näyttämiseen sivulla
 function showError(message, details = '') {
@@ -16,9 +16,9 @@ function showError(message, details = '') {
       <hr>
       <h3>Tarkistuslista:</h3>
       <ol>
-        <li>Onko <code>documents.json</code> tiedosto olemassa?</li>
-        <li>Onko <code>documents/</code> kansio olemassa?</li>
-        <li>Ovatko markdown-tiedostot <code>documents/</code> kansiossa?</li>
+        <li>Onko <code>content.json</code> tiedosto olemassa?</li>
+        <li>Onko <code>content/</code> kansio olemassa?</li>
+        <li>Ovatko markdown-tiedostot <code>content/</code> kansiossa?</li>
         <li>Onko GitHub Pages päällä?</li>
       </ol>
     </div>
@@ -30,14 +30,13 @@ function showStatus(message) {
   app.innerHTML = `<p style="padding: 20px;">${message}</p>`;
 }
 
-// 2. Sovelluksen käynnistysfunktio
+// Sovelluksen käynnistysfunktio
 document.addEventListener('DOMContentLoaded', async () => {
-  showStatus('🔄 Ladataan documents.json...');
+  showStatus('🔄 Ladataan content.json...');
   
   let tocData;
   try {
-    // TÄRKEÄ: Varmista että tiedoston nimi on oikea!
-    const response = await fetch('documents.json');
+    const response = await fetch('content.json');
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
@@ -45,44 +44,44 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Tarkistetaan että data on oikeassa muodossa
     if (!tocData.sections || !Array.isArray(tocData.sections)) {
-      throw new Error('documents.json ei sisällä "sections" taulukkoa');
+      throw new Error('content.json ei sisällä "sections" taulukkoa');
     }
     
-    showStatus('✅ documents.json ladattu! Alustetaan sovellus...');
+    showStatus('✅ content.json ladattu! Alustetaan sovellus...');
     
   } catch (error) {
     console.error("Datan lataus epäonnistui:", error);
     showError(
       'Sisällysluettelon lataus epäonnistui',
-      `Syy: ${error.message}<br><br>Varmista että <code>documents.json</code> on repositoryn juuressa.`
+      `Syy: ${error.message}<br><br>Varmista että <code>content.json</code> on repositoryn juuressa.`
     );
     return;
   }
 
   try {
-    // 3. Luodaan ensin tyhjä controllers-objekti
+    // Luodaan ensin tyhjä controllers-objekti
     const controllers = {};
 
-    // 4. Luodaan reititin ENSIN (ennen controllereita!)
+    // Luodaan reititin ENSIN
     const router = new Router({ 
       root: document.getElementById('app'),
       controllers: controllers
     });
 
-    // 5. Luodaan kontrollerien instanssit ja annetaan niille router + data
+    // Luodaan kontrollerien instanssit
     const homeController = new HomeController(router, tocData);
     const sectionController = new SectionController(router, tocData);
     const chapterController = new ChapterController(router, tocData);
 
-    // 6. Asetetaan controllerit controllers-objektiin
+    // Asetetaan controllerit controllers-objektiin
     controllers.HomeController = () => homeController;
     controllers.SectionController = () => sectionController;
     controllers.ChapterController = () => chapterController;
 
-    // 7. Määritellään reitit (tarkimmasta yleisimpään)
+    // Määritellään reitit (tarkimmasta yleisimpään)
     router.addRoute('/:section/:chapter', 'ChapterController', 'show');
     router.addRoute('/:section', 'SectionController', 'show');
-    router.addRoute('/', 'HomeController', 'index');
+    router.addRoute('', 'HomeController', 'index');
 
     router.setNotFoundHandler(() => {
       router.render(`
@@ -93,7 +92,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       `);
     });
 
-    // 8. Käynnistetään reititin
+    // Käynnistetään reititin
     showStatus('✅ Sovellus alustettu! Käynnistetään reititin...');
     router.resolve();
     
