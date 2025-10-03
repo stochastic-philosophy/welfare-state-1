@@ -1,5 +1,4 @@
-// section-controller.js
-
+// SectionController.js
 import { slugify } from './utils.js';
 
 export class SectionController {
