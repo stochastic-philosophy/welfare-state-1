@@ -1,5 +1,4 @@
 // app.js
-
 // 1. Tuodaan tarvittavat luokat ja kirjastot omista tiedostoistaan
 import { Router } from './router.js';
 import { HomeController, SectionController, PartController, ChapterController } from './controllers.js';
@@ -8,37 +7,39 @@ import { HomeController, SectionController, PartController, ChapterController } 
 document.addEventListener('DOMContentLoaded', async () => {
   let tocData;
   try {
-    const response = await fetch('content.json'); // Varmista, että tiedoston nimi on oikein
+    const response = await fetch('content.json');
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
     tocData = await response.json();
   } catch (error) {
     console.error("Datan lataus epäonnistui:", error);
-    document.getElementById('app').innerHTML = "<h1>Virhe</h1><p>Sisällysluettelon lataus epäonnistui. Tarkista, että data.json-tiedosto on olemassa.</p>";
+    document.getElementById('app').innerHTML = "<h1>Virhe</h1><p>Sisällysluettelon lataus epäonnistui. Tarkista, että content.json-tiedosto on olemassa.</p>";
     return;
   }
 
-  // 3. Luodaan kontrollerien instanssit ja annetaan niille data
-  const homeController = new HomeController(router, tocData);
-  const sectionController = new SectionController(router, tocData);
-  const partController = new PartController(router, tocData);
-  const chapterController = new ChapterController(router, tocData);
+  // 3. Luodaan ensin tyhjä controllers-objekti
+  const controllers = {};
 
-  const controllers = {
-    HomeController: () => homeController,
-    SectionController: () => sectionController,
-    PartController: () => partController,
-    ChapterController: () => chapterController,
-  };
-
-  // 4. Luodaan reititin ja annetaan sille kontrollerit
+  // 4. Luodaan reititin ENSIN (ennen controllereita!)
   const router = new Router({ 
     root: document.getElementById('app'),
     controllers: controllers
   });
 
-  // 5. Määritellään reitit (tarkimmasta yleisimpään)
+  // 5. Luodaan kontrollerien instanssit ja annetaan niille router + data
+  const homeController = new HomeController(router, tocData);
+  const sectionController = new SectionController(router, tocData);
+  const partController = new PartController(router, tocData);
+  const chapterController = new ChapterController(router, tocData);
+
+  // 6. Asetetaan controllerit controllers-objektiin
+  controllers.HomeController = () => homeController;
+  controllers.SectionController = () => sectionController;
+  controllers.PartController = () => partController;
+  controllers.ChapterController = () => chapterController;
+
+  // 7. Määritellään reitit (tarkimmasta yleisimpään)
   router.addRoute('/:section/:part/:chapter', 'ChapterController', 'show');
   router.addRoute('/:section/:part', 'PartController', 'show');
   router.addRoute('/:section', 'SectionController', 'show');
@@ -48,6 +49,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     router.render(`<h1 style="color: red;">404 - Sivua ei löytynyt</h1><p><a href="#/">Takaisin alkuun</a></p>`);
   });
 
-  // 6. Käynnistetään reititin
+  // 8. Käynnistetään reititin
   router.resolve();
 });
