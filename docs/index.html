@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Dokumentaatio-arkisto</title>
+    <style>
+        /* Tyylit pysyvät samoina */
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 1rem; }
+        h1 { border-bottom: 2px solid #ccc; }
+        h2 { border-bottom: 1px solid #eee; }
+        nav a { margin-right: 1rem; }
+        section { margin-bottom: 2rem; }
+        .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .chapter-nav .nav-link { text-decoration: none; color: #007bff; }
+        .chapter-nav .nav-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <main id="app">
+        Ladataan sisältöä...
+    </main>
+
+    <!-- Vain yksi skriptitag, joka lataa sovelluksen -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
