@@ -4,6 +4,38 @@
 import { Router } from './router.js';
 import { HomeController, SectionController, PartController, ChapterController } from './controllers.js';
 
+// LISÄÄ TÄMÄ SKRIPTIN ALKUUN
+window.onerror = function(message, source, lineno, colno, error) {
+    // Näytä virhe punaisessa laatikossa sivun yläreunassa
+    const errorBox = document.createElement('div');
+    errorBox.style.position = 'fixed';
+    errorBox.style.top = '10px';
+    errorBox.style.left = '10px';
+    errorBox.style.right = '10px';
+    errorBox.style.background = 'red';
+    errorBox.style.color = 'white';
+    errorBox.style.padding = '15px';
+    errorBox.style.borderRadius = '5px';
+    errorBox.style.zIndex = '10000';
+    errorBox.style.fontSize = '16px';
+    errorBox.style.fontFamily = 'monospace';
+    errorBox.innerHTML = `<strong>JavaScript-virhe!</strong><br>
+                          Viesti: ${message}<br>
+                          Tiedosto: ${source}<br>
+                          Rivi: ${lineno}`;
+    document.body.appendChild(errorBox);
+
+    // Näytä myös perinteinen alert-ikkuna
+    alert(`JavaScript-virhe!\n\n${message}\n\nTiedosto: ${source}\nRivi: ${lineno}`);
+    
+    return true; // Estää oletusvirheilmoituksen
+};
+
+// ---- AIEMPI KOODISI TÄHÄN ----
+document.addEventListener('DOMContentLoaded', () => {
+    // ...muu koodi...
+});
+
 // 2. Sovelluksen käynnistysfunktio
 document.addEventListener('DOMContentLoaded', async () => {
   let tocData;
