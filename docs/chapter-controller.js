@@ -1,6 +1,7 @@
-// controllers.js - MARKDOWN-IT VERSION
+// chapter-controller.js - MARKDOWN-IT VERSION
 // Tuodaan markdown-it CDN:stä
 import MarkdownIt from 'https://cdn.jsdelivr.net/npm/markdown-it@14/+esm'
+import { slugify } from './utils.js';
 
 // Alustetaan markdown-parseri konfiguraatiolla
 const md = new MarkdownIt({
@@ -11,7 +12,7 @@ const md = new MarkdownIt({
 })
 
 // ChapterController
-class ChapterController {
+export class ChapterController {
   constructor(router, tocData) {
     this.router = router;
     this.tocData = tocData;
@@ -92,5 +93,3 @@ class ChapterController {
     return nav;
   }
 }
-
-export { HomeController, SectionController, ChapterController };
