@@ -36,6 +36,10 @@ AARP (2024). *New AARP Survey: 1 in 5 Americans Ages 50+ Have No Retirement Savi
 
 Acemoglu, D., & Robinson, J. A. (2012). *Why Nations Fail: The Origins of Power, Prosperity, and Poverty*. New York: Crown Publishers.
 
+Aizer, A., Eli, S., Ferrie, J., & Lleras-Muney, A. (2016). "The Long-Run Impact of Cash Transfers to Poor Families." *American Economic Review*, 106(4), 935-971.
+
+Banerjee, A., Faye, M., Krueger, A., Niehaus, P., & Suri, T. (2020). "Effects of a Universal Basic Income during the Pandemic." *NBER Working Paper*.
+
 Berg, A., & Ostry, J. D. (2011). *Inequality and Unsustainable Growth: Two Sides of the Same Coin?* IMF Staff Discussion Note SDN/11/08. International Monetary Fund.
 
 Bossenga, G. (2009). "Rights and Citizens in the Old Regime." *French Historical Studies*, 20(2), 217-243. [Viitattu: Swansea University, n.d.]
@@ -47,6 +51,8 @@ CEPR (2019). "Fiscal austerity and the rise of the Nazis." VoxEU Column. Haettu 
 Doyle, W. (1999). *Origins of the French Revolution* (3rd ed.). Oxford: Oxford University Press.
 
 Economic History Society (2018). "Income inequality in times of war and revolution: the city of Moscow in 1916." Haettu osoitteesta: https://ehs.org.uk/income-inequality-in-times-of-war-and-revolution-the-city-of-moscow-in-1916/
+
+Egger, D., Haushofer, J., Miguel, E., Niehaus, P., & Walker, M. (2022). "General Equilibrium Effects of Cash Transfers: Experimental Evidence from Kenya." *Econometrica*, 90(6), 2603-2643.
 
 Esping-Andersen, G. (1990). *The Three Worlds of Welfare Capitalism*. Princeton: Princeton University Press.
 
@@ -62,6 +68,8 @@ Galofré-Vilà, G., Meissner, C. M., McKee, M., & Stuckler, D. (2019). "Austerit
 
 Giommoni, T., Tabellini, M., & Loumeau, G. (2025). "Extractive taxation and the French Revolution." Harvard Business School Working Paper. [Viitattu: CEPR, 2025]
 
+GiveDirectly (2023). "Early findings from the world's largest UBI study." Haettu osoitteesta: https://www.givedirectly.org/2023-ubi-results/
+
 Hardin, G. (1968). "The Tragedy of the Commons." *Science*, 162(3859), 1243-1248.
 
 History.com (2024). "Russian Revolution: Causes, Timeline & Bolsheviks." Updated July 7, 2025. Haettu osoitteesta: https://www.history.com/articles/russian-revolution
@@ -72,7 +80,11 @@ IMF (2015). "Causes and Consequences of Income Inequality: A Global Perspective.
 
 IMF (2017). "Fiscal Monitor: Tackling Inequality." International Monetary Fund, October 2017.
 
+Jones, D., & Marinescu, I. (2022). "The Labor Market Impacts of Universal and Permanent Cash Transfers: Evidence from the Alaska Permanent Fund." *American Economic Journal: Economic Policy*, 14(2), 315-340.
+
 Kershaw, I. (1998). *Hitler: 1889-1936: Hubris*. London: W. W. Norton & Company.
+
+Kilburn, K., Prencipe, L., Hjelm, L., Peterman, A., Handa, S., & Palermo, T. (2025). "The long-term effects of cash transfer programmes on young adults' mental health: a quasi-experimental study of Colombia, Mexico, and South Africa." *Health Policy and Planning*, 40(2), 206-218.
 
 Lindert, P. H., & Nafziger, S. (2014). "Russian Inequality on the Eve of Revolution." *Journal of Economic History*, 74(3), 767-798.
 
@@ -82,7 +94,13 @@ Mani, A., Mullainathan, S., Shafir, E., & Zhao, J. (2013). "Poverty Impedes Cogn
 
 Marttila, T. (2013). *The Culture of Enterprise in Neoliberalism: Specters of Entrepreneurship*. London: Routledge.
 
+MIT Sloan (2020). "How a universal basic income stabilized Kenyans in bad times." Haettu osoitteesta: https://mitsloan.mit.edu/ideas-made-to-matter/how-a-universal-basic-income-stabilized-kenyans-bad-times
+
+Molina Millán, T., Macours, K., Maluccio, J. A., & Tejerina, L. (2019). "Experimental long-term effects of early-childhood and school-age exposure to a conditional cash transfer program." *Journal of Development Economics*, 143, 102385.
+
 Mullainathan, S., & Shafir, E. (2013). *Scarcity: Why Having Too Little Means So Much*. New York: Times Books.
+
+Noble, K. G., Magnuson, K., Gennetian, L. A., et al. (2021). "The impact of a poverty reduction intervention on infant brain activity." *Proceedings of the National Academy of Sciences*, 119(5), e2115649119.
 
 OECD (2015). *In It Together: Why Less Inequality Benefits All*. Paris: OECD Publishing.
 
@@ -105,6 +123,8 @@ Swansea University (n.d.). "The long and short reasons for why Revolution broke 
 United States Holocaust Memorial Museum (n.d.). "The Great Depression." *Holocaust Encyclopedia*. Haettu osoitteesta: https://encyclopedia.ushmm.org/content/en/article/the-great-depression
 
 United States Holocaust Memorial Museum (n.d.). "The Weimar Republic." *Holocaust Encyclopedia*. Haettu osoitteesta: https://encyclopedia.ushmm.org/content/en/article/the-weimar-republic
+
+Watson, B., Guettabi, M., & Reimer, M. (2020). "Universal Cash and Crime." *Review of Economics and Statistics*, 102(4), 678-689.
 
 Wikipedia (2024). "Economic inequality." Haettu October 1, 2025, osoitteesta: https://en.wikipedia.org/wiki/Economic_inequality
 
