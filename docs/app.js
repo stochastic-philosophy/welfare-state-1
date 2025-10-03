@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 7. Määritellään reitit (tarkimmasta yleisimpään)
     router.addRoute('/:section/:chapter', 'ChapterController', 'show');
     router.addRoute('/:section', 'SectionController', 'show');
-    router.addRoute('', 'HomeController', 'index');
+    router.addRoute('/', 'HomeController', 'index');
 
     router.setNotFoundHandler(() => {
       router.render(`
