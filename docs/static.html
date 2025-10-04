@@ -6,7 +6,19 @@
     <meta name="description" content="Hyvinvointivaltion analyysi - Suorat linkit markdown-dokumentteihin">
     <meta name="robots" content="index, follow">
     <title>Hyvinvointivaltion analyysi - Dokumentit</title>
-    <link id="theme-stylesheet" rel="stylesheet" href="css/theme-light.css">
+    <script>
+        (function() {
+            const THEME_KEY = 'preferred-theme';
+            const CONSENT_KEY = 'cookie-consent';
+            
+            let theme = 'light';
+            if (localStorage.getItem(CONSENT_KEY) === 'granted') {
+                theme = localStorage.getItem(THEME_KEY) || 'light';
+            }
+            
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="css/theme-' + theme + '.css">');
+        })();
+    </script>
 </head>
 <body>
     <main id="app">
