@@ -1,23 +1,25 @@
-// HomeController.js
-import { slugify } from './utils.js';
+import { loadAllContent } from './content-loader.js';
+import { generateTableOfContents } from './toc-generator.js';
 
 export class HomeController {
   constructor(router, tocData) {
     this.router = router;
     this.tocData = tocData;
+    this.enrichedData = null;
   }
 
-  index() {
-    let html = `<h1>${this.tocData.title || 'Dokumentaatio'}</h1>`;
-    html += '<p>Valitse osio:</p>';
-    html += '<nav><ul>';
+  async index() {
+    if (!this.enrichedData) {
+      const loadingHtml = '<h1>Ladataan sisällysluetteloa...</h1><p>Luetaan markdown-tiedostoja ja parsitaan otsikot...</p>';
+      this.router.render(loadingHtml);
+      
+      this.enrichedData = await loadAllContent(this.tocData);
+    }
     
-    this.tocData.sections.forEach(section => {
-      const sectionSlug = slugify(section.title);
-      html += `<li><a href="#/${sectionSlug}">${section.title}</a></li>`;
-    });
-    
-    html += '</ul></nav>';
-    return html;
+    return generateTableOfContents(this.enrichedData);
+  }
+  
+  getEnrichedData() {
+    return this.enrichedData;
   }
 }
