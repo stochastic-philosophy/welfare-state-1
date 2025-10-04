@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiedostonimi-parsinta testi</title>
+    <style>
+        body { font-family: sans-serif; max-width: 900px; margin: 2rem auto; padding: 1rem; }
+        table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+        th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+        th { background: #f5f5f5; }
+        .section { background: #e8f5e9; font-weight: bold; }
+        pre { background: #f5f5f5; padding: 1rem; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Tiedostonimi-parsinta testi</h1>
+    <div id="results"></div>
+
+    <script type="module">
+        import { parseFilename, groupFilesBySection } from './filename-parser.js';
+
+        const files = [
+            "yhteiskunta_sopimus_v3_osa1.md",
+            "yhteiskunta_sopimus_v3_osa2.md",
+            "yhteiskunta_sopimus_v3_osa3.md",
+            "oppimiskatko_v2_osa1.md",
+            "oppimiskatko_v2_osa2.md",
+            "oppimiskatko_v2_osa3.md",
+            "innovaatio_v2_osa1.md",
+            "innovaatio_v2_osa2.md",
+            "innovaatio_v2_osa3.md",
+            "hyvinvointivaltio_b_osa1.md",
+            "hyvinvointivaltio_b_osa2.md",
+            "hyvinvointivaltio_b_osa3.md",
+            "moraaliset_juuret_osa1.md",
+            "moraaliset_juuret_osa2.md",
+            "moraaliset_juuret_osa3.md"
+        ];
+
+        const results = document.getElementById('results');
+
+        // Testaa yksittäistä parseFilename
+        results.innerHTML += '<h2>1. Yksittäinen tiedostonimi-parsinta</h2>';
+        results.innerHTML += '<table><tr><th>Tiedosto</th><th>Base Name</th><th>Clean Name</th><th>Part #</th></tr>';
+        
+        files.forEach(file => {
+            const parsed = parseFilename(file);
+            if (parsed) {
+                results.innerHTML += `
+                    <tr>
+                        <td><code>${file}</code></td>
+                        <td>${parsed.baseName}</td>
+                        <td><strong>${parsed.cleanName}</strong></td>
+                        <td>${parsed.partNumber}</td>
+                    </tr>
+                `;
+            }
+        });
+        results.innerHTML += '</table>';
+
+        // Testaa groupFilesBySection
+        results.innerHTML += '<h2>2. Ryhmittely osioihin</h2>';
+        const sections = groupFilesBySection(files, 'content');
+        
+        results.innerHTML += '<table><tr><th>Osio</th><th>Luvut</th></tr>';
+        sections.forEach(section => {
+            results.innerHTML += `
+                <tr class="section">
+                    <td colspan="2"><strong>${section.title}</strong></td>
+                </tr>
+            `;
+            section.chapters.forEach(chapter => {
+                results.innerHTML += `
+                    <tr>
+                        <td style="padding-left: 2rem;">${chapter.title}</td>
+                        <td><code>${chapter.file}</code></td>
+                    </tr>
+                `;
+            });
+        });
+        results.innerHTML += '</table>';
+
+        // Näytä lopullinen JSON-rakenne
+        results.innerHTML += '<h2>3. Lopullinen rakenne (JSON)</h2>';
+        results.innerHTML += '<pre>' + JSON.stringify({ 
+            title: "Hyvinvointivaltion analyysi",
+            sections: sections 
+        }, null, 2) + '</pre>';
+
+    </script>
+</body>
+</html>
