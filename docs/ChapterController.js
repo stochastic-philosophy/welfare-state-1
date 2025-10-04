@@ -12,9 +12,10 @@ export class ChapterController {
   async show(params) {
     const sectionSlug = params.section;
     const chapterSlug = params.chapter;
-    const hash = window.location.hash;
-    const anchorMatch = hash.match(/#[^#]+#(.+)$/);
-    const anchorId = anchorMatch ? anchorMatch[1] : null;
+    
+    const fullHash = window.location.hash;
+    const anchorIndex = fullHash.indexOf('#', 1);
+    const anchorId = anchorIndex > 0 ? fullHash.substring(anchorIndex + 1) : null;
     
     const enrichedData = this.getEnrichedData();
     if (!enrichedData) {
@@ -51,6 +52,11 @@ export class ChapterController {
         const element = document.getElementById(anchorId);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          element.style.backgroundColor = '#ffffcc';
+          setTimeout(() => {
+            element.style.transition = 'background-color 2s';
+            element.style.backgroundColor = '';
+          }, 500);
         }
       }, 100);
     }
