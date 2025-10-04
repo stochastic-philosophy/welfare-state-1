@@ -1,4 +1,5 @@
 import { openCookieSettings } from './cookie-consent.js';
+import { sendFeedback } from './email-helper.js';
 
 export function initFooter() {
   const footer = document.createElement('footer');
@@ -12,7 +13,7 @@ export function initFooter() {
         © ${currentYear} Stochastic Philosopher
       </p>
       <p class="contact">
-        Sähköposti: stochasticphilosopher(at)gmail(dot)com
+        <a href="#" id="email-link">📧 Lähetä palaute</a>
       </p>
       <p class="privacy">
         <a href="#" id="privacy-link">Tietosuoja-asetukset</a>
@@ -21,6 +22,11 @@ export function initFooter() {
   `;
   
   document.body.appendChild(footer);
+  
+  document.getElementById('email-link').addEventListener('click', (e) => {
+    e.preventDefault();
+    sendFeedback();
+  });
   
   document.getElementById('privacy-link').addEventListener('click', (e) => {
     e.preventDefault();
