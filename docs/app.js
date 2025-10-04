@@ -16,9 +16,9 @@ function showError(message, details = '') {
       <hr>
       <h3>Tarkistuslista:</h3>
       <ol>
-        <li>Onko <code>content.json</code> tiedosto olemassa?</li>
-        <li>Onko <code>content/</code> kansio olemassa?</li>
-        <li>Ovatko markdown-tiedostot <code>content/</code> kansiossa?</li>
+        <li>Onko <code>documents.json</code> tiedosto olemassa?</li>
+        <li>Onko <code>documents/</code> kansio olemassa?</li>
+        <li>Ovatko markdown-tiedostot <code>documents/</code> kansiossa?</li>
         <li>Onko GitHub Pages päällä?</li>
       </ol>
     </div>
@@ -32,11 +32,11 @@ function showStatus(message) {
 
 // Sovelluksen käynnistysfunktio
 document.addEventListener('DOMContentLoaded', async () => {
-  showStatus('🔄 Ladataan content.json...');
+  showStatus('🔄 Ladataan documents.json...');
   
   let tocData;
   try {
-    const response = await fetch('content.json');
+    const response = await fetch('documents.json');
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
@@ -44,16 +44,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Tarkistetaan että data on oikeassa muodossa
     if (!tocData.sections || !Array.isArray(tocData.sections)) {
-      throw new Error('content.json ei sisällä "sections" taulukkoa');
+      throw new Error('documents.json ei sisällä "sections" taulukkoa');
     }
     
-    showStatus('✅ content.json ladattu! Alustetaan sovellus...');
+    showStatus('✅ documents.json ladattu! Alustetaan sovellus...');
     
   } catch (error) {
     console.error("Datan lataus epäonnistui:", error);
     showError(
       'Sisällysluettelon lataus epäonnistui',
-      `Syy: ${error.message}<br><br>Varmista että <code>content.json</code> on repositoryn juuressa.`
+      `Syy: ${error.message}<br><br>Varmista että <code>documents.json</code> on repositoryn juuressa.`
     );
     return;
   }
