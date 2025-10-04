@@ -185,6 +185,7 @@ ul, ol {
     color: var(--text-primary);
 }
 
+#ai-export-toggle,
 #theme-toggle {
     position: fixed;
     top: 1rem;
@@ -197,6 +198,8 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
+    min-width: 120px;
+    text-align: center;
 }
 
 #theme-toggle:hover {
@@ -349,19 +352,6 @@ ul, ol {
 }
 
 /* AI Export Button */
-#ai-export-toggle {
-    position: fixed;
-    top: 4rem;
-    right: 1rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-light);
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Georgia, serif;
-    color: var(--text-primary);
-    font-size: 0.9rem;
-}
 
 #ai-export-toggle:hover {
     background: var(--bg-tertiary);
