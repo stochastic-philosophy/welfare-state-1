@@ -1,4 +1,4 @@
-// app2.js
+// app.js
 // Tuodaan tarvittavat luokat erillisistä tiedostoista
 import { Router } from './router.js';
 import { HomeController } from './HomeController.js';
