@@ -2,8 +2,8 @@ import { hasConsent } from './cookie-consent.js';
 
 const THEME_KEY = 'preferred-theme';
 const THEMES = {
-  light: 'theme-light.css',
-  dark: 'theme-dark.css'
+  light: 'css/theme-light.css',
+  dark: 'css/theme-dark.css'
 };
 
 function getCurrentTheme() {
