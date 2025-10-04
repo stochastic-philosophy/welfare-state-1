@@ -18,6 +18,7 @@
     
     --highlight-bg: #2a2825;
     --code-bg: #2f2c28;
+    --button-min-width: 135px;
 }
 
 body { 
@@ -197,7 +198,7 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
-    min-width: 135px;
+    min-width: var(--button-min-width);
     text-align: center;
 }
 
@@ -364,7 +365,7 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
-    min-width: 135px;
+    var(--button-min-width);
     text-align: center;
 }
 
@@ -527,7 +528,7 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
-    min-width: 135px;
+    var(--button-min-width);
     text-align: center;
 }
 
