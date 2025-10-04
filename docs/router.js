@@ -1,4 +1,3 @@
-// router.js
 export class Router {
   constructor(options = {}) {
     this.routes = [];
@@ -29,7 +28,14 @@ export class Router {
   }
 
   resolve() {
-    let path = window.location.hash.slice(1);
+    let fullHash = window.location.hash.slice(1);
+    
+    const anchorIndex = fullHash.indexOf('#');
+    let path = fullHash;
+    if (anchorIndex > 0) {
+      path = fullHash.substring(0, anchorIndex);
+    }
+    
     if (path === '') path = '/';
     
     for (const route of this.routes) {
