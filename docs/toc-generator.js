@@ -1,5 +1,45 @@
 import { slugify } from './utils.js';
 
+function generateHeadingsList(headings, sectionSlug, chapterSlug) {
+  if (!headings || headings.length === 0) return '';
+  
+  let html = '';
+  let currentLevel = 0;
+  let openLists = 0;
+  
+  headings.forEach((heading, index) => {
+    const level = heading.level;
+    
+    if (level > currentLevel) {
+      for (let i = currentLevel; i < level; i++) {
+        html += '<ul class="toc-headings">';
+        openLists++;
+      }
+    } else if (level < currentLevel) {
+      for (let i = level; i < currentLevel; i++) {
+        html += '</li></ul>';
+        openLists--;
+      }
+      html += '</li>';
+    } else if (index > 0) {
+      html += '</li>';
+    }
+    
+    html += `<li><a href="#/${sectionSlug}/${chapterSlug}#${heading.id}">${heading.text}</a>`;
+    
+    currentLevel = level;
+  });
+  
+  html += '</li>';
+  
+  while (openLists > 0) {
+    html += '</ul>';
+    openLists--;
+  }
+  
+  return html;
+}
+
 export function generateTableOfContents(enrichedData) {
   let html = `<h1>${enrichedData.title}</h1>`;
   html += '<nav class="table-of-contents">';
@@ -18,20 +58,7 @@ export function generateTableOfContents(enrichedData) {
       html += `<strong>${chapter.title}</strong>`;
       html += `</a>`;
       
-      if (chapter.headings && chapter.headings.length > 0) {
-        html += `<ul class="toc-headings">`;
-        
-        chapter.headings.forEach(heading => {
-          const indent = (heading.level - 1) * 20;
-          html += `<li style="margin-left: ${indent}px;">`;
-          html += `<a href="#/${sectionSlug}/${chapterSlug}#${heading.id}">`;
-          html += heading.text;
-          html += `</a>`;
-          html += `</li>`;
-        });
-        
-        html += `</ul>`;
-      }
+      html += generateHeadingsList(chapter.headings, sectionSlug, chapterSlug);
       
       html += `</div>`;
     });
