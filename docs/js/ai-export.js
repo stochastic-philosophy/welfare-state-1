@@ -1,3 +1,5 @@
+import { sendFeedback } from './email-helper.js';
+
 export function initAIExport(getEnrichedDataFn) {
   const button = document.createElement('button');
   button.id = 'ai-export-toggle';
@@ -26,8 +28,9 @@ function openExportModal(getEnrichedDataFn) {
       </div>
       
       <div id="file-tree" class="file-tree"></div>
-      
+
       <div class="export-actions">
+        <button id="email-selected" class="export-btn">📧 Lähetä sähköpostilla</button>
         <button id="copy-selected" class="export-btn primary">Kopioi linkit</button>
         <button id="close-export" class="export-btn">Sulje</button>
       </div>
@@ -44,6 +47,10 @@ function openExportModal(getEnrichedDataFn) {
   document.getElementById('deselect-all').addEventListener('click', () => toggleAll(false));
   document.getElementById('copy-selected').addEventListener('click', () => copySelected(enrichedData));
   document.getElementById('close-export').addEventListener('click', () => modal.remove());
+  document.getElementById('email-selected').addEventListener('click', () => {
+    const links = generateLinksList(enrichedData);
+    sendFeedback(links);
+  });
   
   modal.addEventListener('click', (e) => {
     if (e.target === modal) modal.remove();
