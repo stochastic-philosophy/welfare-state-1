@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown-kirjaston testi</title>
+</head>
+<body>
+    <div id="status">Testataan markdown-kirjastoja...</div>
+    
+    <script type="module">
+        const status = document.getElementById('status');
+        
+        // Testi 1: markdown-it
+        status.innerHTML += '<h2>Testi 1: markdown-it</h2>';
+        try {
+            const MarkdownIt = await import('https://cdn.jsdelivr.net/npm/markdown-it@14/+esm');
+            status.innerHTML += '<p style="color: green;">✅ markdown-it latautui!</p>';
+            const md = new MarkdownIt.default();
+            const html = md.render('# Otsikko\n\nTekstiä **lihavoituna**');
+            status.innerHTML += `<div style="border: 1px solid green; padding: 10px;">${html}</div>`;
+        } catch (error) {
+            status.innerHTML += `<p style="color: red;">❌ markdown-it EPÄONNISTUI: ${error.message}</p>`;
+        }
+        
+        // Testi 2: marked
+        status.innerHTML += '<h2>Testi 2: marked</h2>';
+        try {
+            const marked = await import('https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js');
+            status.innerHTML += '<p style="color: green;">✅ marked latautui!</p>';
+            const html = marked.marked.parse('# Otsikko\n\nTekstiä **lihavoituna**');
+            status.innerHTML += `<div style="border: 1px solid green; padding: 10px;">${html}</div>`;
+        } catch (error) {
+            status.innerHTML += `<p style="color: red;">❌ marked EPÄONNISTUI: ${error.message}</p>`;
+        }
+        
+        // Testi 3: Yksinkertainen regex-parseri
+        status.innerHTML += '<h2>Testi 3: Regex-parseri (aina toimii)</h2>';
+        function simpleMarkdown(text) {
+            return text
+                .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+                .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+                .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.+?)\*/g, '<em>$1</em>')
+                .replace(/\n\n/g, '</p><p>')
+                .replace(/^(.+)$/gm, '<p>$1</p>');
+        }
+        const html = simpleMarkdown('# Otsikko\n\nTekstiä **lihavoituna**');
+        status.innerHTML += '<p style="color: green;">✅ Regex-parseri toimii aina!</p>';
+        status.innerHTML += `<div style="border: 1px solid green; padding: 10px;">${html}</div>`;
+    </script>
+</body>
+</html>
+```
