@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     controllers.ChapterController = () => chapterController;
 
     router.addRoute('/:section/:chapter', 'ChapterController', 'show');
-    router.addRoute('', 'HomeController', 'index');
+    router.addRoute('/', 'HomeController', 'index');
 
     router.setNotFoundHandler(() => {
       router.render(`
