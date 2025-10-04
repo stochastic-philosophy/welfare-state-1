@@ -1,57 +1,61 @@
-// ChapterController.js
 import { slugify } from './utils.js';
 import { md } from './markdown-config.js';
+import { addIdsToHeadings } from './markdown-parser.js';
 
 export class ChapterController {
-  constructor(router, tocData) {
+  constructor(router, tocData, getEnrichedDataFn) {
     this.router = router;
     this.tocData = tocData;
+    this.getEnrichedData = getEnrichedDataFn;
   }
 
   async show(params) {
     const sectionSlug = params.section;
     const chapterSlug = params.chapter;
+    const hash = window.location.hash;
+    const anchorMatch = hash.match(/#[^#]+#(.+)$/);
+    const anchorId = anchorMatch ? anchorMatch[1] : null;
     
-    const section = this.tocData.sections.find(s => slugify(s.title) === sectionSlug);
+    const enrichedData = this.getEnrichedData();
+    if (!enrichedData) {
+      return '<h1>Virhe</h1><p>Sisältöä ei ole vielä ladattu. <a href="#/">Palaa etusivulle</a></p>';
+    }
+    
+    const section = enrichedData.sections.find(s => slugify(s.title) === sectionSlug);
     if (!section) {
       return `<h1>Osiota ei löytynyt</h1><p><a href="#/">Takaisin</a></p>`;
     }
     
     const chapterIndex = section.chapters.findIndex(c => slugify(c.title) === chapterSlug);
     if (chapterIndex === -1) {
-      return `<h1>Lukua ei löytynyt</h1><p><a href="#/${sectionSlug}">Takaisin osioon</a></p>`;
+      return `<h1>Lukua ei löytynyt</h1><p><a href="#/">Takaisin</a></p>`;
     }
     
     const chapter = section.chapters[chapterIndex];
     
-    try {
-      const response = await fetch(chapter.file);
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-      }
-      const markdown = await response.text();
-      
-      // Käytä markdown-it:iä parsimaan markdown -> HTML
-      const contentHtml = md.render(markdown);
-      
-      let html = '<article>';
-      html += this.createNavigation(section, chapterIndex);
-      html += contentHtml;
-      html += this.createNavigation(section, chapterIndex);
-      html += '</article>';
-      
-      return html;
-      
-    } catch (error) {
-      return `
-        <h1>Virhe</h1>
-        <p><strong>Luvun lataus epäonnistui</strong></p>
-        <p>Tiedosto: <code>${chapter.file}</code></p>
-        <p>Virhe: ${error.message}</p>
-        <hr>
-        <p><a href="#/${sectionSlug}">← Takaisin osioon</a> | <a href="#/">Alkuun</a></p>
-      `;
+    if (chapter.error) {
+      return `<h1>Virhe</h1><p>Luvun lataus epäonnistui: ${chapter.error}</p><p><a href="#/">Takaisin</a></p>`;
     }
+    
+    let contentHtml = md.render(chapter.markdown);
+    contentHtml = addIdsToHeadings(contentHtml);
+    
+    let html = '<article>';
+    html += this.createNavigation(section, chapterIndex);
+    html += contentHtml;
+    html += this.createNavigation(section, chapterIndex);
+    html += '</article>';
+    
+    if (anchorId) {
+      setTimeout(() => {
+        const element = document.getElementById(anchorId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+    
+    return html;
   }
 
   createNavigation(section, index) {
@@ -60,7 +64,6 @@ export class ChapterController {
     
     let nav = '<div class="chapter-nav">';
     
-    // Edellinen luku
     if (index > 0) {
       const prev = chapters[index - 1];
       nav += `<a href="#/${sectionSlug}/${slugify(prev.title)}" class="nav-link">← ${prev.title}</a>`;
@@ -68,10 +71,8 @@ export class ChapterController {
       nav += '<span></span>';
     }
     
-    // Takaisin osioon
-    nav += `<a href="#/${sectionSlug}" class="nav-link">↑ ${section.title}</a>`;
+    nav += `<a href="#/" class="nav-link">↑ Sisällysluettelo</a>`;
     
-    // Seuraava luku
     if (index < chapters.length - 1) {
       const next = chapters[index + 1];
       nav += `<a href="#/${sectionSlug}/${slugify(next.title)}" class="nav-link">${next.title} →</a>`;
