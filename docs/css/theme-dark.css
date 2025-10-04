@@ -365,7 +365,7 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
-    var(--button-min-width);
+    min-width: var(--button-min-width);
     text-align: center;
 }
 
