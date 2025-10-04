@@ -1,27 +1,148 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Dokumentaatio-arkisto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyvinvointivaltion analyysi</title>
     <style>
-        /* Tyylit pysyvät samoina */
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 1rem; }
-        h1 { border-bottom: 2px solid #ccc; }
-        h2 { border-bottom: 1px solid #eee; }
-        nav a { margin-right: 1rem; }
-        section { margin-bottom: 2rem; }
-        .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        .chapter-nav .nav-link { text-decoration: none; color: #007bff; }
-        .chapter-nav .nav-link:hover { text-decoration: underline; }
+        body { 
+            font-family: Georgia, serif;
+            line-height: 1.6; 
+            max-width: 900px; 
+            margin: auto; 
+            padding: 2rem 1rem;
+            color: #333;
+        }
+        
+        h1 { 
+            border-bottom: 3px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.3rem; }
+        h3 { color: #555; }
+        
+        .table-of-contents {
+            margin: 2rem 0;
+        }
+        
+        .toc-section {
+            margin-bottom: 3rem;
+        }
+        
+        .toc-main-heading {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+        
+        .toc-chapter {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+        
+        .toc-chapter-link {
+            text-decoration: none;
+            color: #0066cc;
+            font-size: 1.1rem;
+        }
+        
+        .toc-chapter-link:hover {
+            text-decoration: underline;
+        }
+        
+        .toc-headings {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0 1rem;
+        }
+        
+        .toc-headings li {
+            margin: 0.3rem 0;
+        }
+        
+        .toc-headings a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .toc-headings a:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        
+        .chapter-nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin: 2rem 0; 
+            padding: 1rem; 
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+        
+        .chapter-nav .nav-link { 
+            text-decoration: none; 
+            color: #0066cc;
+            padding: 0.5rem 1rem;
+        }
+        
+        .chapter-nav .nav-link:hover { 
+            text-decoration: underline;
+            background: #e0e0e0;
+            border-radius: 3px;
+        }
+        
+        article {
+            margin: 2rem 0;
+        }
+        
+        article h1, article h2, article h3, article h4, article h5, article h6 {
+            scroll-margin-top: 2rem;
+        }
+        
+        code { 
+            background: #f0f0f0; 
+            padding: 2px 6px; 
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        pre {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin-left: 0;
+            padding-left: 1rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        a {
+            color: #0066cc;
+        }
+        
+        a:hover {
+            color: #004499;
+        }
     </style>
 </head>
 <body>
     <main id="app">
         Ladataan sisältöä...
     </main>
-
-    <!-- Vain yksi skriptitag, joka lataa sovelluksen -->
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app2.js"></script>
 </body>
 </html>
