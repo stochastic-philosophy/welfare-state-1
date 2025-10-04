@@ -32,8 +32,11 @@ export class Router {
     
     const anchorIndex = fullHash.indexOf('#');
     let path = fullHash;
+    let hasAnchor = false;
+    
     if (anchorIndex > 0) {
       path = fullHash.substring(0, anchorIndex);
+      hasAnchor = true;
     }
     
     if (path === '') path = '/';
@@ -60,10 +63,20 @@ export class Router {
           const result = action.call(controllerInstance, params);
           if (result && typeof result.then === 'function') {
             result.then(html => {
-              if (html) this.render(html);
+              if (html) {
+                this.render(html);
+                if (!hasAnchor) {
+                  window.scrollTo(0, 0);
+                }
+              }
             });
           } else {
-            if (result) this.render(result);
+            if (result) {
+              this.render(result);
+              if (!hasAnchor) {
+                window.scrollTo(0, 0);
+              }
+            }
           }
         } else {
           console.error(`Metodi ${route.methodName} ei ole funktio`);
