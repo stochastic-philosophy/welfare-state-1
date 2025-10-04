@@ -12,7 +12,12 @@
     </main>
     <script type="module">
         import { initThemeSwitcher } from './theme-switcher.js';
+        import { initCookieConsent } from './cookie-consent.js';
+        import { initFooter } from './footer.js';
+        
+        initCookieConsent();
         initThemeSwitcher();
+        initFooter();
     </script>
     <script type="module" src="app.js"></script>
 </body>
