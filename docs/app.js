@@ -6,7 +6,7 @@ function showError(message, details = '') {
   const app = document.getElementById('app');
   app.innerHTML = `
     <div style="padding: 20px; border: 2px solid red; background: #fee; margin: 20px;">
-      <h1 style="color: red;">⚠️ Virhe</h1>
+      <h1 style="color: red;">Virhe</h1>
       <p><strong>${message}</strong></p>
       ${details ? `<p style="font-size: 0.9em; color: #666;">${details}</p>` : ''}
     </div>
@@ -19,18 +19,18 @@ function showStatus(message) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  showStatus('🔄 Ladataan documents.json...');
+  showStatus('Ladataan content.json...');
   
   let tocData;
   try {
-    const response = await fetch('documents.json');
+    const response = await fetch('content.json');
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
     tocData = await response.json();
     
-    if (!tocData.sections || !Array.isArray(tocData.sections)) {
-      throw new Error('documents.json ei sisällä "sections" taulukkoa');
+    if (!tocData.files || !Array.isArray(tocData.files)) {
+      throw new Error('content.json ei sisällä "files" taulukkoa');
     }
     
   } catch (error) {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     controllers.ChapterController = () => chapterController;
 
     router.addRoute('/:section/:chapter', 'ChapterController', 'show');
-    router.addRoute('/', 'HomeController', 'index');
+    router.addRoute('', 'HomeController', 'index');
 
     router.setNotFoundHandler(() => {
       router.render(`
