@@ -197,7 +197,7 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
-    min-width: 120px;
+    min-width: 135px;
     text-align: center;
 }
 
@@ -364,7 +364,7 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
-    min-width: 150px;
+    min-width: 135px;
     text-align: center;
 }
 
@@ -527,7 +527,7 @@ ul, ol {
     font-family: Georgia, serif;
     color: var(--text-primary);
     font-size: 0.9rem;
-    min-width: 120px;
+    min-width: 135px;
     text-align: center;
 }
 
