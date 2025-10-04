@@ -1,15 +1,17 @@
 import { extractHeadings } from './markdown-parser.js';
+import { groupFilesBySection } from './filename-parser.js';
 
 export async function loadAllContent(tocData) {
+  const sections = groupFilesBySection(tocData.files, tocData.contentDir);
+  
   const enrichedData = {
     title: tocData.title,
     sections: []
   };
   
-  for (const section of tocData.sections) {
+  for (const section of sections) {
     const enrichedSection = {
       title: section.title,
-      description: section.description,
       chapters: []
     };
     
