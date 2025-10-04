@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyvinvointivaltion analyysi - Dokumentit</title>
     
-    <!-- Debug: Näytä mitä tapahtuu -->
+    <!-- Critical CSS: Ladataan heti, estää flashin -->
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.7;
+            font-size: 16px;
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        
+        /* Piilota kunnes teema-CSS latautuu */
+        body { visibility: hidden; }
+        body.loaded { visibility: visible; }
+    </style>
+    
     <script>
         (function() {
-            const debugDiv = document.createElement('div');
-            debugDiv.style.cssText = 'position:fixed;top:10rem;right:1rem;background:yellow;padding:1rem;z-index:9999;font-size:12px;';
-            
             const THEME_KEY = 'preferred-theme';
             const CONSENT_KEY = 'cookie-consent';
             
             let theme = 'light';
-            const consent = localStorage.getItem(CONSENT_KEY);
-            const saved = localStorage.getItem(THEME_KEY);
-            
-            if (consent === 'granted' && saved) {
-                theme = saved;
+            if (localStorage.getItem(CONSENT_KEY) === 'granted') {
+                theme = localStorage.getItem(THEME_KEY) || 'light';
             }
-            
-            debugDiv.innerHTML = 'Consent: ' + consent + '<br>Saved: ' + saved + '<br>Loading: ' + theme;
-            
-            setTimeout(() => {
-                document.body.appendChild(debugDiv);
-            }, 100);
             
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="css/theme-' + theme + '.css">');
         })();
     </script>
 </head>
+<body>
+    <!-- ... sisältö ... -->
+    
+    <script type="module">
+        // Merkitse ladatuksi kun kaikki valmista
+        document.body.classList.add('loaded');
+    </script>
+    <script type="module" src="js/static.js"></script>
+</body>
 <body>
     <main id="app">
         <h1>Hyvinvointivaltion analyysi</h1>
