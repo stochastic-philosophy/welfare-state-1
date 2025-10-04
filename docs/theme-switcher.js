@@ -1,3 +1,5 @@
+import { hasConsent } from './cookie-consent.js';
+
 const THEME_KEY = 'preferred-theme';
 const THEMES = {
   light: 'theme-light.css',
@@ -5,14 +7,19 @@ const THEMES = {
 };
 
 function getCurrentTheme() {
-  return localStorage.getItem(THEME_KEY) || 'light';
+  if (hasConsent()) {
+    return localStorage.getItem(THEME_KEY) || 'light';
+  }
+  return 'light';
 }
 
 function setTheme(themeName) {
   const link = document.getElementById('theme-stylesheet');
   if (link) {
     link.href = THEMES[themeName];
-    localStorage.setItem(THEME_KEY, themeName);
+    if (hasConsent()) {
+      localStorage.setItem(THEME_KEY, themeName);
+    }
   }
 }
 
@@ -21,6 +28,10 @@ function toggleTheme() {
   const next = current === 'light' ? 'dark' : 'light';
   setTheme(next);
   updateToggleButton();
+  
+  if (!hasConsent()) {
+    alert('Teemavalinta ei tallennu koska et ole hyväksynyt tietojen tallennusta. Valinta nollautuu selaimen päivityksen yhteydessä.');
+  }
 }
 
 function updateToggleButton() {
