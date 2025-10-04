@@ -512,3 +512,48 @@ ul, ol {
     background: #b71c1c;
     color: #ef9a9a;
 }
+
+/* SPA/Static-linkki nappi */
+#spa-link,
+#static-link {
+    position: fixed;
+    top: 7rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    min-width: 120px;
+    text-align: center;
+}
+
+#spa-link:hover,
+#static-link:hover {
+    background: var(--bg-tertiary);
+}
+
+/* Static list tyyli */
+.static-list {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+}
+
+.static-list li {
+    margin: 0.3rem 0;
+}
+
+.static-list a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.static-list a:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+}
