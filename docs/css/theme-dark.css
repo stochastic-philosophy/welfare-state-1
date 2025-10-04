@@ -348,3 +348,163 @@ ul, ol {
     padding: 0.3rem 0;
     color: var(--text-secondary);
 }
+
+/* AI Export Button */
+#ai-export-toggle {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+#ai-export-toggle:hover {
+    background: var(--bg-tertiary);
+}
+
+/* AI Export Modal */
+#ai-export-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.ai-export-content {
+    background: var(--bg-primary);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    margin: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-medium);
+}
+
+.ai-export-content h2 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 0.5rem;
+}
+
+.ai-export-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.export-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.export-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-medium);
+    border-radius: 5px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+}
+
+.export-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+.export-btn.primary {
+    background: var(--link-color);
+    color: var(--bg-primary);
+    border-color: var(--link-color);
+}
+
+.export-btn.primary:hover {
+    background: var(--link-hover);
+    border-color: var(--link-hover);
+}
+
+.file-tree {
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    margin-bottom: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.tree-section {
+    margin-bottom: 1rem;
+}
+
+.tree-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0;
+}
+
+.tree-item input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.tree-item label {
+    cursor: pointer;
+    color: var(--text-primary);
+    user-select: none;
+}
+
+.tree-chapters {
+    margin-left: 1.5rem;
+}
+
+.chapter-item label {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.export-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.export-status {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.export-status.success {
+    background: #1b5e20;
+    color: #a5d6a7;
+}
+
+.export-status.warning {
+    background: #e65100;
+    color: #ffcc80;
+}
+
+.export-status.error {
+    background: #b71c1c;
+    color: #ef9a9a;
+}
