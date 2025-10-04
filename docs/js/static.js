@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const spaButton = document.createElement('button');
   spaButton.id = 'spa-link';
-  spaButton.textContent = '📄 Interaktiivinen versio';
+  spaButton.textContent = '📄 js-versio';
   spaButton.addEventListener('click', () => {
     window.location.href = 'index.html';
   });
