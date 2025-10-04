@@ -4,24 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyvinvointivaltion analyysi - Dokumentit</title>
-    
-    <!-- Preload molemmat teemat korkealla prioriteetilla -->
-    <link rel="preload" href="css/theme-light.css" as="style">
-    <link rel="preload" href="css/theme-dark.css" as="style">
-    
-    <script>
-        (function() {
-            const THEME_KEY = 'preferred-theme';
-            const CONSENT_KEY = 'cookie-consent';
-            
-            let theme = 'light';
-            if (localStorage.getItem(CONSENT_KEY) === 'granted') {
-                theme = localStorage.getItem(THEME_KEY) || 'light';
-            }
-            
-            document.write('<link id="theme-stylesheet" rel="stylesheet" href="css/theme-' + theme + '.css">');
-        })();
-    </script>
+
+    <style>
+        * {
+            font-size: 9px;
+        }
+    </style>
 </head>
 <body>
     <!-- ... sisältö ... -->
