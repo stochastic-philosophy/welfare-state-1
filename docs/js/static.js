@@ -4,7 +4,7 @@ import { initFooter } from './footer.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initCookieConsent();
-  //initThemeSwitcher();
+  initThemeSwitcher();
   initFooter();
   
   const spaButton = document.createElement('button');
