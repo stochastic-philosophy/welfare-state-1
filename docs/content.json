@@ -1,48 +1,21 @@
 {
   "title": "Hyvinvointivaltion analyysi",
-  "sections": [
-    {
-      "title": "Yhteiskunnallisen vakauden perustat",
-      "chapters": [
-        {
-          "title": "Johdanto",
-          "file": "documents/01-johdanto.md"
-        },
-        {
-          "title": "Eriarvoisuuden riskit",
-          "file": "documents/02-eriarvoisuus.md"
-        },
-        {
-          "title": "Historialliset esimerkit",
-          "file": "documents/03-historia.md"
-        }
-      ]
-    },
-    {
-      "title": "Politiikan oppimishaaste",
-      "chapters": [
-        {
-          "title": "Miksi politiikka ei opi",
-          "file": "documents/04-oppiminen.md"
-        },
-        {
-          "title": "Ideologian voitto",
-          "file": "documents/05-ideologia.md"
-        }
-      ]
-    },
-    {
-      "title": "Innovaatio ja koulutus",
-      "chapters": [
-        {
-          "title": "Lahjakkuuden ennustamattomuus",
-          "file": "documents/06-lahjakkuus.md"
-        },
-        {
-          "title": "Koulutuspanostukset",
-          "file": "documents/07-koulutus.md"
-        }
-      ]
-    }
+  "contentDir": "documents",
+  "files": [
+    "yhteiskunta_sopimus_v3_osa1.md",
+    "yhteiskunta_sopimus_v3_osa2.md",
+    "yhteiskunta_sopimus_v3_osa3.md",
+    "oppimiskatko_v2_osa1.md",
+    "oppimiskatko_v2_osa2.md",
+    "oppimiskatko_v2_osa3.md",
+    "innovaatio_v2_osa1.md",
+    "innovaatio_v2_osa2.md",
+    "innovaatio_v2_osa3.md",
+    "hyvinvointivaltio_b_osa1.md",
+    "hyvinvointivaltio_b_osa2.md",
+    "hyvinvointivaltio_b_osa3.md",
+    "moraaliset_juuret_osa1.md",
+    "moraaliset_juuret_osa2.md",
+    "moraaliset_juuret_osa3.md"
   ]
 }
