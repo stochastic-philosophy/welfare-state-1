@@ -1,6 +1,7 @@
 import { Router } from './router.js';
 import { HomeController } from './HomeController.js';
 import { ChapterController } from './ChapterController.js';
+import { initAIExport } from './ai-export.js';
 
 function showError(message, details = '') {
   const app = document.getElementById('app');
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     controllers.ChapterController = () => chapterController;
 
     router.addRoute('/:section/:chapter', 'ChapterController', 'show');
-    router.addRoute('/', 'HomeController', 'index');
+    router.addRoute('', 'HomeController', 'index');
 
     router.setNotFoundHandler(() => {
       router.render(`
@@ -69,6 +70,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         <p><a href="#/">Takaisin sisällysluetteloon</a></p>
       `);
     });
+
+    initAIExport(() => homeController.getEnrichedData());
 
     router.resolve();
     
