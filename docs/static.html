@@ -5,21 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyvinvointivaltion analyysi - Dokumentit</title>
     
-    <!-- Critical CSS: Ladataan heti, estää flashin -->
-    <style>
-        body {
-            font-family: Georgia, serif;
-            line-height: 1.7;
-            font-size: 11px;
-            max-width: 900px;
-            margin: auto;
-            padding: 2rem 1rem;
-        }
-        
-        /* Piilota kunnes teema-CSS latautuu */
-        body { visibility: hidden; }
-        body.loaded { visibility: visible; }
-    </style>
+    <!-- Preload molemmat teemat korkealla prioriteetilla -->
+    <link rel="preload" href="css/theme-light.css" as="style">
+    <link rel="preload" href="css/theme-dark.css" as="style">
     
     <script>
         (function() {
