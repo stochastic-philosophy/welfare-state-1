@@ -1,6 +1,5 @@
-// home-controller.js
-
-import { slugify } from './utils.js'
+// HomeController.js
+import { slugify } from './utils.js';
 
 export class HomeController {
   constructor(router, tocData) {
