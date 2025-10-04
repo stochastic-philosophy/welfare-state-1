@@ -3,11 +3,15 @@ import { slugify } from './utils.js';
 function generateHeadingsList(headings, sectionSlug, chapterSlug) {
   if (!headings || headings.length === 0) return '';
   
+  const filteredHeadings = headings.filter(h => h.level > 1);
+  
+  if (filteredHeadings.length === 0) return '';
+  
   let html = '';
-  let currentLevel = 0;
+  let currentLevel = 1;
   let openLists = 0;
   
-  headings.forEach((heading, index) => {
+  filteredHeadings.forEach((heading, index) => {
     const level = heading.level;
     
     if (level > currentLevel) {
