@@ -1,6 +1,6 @@
-import { initThemeSwitcher } from './js/theme-switcher.js';
-import { initCookieConsent } from './js/cookie-consent.js';
-import { initFooter } from './js/footer.js';
+import { initThemeSwitcher } from './theme-switcher.js';
+import { initCookieConsent } from './cookie-consent.js';
+import { initFooter } from './footer.js';
         
 initCookieConsent();
 const staticButton = document.createElement('button');
