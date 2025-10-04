@@ -3,489 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyvinvointivaltion analyysi - Staattinen näkymä</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Hyvinvointivaltion analyysi - Suorat linkit markdown-dokumentteihin">
+    <meta name="robots" content="index, follow">
+    <title>Hyvinvointivaltion analyysi - Dokumentit</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="css/theme-light.css">
 </head>
 <body>
-    <div id="consentModal" class="modal">
-        <div class="modal-content">
-            <h2>Evästekäytäntö</h2>
-            <p>Haluatko tallentaa teema-asetuksesi selaimen välimuistiin? Tämä parantaa käyttökokemustasi, sillä valintasi säilyy sivustovierailujesi välillä.</p>
-            <div class="modal-buttons">
-                <button onclick="handleConsent(true)">Kyllä, tallenna</button>
-                <button onclick="handleConsent(false)">Ei, älä tallenna</button>
-            </div>
-        </div>
-    </div>
-
-    <header>
-        <div class="header-left">
-            <h1>Hyvinvointivaltion analyysi - Staattinen näkymä</h1>
-            <div class="nav-buttons">
-                <a href="index.html" class="button">🏠 Pää-sisällysluettelo</a>
-            </div>
-        </div>
-        <div class="header-right">
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Vaihda teemaa">
-                <span id="themeIcon">🌙</span>
-            </button>
-        </div>
-    </header>
-
-    <main id="mainContent">
-        <div class="static-intro">
-            <h2>Hyvinvointivaltion analyysi: Kokonaisuus</h2>
-            <p class="description">Kattava analyysi hyvinvointivaltiosta kolmesta näkökulmasta: perustelut ja toimivuus, systemaattinen heikentäminen, sekä keskustelun moraaliset ja psykologiset juuret.</p>
-            
-            <div class="ai-instructions">
-                <p><strong>🤖 Tekoälyille ja web crawlereille - Tärkeää:</strong></p>
-                <ul>
-                    <li><strong>URL-rakenne:</strong> Kaikki dokumentit ovat muotoa: <code>https://stochastic-philosophy.github.io/welfare-state-1/content/[tiedostonimi].md</code></li>
-                    <li><strong>Useat luvut, yksi tiedosto:</strong> Yksi .md-tiedosto sisältää useita lukuja. Esim. "Johdanto ja rajaukset", "Lyhytnäköisen itsekkyyden paradoksi" ja muut ovat kaikki samassa <code>yhteiskunta_sopimus_v3_osa1.md</code> tiedostossa.</li>
-                    <li><strong>Tiedostonimet ovat täsmällisiä:</strong> Käytä tarkalleen alla näytettyjä tiedostonimiä (esim. <code>yhteiskunta_sopimus_v3_osa1.md</code>, EI <code>yhteiskunta-sopimus-v2-osa1.md</code>)</li>
-                    <li><strong>Luvun sisällön lukeminen:</strong> Hae tiedosto URL:lla ja etsi luvun otsikko (markdown ## tai ###) sisällöstä</li>
-                </ul>
-            </div>
-
-            <p class="info-note">💡 <strong>Käyttäjille:</strong> Tämä sivu sisältää suorat linkit kaikkiin markdown-dokumentteihin. Kopioi URL ja anna se tekoälylle, joka voi lukea sisällön ja keskustella siitä kanssasi.</p>
-            <p class="base-url-info">🔗 <strong>Pohja-URL:</strong> <code>https://stochastic-philosophy.github.io/welfare-state-1/content/</code></p>
-            <p class="info-note"><strong>Tiedostot:</strong></p>
-            <p class="base-url-info">
-                https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa1.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa2.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa3.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa1.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa2.md<br>
-                https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa3.md
-            </p>
-        </div>
-
-        <div class="static-toc">
-            <!-- KOKONAISUUS A -->
-            <div class="section-block">
-                <h3 class="section-title">KOKONAISUUS A: Hyvinvointivaltion perustelut</h3>
-                <p class="description">Tämä kokonaisuus argumentoi hyvinvointivaltion puolesta kolmesta näkökulmasta: yhteiskunnallinen vakaus ja turvallisuus, historiallinen oppiminen ja politiikan syklisyys, sekä innovaatio ja koulutus. Keskeisenä teemana on, että hyvinvointivaltio on sekä taloudellisesti rationaalinen että moraalisesti perusteltu vaihtoehto.</p>
-
-                <!-- OSA 1 -->
-                <div class="part-block">
-                    <h4 class="part-title">Osa 1: Yhteiskunnallisen vakauden perustat</h4>
-                    <p class="part-description">Tarkastelee hyvinvointivaltion roolia yhteiskunnallisen vakauden ylläpitäjänä erityisesti vauraiden kansalaisten näkökulmasta. Argumentoi, että hyvinvointivaltio on paradoksaalisesti juuri niiden ihmisten perustavanlaatuinen turvallisuustekijä, jotka usein vastustavat sitä voimakkaimmin. Sisältää historiallista analyysia vallankumouksista ja kriiseistä sekä nykyaikaista analyysia Yhdysvaltojen ja Euroopan kehityksestä.</p>
-
-                    <ul class="chapter-list">
-                        <li>
-                            <strong>Johdanto ja rajaukset</strong>
-                            <p class="description">Esittelee tekstin lähtökohdat ja tunnustaa avoimesti argumentatiivisen luonteen. Määrittelee hyvinvointivaltion käsitteen viittaamaan erityisesti pohjoismaiseen malliin.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Lyhytnäköisen itsekkyyden paradoksi</strong>
-                            <p class="description">Esittelee IMF:n tunnustaman yhteyden eriarvoisuuden ja taloudellisen riskin välillä. Analysoi, miksi lyhyen aikavälin itsekkäät valinnat voivat horjuttaa yhteiskunnallista perustaa pitkällä aikavälillä.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Ranskan vallankumous: Monitekijäinen kriisi</strong>
-                            <p class="description">Tutkii Ranskan vallankumousta (1789) esimerkkinä monimutkaisesta kriisistä, jossa verotuksen epäoikeudenmukaisuus, äärimmäinen eriarvoisuus ja muut tekijät yhdistyivät. Korostaa, ettei kyse ollut yksinkertaisesta 'köyhät vastaan rikkaat' -konfliktista.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Venäjän vallankumous: Sodan paljastama heikkous</strong>
-                            <p class="description">Analysoi Venäjän vallankumouksia 1917 osoittamaan, miten äärimmäinen eriarvoisuus yhdistettynä sotaan ja poliittiseen sortoon johti tsaarijärjestelmän romahtamiseen. Painottaa tekijöiden monitekijäisyyttä.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>1930-luvun Saksa: Säästöpolitiikan tuhoisa kierre</strong>
-                            <p class="description">Tarjoaa varoittavan esimerkin siitä, miten taloudellinen kriisi ja erityisesti säästöpolitiikka loivat hedelmällisen maaperän radikalismille. Osoittaa tuoreen tutkimuksen perusteella, että säästötoimet kiihdyttivät natsipuolueen kannatusta.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Nyky-Yhdysvallat: Eriarvoisuuden seuraukset reaaliajassa</strong>
-                            <p class="description">Tarkastelee Yhdysvaltoja modernina esimerkkinä siitä, miten pitkäaikainen eriarvoisuuden kasvu voi heikentää yhteiskunnallista vakautta. Dokumentoi eläketurvakriisin ja poliittisen polarisaation kasvun.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Euroopan hiljainen seuranta: uusliberalismin leviäminen</strong>
-                            <p class="description">Osoittaa, että vaikka Yhdysvallat on selvempi esimerkki, Eurooppa on hiljalleen seurannut samaa polkua. Dokumentoi progressiivisen verotuksen heikentymisen, julkisten palvelujen yksityistämisen ja tuloerojen kasvun. Käsittelee Suomea tapausesimerkkinä: eriarvoisuuden kasvu 1990-luvun puolivälistä lähtien, koulutuksen resurssien heikkeneminen ja palveluiden saatavuuden eriytyminen. Korostaa, että nämä trendit eivät ole 'luonnollisia' vaan seurausta tietoisista poliittisista valinnoista 1990-luvulta lähtien.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Hyvinvointivaltio vakauden rakentajana</strong>
-                            <p class="description">Analysoi, mitä onnistuneet hyvinvointivaltiot ovat tehneet oikein. Tarkastelee pohjoismaista mallia ja sen kolmea keskeistä funktiota: yhteiskuntarauha, poliittinen vakaus ja taloudellinen vakaus.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Yhteisten alueiden tragedia ja sen ratkaisu</strong>
-                            <p class="description">Soveltaa taloustieteen klassista ongelmaa hyvinvointivaltio-kysymykseen. Argumentoi, että vaikka verojen välttäminen voi olla yksilöllisesti rationaalista, se johtaa kollektiiviseen tappioon kun kaikki toimivat samoin.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Itsesuojeluvaisto hyvinvointivaltion perustana</strong>
-                            <p class="description">Esittää, että vahvin argumentti hyvinvointivaltion puolesta on kylmän rationaalinen itsesuojeluvaisto: halu varmistaa turvallinen ja vakaa yhteiskunta omille jälkeläisille. Viittaa Piketty'n tutkimukseen 1914-1980 'suuresta uudelleenjaosta'.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Pakosuunnitelmien todellisuus</strong>
-                            <p class="description">Käsittelee ajatusta siitä, että varakkaat voisivat 'paeta' yhteiskunnallisen epävakauden seurauksilta. Osoittaa tämän strategian perustavanlaatuiset ongelmat: globalisaatio, nopeat murrokset ja eristettyjen kuplien sokaiseva vaikutus.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Johtopäätökset</strong>
-                            <p class="description">Kokoaa yhteen analyysin keskeiset havainnot: hyvinvointivaltio ei ole 'rikkaiden riistoa' vaan rikkaiden perustavanlaatuinen turvallisuustekijä. Esittää lopullisen kysymyksen: haluavatko tämän hetken varakkaat olla viimeinen vauraiden sukupolvi historiassa?</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md</a></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- OSA 2 -->
-                <div class="part-block">
-                    <h4 class="part-title">Osa 2: Politiikan oppimishaaste</h4>
-                    <p class="part-description">Tarkastelee sitä, miksi poliittinen päätöksenteko näyttää toistavan samoja virheitä sukupolvesta toiseen, vaikka tieteellinen tieto kehittyy kumulatiivisesti. Argumentoi, että ideologiset sokkoläpät ja lyhyt poliittinen muisti estävät systemaattisesti oppimista empiirisestä näytöstä. Käyttää esimerkkinä 1970-luvun stagflaatiota ja uusliberalismin nousua.</p>
-
-                    <ul class="chapter-list">
-                        <li>
-                            <strong>Johdanto ja rajaukset</strong>
-                            <p class="description">Esittelee tekstin kysymyksenasettelun: miksi politiikka ei opi samalla tavalla kuin tiede? Tunnustaa argumentatiivisen lähestymistavan ja viittaa historiallisiin esimerkkeihin tukemaan väitteitä.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Tieteen kumulatiivinen luonne vs. politiikan syklisyys</strong>
-                            <p class="description">Vertaa tieteen kumulatiivista kehitystä ('jättiläisten hartioilla seisominen') politiikan sykliseen luonteeseen, jossa samat virheet toistuvat. Esittää, että politiikassa oppimismalli on perustavanlaatuisesti rikki.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Pohjoismaisen hyvinvointivaltion empiirinen menestys</strong>
-                            <p class="description">Dokumentoi pohjoismaisen mallin historiallisen menestyksen vuosikymmeninä 1950-1980. Korostaa, että malli ei ollut täydellinen tai staattinen, mutta tuotti erinomaisia tuloksia kulta-aikanaan.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Stagflaatio ja 1970-luvun kriisi: Monimutkaisempi kuva</strong>
-                            <p class="description">Analysoi 1970-luvun stagflaatiota ja sen todellisia syitä: öljykriisit, Bretton Woods -järjestelmän romahdus, rahapolitiikka ja tuottavuuden lasku. Osoittaa, että keynesiläinen malli oli riittämätön eikä 'epäonnistunut'.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Stagflaation ratkaisu: Volcker, ei Reagan</strong>
-                            <p class="description">Osoittaa, että stagflaation ratkaisi Federal Reserve -pankin pääjohtaja Paul Volcker tiukalla rahapolitiikalla, ei presidentti Reaganin 'vapaat markkinat' -politiikka. Tämä on kriittinen korjaus vallitsevaan narratiiviin.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Uusliberalismi ja Reaganomics: Lupausten ja todellisuuden välinen kuilu</strong>
-                            <p class="description">Tarkastelee Reaganomicsin teorioita ja todellisia tuloksia. Dokumentoi, että vaikka talous kasvoi, verojen leikkaukset eivät 'maksaneet itseään takaisin', ja Kansas-kokeilu 2010-luvulla epäonnistui samalla tavalla.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Ideologian voitto tosiasioiden yli</strong>
-                            <p class="description">Analysoi, miksi supply-side-taloustiede jatkaa elämäänsä huolimatta vahvasta empiirisestä näytöstä sen epäonnistumisesta. Tunnistaa syitä: lyhyt muisti, ideologinen sitoutuminen, ekonomistien työllisyys ja narratiivien yksinkertaisuus.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Nyky-Suomen tilanne: Varoittavia merkkejä</strong>
-                            <p class="description">Tarkastelee Suomen kehitystä, erityisesti akateemisen vapauden laskua Academic Freedom Indexin mukaan. Mainitsee myös muita huolestuttavia trendejä sosiaaliturvan riittävyydessä ja julkisten palvelujen heikkenemisessä.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Oppimisen systemaattiset esteet politiikassa</strong>
-                            <p class="description">Tunnistaa viisi keskeistä estettä: institutionaalisen muistin tuhoaminen, narratiivisten yksinkertaistusten voima, ideologinen sokeus, lyhyen tähtäimen ajattelu ja median manipulaatio.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Kohti todellista poliittista oppimista</strong>
-                            <p class="description">Ehdottaa ratkaisuja: empiirisen päätöksenteon kulttuuri, institutionaalisen muistin palauttaminen, pitkäjänteinen ajattelu ja median riippumattomuus. Painottaa, että muutos on mahdollinen.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Johtopäätökset</strong>
-                            <p class="description">Kokoaa yhteen analyysin: siinä missä tiede kehittyy järjestelmällisesti, yhteiskunta näyttää toistavan ikuisesti samoja virheitä ideologisista syistä. Jos haluamme todella oppia, meidän on arvostettava empiiristä näyttöä ideologisen puhtauden sijaan.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- OSA 3 -->
-                <div class="part-block">
-                    <h4 class="part-title">Osa 3: Innovaatio ja laajapohjainen koulutus</h4>
-                    <p class="part-description">Argumentoi sen puolesta, että yhteiskunnan tulisi investoida laajaan, korkealaatuiseen koulutukseen innovaation näkökulmasta. Keskeisenä argumenttina on lahjakkuuden ennustamattomuus ja innovaatioekosysteemien monimutkaisuus, jotka tekevät laajasta koulutuspanostuksesta sekä taloudellisesti rationaalisen että oikeudenmukaisuusnäkökulmasta puolustettavan valinnan.</p>
-
-                    <ul class="chapter-list">
-                        <li>
-                            <strong>Johdanto ja rajaukset</strong>
-                            <p class="description">Esittelee tekstin kysymyksenasettelun: miksi yhteiskunnan tulisi investoida laajaan koulutukseen innovaation näkökulmasta? Tunnustaa argumentatiivisen lähestymistavan ja korostaa, että argumentti ei riipu väitteestä 'kaikki ovat yhtä lahjakkaita'.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Lahjakkuuden ennustamattomuus: Mitä tutkimus kertoo?</strong>
-                            <p class="description">Esittää tutkimukseen perustuvan argumentin siitä, että todellista luovaa lahjakkuutta on vaikea ennustaa etukäteen. Viittaa tutkimukseen innovaation ennustamattomuudesta ja lahjakkuuden väärästä allokaatiosta, joka voi alentaa talouden kasvua jopa 10 prosentilla.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Innovaatioekosysteemin monimutkaisuus</strong>
-                            <p class="description">Osoittaa, että yksittäinen nero ei koskaan riitä - innovaatio syntyy monimutkaisessa ekosysteemissä. Viittaa Scott E. Pagen tutkimukseen kognitiivisen monimuotoisuuden merkityksestä ja 'diversity bonus' -ilmiöön.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Verkostovaikutukset ja kriittinen massa</strong>
-                            <p class="description">Analysoi, miten korkeakoulutuksella on voimakkaita verkostovaikutuksia, jotka kasvavat eksponentiaalisesti koulutetun väestön määrän mukaan. Viittaa tutkimukseen innovaatiokeskittymistä kuten Piilaaksosta.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Suomen historiallinen tapaustutkimus: Menestys ja sen perusta</strong>
-                            <p class="description">Tarkastelee Suomen koulutuspanostusten historiaa ja Nokian tapausta esimerkkinä symbioosista koulutuksen ja innovaation välillä. Dokumentoi, että 'Nokia palkkasi käytännössä jokaisen suomalaisen insinöörivalmistuneen'. Käsittelee myös PISA-menestystä ja sen taustalla olevia tekijöitä.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>PISA-tulosten lasku: Monitekijäinen ilmiö</strong>
-                            <p class="description">Analysoi Suomen PISA-tulosten johdonmukaista laskua vuodesta 2006 lähtien. Esittelee useita tutkijoiden tulkintoja: yhteiskunnalliset muutokset, opetussuunnitelmamuutokset, desentralisaatio ja maahanmuutto. Korostaa, että lasku on merkittävä erityisesti eriarvoisuuden kasvun vuoksi.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Koulutusleikkaukset ja tulevaisuuden riskit</strong>
-                            <p class="description">Dokumentoi akateemisen vapauden heikkenemisen Suomessa ja resurssileikkaukset. Varoittaa, että nämä kehityssuunnat uhkaavat yhteiskunnan pitkän aikavälin innovaatiokykyä.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Koulutuksen markkinoistuminen: Kriittinen tarkastelu</strong>
-                            <p class="description">Tarkastelee koulutuksen käsitteellistämistä yhä enemmän yksityishyödykkeenä julkishyödykkeen sijaan. Analysoi tämän muutoksen potentiaalisia ongelmia innovaation näkökulmasta.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Koulutuksen oikeudenmukaisuus ja tehokkuus: Eivät vastakohtia vaan synergisiä</strong>
-                            <p class="description">Argumentoi, että innovaation näkökulmasta oikeudenmukaisuus ja tehokkuus ovat samaa asiaa. Kun annamme kaikille mahdollisuuden kehittää lahjakkuutensa, maksimoimme yhteiskunnan innovaatiopotentiaalin.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Globaali kilpailu ja Suomen tulevaisuus</strong>
-                            <p class="description">Tarkastelee kansainvälistä kontekstia, jossa maat kilpailevat yhä tiukemmin lahjakkuuksista ja innovaatioista. Analysoi Suomen valintoja ja vertaa Singaporen ja Viron strategioihin.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Arvovalinnat ja normatiiviset kysymykset</strong>
-                            <p class="description">Tunnustaa rehellisesti, että argumentti sisältää arvovalintoja: usko tasa-arvoisiin mahdollisuuksiin, kollektiivinen vastuu ja pitkän aikavälin ajattelu. Perustelee miksi nämä arvovalinnat ovat puolustettavissa.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Johtopäätökset ja suositukset</strong>
-                            <p class="description">Kokoaa yhteen keskeiset havainnot ja esittää konkreettisia suosituksia Suomen ja muiden maiden koulutuspolitiikalle. Painottaa, että laaja koulutuspanostus on sekä taloudellisesti järkevää että moraalisesti oikein.</p>
-                            <div class="file-link-box">
-                                <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                                <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md</a></p>
-                            </div>
-                        </li>
+    <main id="app">
+        <h1>Hyvinvointivaltion analyysi</h1>
+        
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+            Tämä sivu sisältää suorat linkit kaikkiin markdown-dokumentteihin. 
+            Sivun tarkoitus on helpottaa dokumenttien lukemista boteille ja tekoälyille.
+        </p>
+        
+        <nav class="table-of-contents">
+            <div class="toc-section">
+                <h2 class="toc-main-heading">Yhteiskunta Sopimus</h2>
+                <div class="toc-chapter">
+                    <ul class="static-list">
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa1.md">Osa 1</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa2.md">Osa 2</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/yhteiskunta_sopimus_v3_osa3.md">Osa 3</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- KOKONAISUUS B -->
-            <div class="section-block">
-                <h3 class="section-title">KOKONAISUUS B: Hyvinvointivaltion hajoamisen anatomia</h3>
-                <p class="description">Tämä kokonaisuus dokumentoi systemaattisesti, miten hyvinvointivaltiota on heikennetty 1980-luvulta lähtien. Keskeinen argumentti on, että nykyajan ongelmat eivät ole hyvinvointivaltion 'epäonnistumista' vaan sen tahallisen heikentämisen seurausta. Kokonaisuus tarkastelee rahoituspohjan rapautumista globaalisti, Suomen empiiristä kehitystä ja koulutuksen erityistapausta.</p>
-
-                <div class="part-block">
-                    <h4 class="part-title">Osa 1: Rahoituspohjan rapautuminen (1980-2020)</h4>
-                    <p class="part-description">Dokumentoi systemaattisesti, miten progressiivinen verotus, yritysverotus ja pääomatulojen verotus ovat heikentyneet globaalisti OECD-maissa 1980-luvulta lähtien. Esittää empiriiristä dataa ja tutkimusta, joka osoittaa että veronalennukset rikkaimmille eivät kasvattaneet taloutta mutta lisäsivät eriarvoisuutta.</p>
-                    <div class="file-link-box">
-                        <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                        <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa1.md</a></p>
-                    </div>
-                    <p class="chapter-note">Tiedosto sisältää useita lukuja: Johdanto, Kategorivirhe, Progressiivisen verotuksen globaali heikentyminen, Yritysverotuksen race to the bottom, Pääomatulojen verotuksen heikentyminen, USA erikoistapaus, Kausaalinen ketju, Teoreettinen puolustus, Kolme kriittistä huomiota, ja Johtopäätökset.</p>
-                </div>
-
-                <div class="part-block">
-                    <h4 class="part-title">Osa 2: Empiirinen evidenssi: Suomen tapaus</h4>
-                    <p class="part-description">Tarkastelee Suomea tapaustutkimuksena siitä, miten pohjoismainen hyvinvointivaltio on muuttunut viime vuosikymmeninä. Dokumentoi eriarvoisuuden dramaattisen kasvun, uudelleenjaon tehokkuuden heikkenemisen ja julkisten menojen 'paisumisen' paradoksin. Esittää, että julkiset menot kasvavat KOSKA hyvinvointivaltiota heikennetään (kalliit reaktiiviset toimet korvaavat halvemmat ennaltaehkäisevät).</p>
-                    <div class="file-link-box">
-                        <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                        <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa2.md</a></p>
-                    </div>
-                    <p class="chapter-note">Tiedosto sisältää useita lukuja: Johdanto, Eriarvoisuuden kasvu, Julkisten menojen paradoksi, Ennaltaehkäisevän infran purkaminen ja reaktiivisten kustannusten kasvu, Koulutuksen erityistapaus, Sosiaaliturvajärjestelmän rapautuminen, Terveydenhuollon yksityistäminen, ja Johtopäätökset.</p>
-                </div>
-
-                <div class="part-block">
-                    <h4 class="part-title">Osa 3: Koulutus ja innovaatio resurssileikkausten aikakaudella</h4>
-                    <p class="part-description">Yhdistää rahoituspohjan rapautumisen ja Suomen empiirisen kehityksen innovaation ja koulutuksen kysymyksiin. Osoittaa, että koulutusleikkaukset eivät ole vain 'säästötoimenpiteitä' vaan syövät systemaattisesti yhteiskunnan pitkän aikavälin innovaatiokykyä. Viittaa Mazzucaton tutkimukseen julkisen rahoituksen keskeisyydestä perustutkimuksessa (esim. iPhone:n teknologiat).</p>
-                    <div class="file-link-box">
-                        <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                        <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa3.md</a></p>
-                    </div>
-                    <p class="chapter-note">Tiedosto sisältää useita lukuja: Johdanto, Resurssien ja tulosten korrelaatio, Vertaileva evidenssi, OECD:n tutkimus, Akateemisen vapauden lasku, Innovaatiorahoituksen paradoksi, Suomen tapaus: Nokia ja koulutus, Globaali trendi, Paradoksaalinen tilanne, Systeeminen ongelma, Vaihtoehtoinen malli, ja Johtopäätökset.</p>
+            <div class="toc-section">
+                <h2 class="toc-main-heading">Oppimiskatko</h2>
+                <div class="toc-chapter">
+                    <ul class="static-list">
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa1.md">Osa 1</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa2.md">Osa 2</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/oppimiskatko_v2_osa3.md">Osa 3</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- KOKONAISUUS C -->
-            <div class="section-block">
-                <h3 class="section-title">KOKONAISUUS C: Moraaliset ja psykologiset juuret</h3>
-                <p class="description">Tämä kokonaisuus tarkastelee, miksi hyvinvointivaltio-keskustelu jämähtää usein pattitilanteeseen rationaalisista argumenteista huolimatta. Esittää synteettisen teorian moraalisen päätöksenteon luonteesta, joka yhdistää Jonathan Haidtin Moral Foundations Theory -viitekehystä sen kriitikkojen näkemyksiin sekä Carol Dweckin tutkimukseen mindset-teorioista. Argumentoi, että keskustelu on syvempien moraalisten intuittioiden ja maailmankatsomuksellisten erojen törmäys, ei rationaalinen vääntö faktoista.</p>
-
-                <div class="part-block">
-                    <h4 class="part-title">Osa 1: Haidtin Moral Foundations Theory ja kritiikki</h4>
-                    <p class="part-description">Esittelee Jonathan Haidtin tunnetun Moral Foundations Theory -viitekehyksen, joka tunnistaa useita synnynnäisiä 'moraalisia perustuksia': Huolenpito, Oikeudenmukaisuus, Lojaalisuus, Auktoriteetti, Pyhyys. Käsittelee myös teorian merkittävimmät kritiikkikohdat: synnynnäisyyden käsitteen epäselvyys, puuttuvat yhteistyön muodot, ad hoc -luonne ja kulttuurinen variaatio.</p>
-                    <div class="file-link-box">
-                        <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                        <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa1.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa1.md</a></p>
-                    </div>
-                    <p class="chapter-note">Tiedosto sisältää useita lukuja: Johdanto ja rajaukset, Haidtin Moral Foundations Theory: Perusta ja kritiikki, Kriittisiä näkökulmia teoriaan, ja Teorian vahvuudet huolimatta kritiikistä.</p>
-                </div>
-
-                <div class="part-block">
-                    <h4 class="part-title">Osa 2: Identiteetin läheisyys ja oppimisen mindsetit</h4>
-                    <p class="part-description">Laajentaa Haidtin teoriaa kahdella keskeisellä lisäyksellä: (1) Moraalisten reaktioiden jäykkyys vaihtelee sen mukaan, kuinka lähellä kysymys on yksilön identiteettiä. (2) Carol Dweckin mindset-tutkimuksen soveltaminen moraaliseen ajatteluun: uuden oppiminen voi olla osa identiteettiä (growth mindset) tai uhka identiteetille (fixed mindset). Käsittelee myös traumaattisten kokemusten vaikutusta.</p>
-                    <div class="file-link-box">
-                        <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                        <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa2.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa2.md</a></p>
-                    </div>
-                    <p class="chapter-note">Tiedosto sisältää useita lukuja: Identiteetin läheisyys ja moraalisten reaktioiden jäykkyys, Haidtin 'norsu ja ratsastaja' -malli ja sen rajoitukset, Empiirinen tuki identiteettiuhan vaikutuksista, Uuden oppimisen priorisointi osana identiteettiä, Metakognitiiviset tuntemukset, Moraalin pragmaattinen oppimismalli, Traumaattiset kokemukset ja oppimisen estyminen, ja Kulttuuriset kontekstit.</p>
-                </div>
-
-                <div class="part-block">
-                    <h4 class="part-title">Osa 3: Synteesi ja soveltaminen hyvinvointivaltio-keskusteluun</h4>
-                    <p class="part-description">Yhdistää aiemmat osat integroivaksi teoriaksi ja soveltaa sitä hyvinvointivaltio-keskusteluun. Selittää, miksi rationaaliset argumentit eivät vakuuta: koska kyse on identiteetin lähellä olevista moraalisista intuittioista, ei rationaalisesta väittelystä. Esittää konkreettisia suosituksia rakentavampaan keskusteluun: identiteettiä vahvistava kehystäminen, uuden oppimisen tekeminen nautinnolliseksi ja moraalisten kielien kunnioittaminen.</p>
-                    <div class="file-link-box">
-                        <p class="file-link">📄 <strong>Tiedosto:</strong></p>
-                        <p class="url-display"><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa3.md" target="_blank">https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa3.md</a></p>
-                    </div>
-                    <p class="chapter-note">Tiedosto sisältää useita lukuja: Synteesi: Integroiva teoria moraalisesta päätöksenteosta, Soveltaminen hyvinvointivaltio-keskusteluun, Moraalisten perustusten erilaiset painotukset, Traumaattiset kokemukset, Kohti rakentavampaa keskustelua, Identiteettia vahvistava kehystäminen, Uuden oppimisen tekeminen nautinnolliseksi, Moraalisten kielien kunnioittaminen, Kriittinen huomio, Johtopäätökset, ja Lopuksi: Toivo muutokselle.</p>
+            <div class="toc-section">
+                <h2 class="toc-main-heading">Innovaatio</h2>
+                <div class="toc-chapter">
+                    <ul class="static-list">
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa1.md">Osa 1</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa2.md">Osa 2</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/innovaatio_v2_osa3.md">Osa 3</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+
+            <div class="toc-section">
+                <h2 class="toc-main-heading">Hyvinvointivaltio</h2>
+                <div class="toc-chapter">
+                    <ul class="static-list">
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa1.md">Osa 1</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa2.md">Osa 2</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/hyvinvointivaltio_b_osa3.md">Osa 3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="toc-section">
+                <h2 class="toc-main-heading">Moraaliset Juuret</h2>
+                <div class="toc-chapter">
+                    <ul class="static-list">
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa1.md">Osa 1</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa2.md">Osa 2</a></li>
+                        <li><a href="https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa3.md">Osa 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <hr style="margin: 3rem 0;">
+        
+        <section style="color: var(--text-secondary); font-size: 0.95rem;">
+            <h3>Tietoa tekoälyille ja boteille</h3>
+            <p>Tämä sivusto sisältää 15 markdown-dokumenttia jaettuna viiteen teemaan. Jokainen linkki osoittaa suoraan markdown-tiedostoon, jonka voit lukea ja analysoida.</p>
+            <p>Dokumentit käsittelevät hyvinvointivaltiota kolmesta eri näkökulmasta: yhteiskunnallinen vakaus, oppimisen haasteet politiikassa, sekä innovaatio ja koulutus.</p>
+        </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <p class="footer-text">
-                    <strong>Sisällön luonti:</strong> Tekstit ideoitu ja kehitetty 
-                    <a href="mailto:stochasticphilosopher@gmail.com" class="footer-link">Stochastic Philosopherin</a> 
-                    näkemysten pohjalta. Argumentit ja sisältö generoitu <strong>Claude Sonnet 4.5</strong> -tekoälyn avulla.
-                </p>
-            </div>
-            
-            <div class="footer-section">
-                <p class="footer-text">
-                    <strong>Yksityisyys:</strong> Tämä sivusto tallentaa ainoastaan teemavalintasi (vaalea/tumma) 
-                    selaimeesi, jos annat siihen luvan. Emme kerää muita tietoja. 
-                    <a href="#" onclick="showConsentModal(); return false;" class="footer-link">Hallinnoi evästeitä</a>.
-                </p>
-            </div>
-            
-            <div class="footer-section footer-bottom">
-                <p class="copyright">
-                    © <span id="currentYear"></span> Stochastic Philosopher. 
-                    <a href="mailto:stochasticphilosopher@gmail.com" class="footer-link">stochasticphilosopher@gmail.com</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Load modules in correct order -->
-    <script src="js/consent.js"></script>
-    <script src="js/app.js"></script>
+    <script type="module" src="js/static.js"></script>
 </body>
 </html>
