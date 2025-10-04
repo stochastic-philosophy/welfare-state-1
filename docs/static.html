@@ -1,20 +1,30 @@
-<!DOCTYPE html>
-<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hyvinvointivaltion analyysi - Suorat linkit markdown-dokumentteihin">
-    <meta name="robots" content="index, follow">
     <title>Hyvinvointivaltion analyysi - Dokumentit</title>
+    
+    <!-- Debug: Näytä mitä tapahtuu -->
     <script>
         (function() {
+            const debugDiv = document.createElement('div');
+            debugDiv.style.cssText = 'position:fixed;top:10rem;right:1rem;background:yellow;padding:1rem;z-index:9999;font-size:12px;';
+            
             const THEME_KEY = 'preferred-theme';
             const CONSENT_KEY = 'cookie-consent';
             
             let theme = 'light';
-            if (localStorage.getItem(CONSENT_KEY) === 'granted') {
-                theme = localStorage.getItem(THEME_KEY) || 'light';
+            const consent = localStorage.getItem(CONSENT_KEY);
+            const saved = localStorage.getItem(THEME_KEY);
+            
+            if (consent === 'granted' && saved) {
+                theme = saved;
             }
+            
+            debugDiv.innerHTML = 'Consent: ' + consent + '<br>Saved: ' + saved + '<br>Loading: ' + theme;
+            
+            setTimeout(() => {
+                document.body.appendChild(debugDiv);
+            }, 100);
             
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="css/theme-' + theme + '.css">');
         })();
