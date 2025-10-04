@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyvinvointivaltion analyysi</title>
-    <link id="theme-stylesheet" rel="stylesheet" href="theme-light.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="css/theme-light.css">
 </head>
 <body>
     <main id="app">
         Ladataan sisältöä...
     </main>
     <script type="module">
-        import { initThemeSwitcher } from './theme-switcher.js';
-        import { initCookieConsent } from './cookie-consent.js';
-        import { initFooter } from './footer.js';
+        import { initThemeSwitcher } from './js/theme-switcher.js';
+        import { initCookieConsent } from './js/cookie-consent.js';
+        import { initFooter } from './js/footer.js';
         
         initCookieConsent();
         initThemeSwitcher();
         initFooter();
     </script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
