@@ -137,6 +137,8 @@ Näin ollen Haidtin moraaliset perustukset eivät ole universaaleja *kategorioit
 
 ---
 
+*Jatkuu osassa 3...*
+
 ## Lähteet
 
 Alter, A. L., & Oppenheimer, D. M. (2009). Uniting the tribes of fluency to form a metacognitive nation. *Personality and Social Psychology Review*, 13(3), 219-235.
