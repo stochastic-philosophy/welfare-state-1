@@ -1,4 +1,4 @@
-# Hyvinvointivaltiokiistan moraaliset juuret - Väliosio
+# Hyvinvointivaltiokiistan moraaliset juuret
 
 ## Neurotieteen valossa: Tunteet rationaalisen päätöksenteon ytimessä
 
