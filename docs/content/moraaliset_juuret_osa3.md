@@ -36,6 +36,22 @@ Moraalisten perustusten **sisällöt** ovat aina kulttuurisesti ja mikrokulttuur
 
 Vaikka psykologiset mekanismit selittävät, *miten* moraaliset intuitiot toimivat, ne eivät riittävästi selitä *miksi* tietyt moraaliset kehykset dominoivat tiettynä aikana ja paikassa. Tämä vaatii valtasuhteiden ja materiaalisten intressien analyysia.
 
+**Moraalinen hegemonia ja affektiivinen politiikka: intuitioiden hallinta vallankäytön muotona**
+
+Mikäli moraali toimii pääasiassa intuitiivisten, identiteettiin sidottujen reaktioiden tasolla, myös poliittinen valta toimii yhä enemmän **affektiivisen ohjauksen** kautta. Gramscilainen hegemoniateoria saa tällöin neuropsykologisen jatkeen: hegemonia ei ole vain ideoiden hallintaa, vaan **tunteiden, reaktioiden ja moraalisten kehysten hallintaa**.
+
+Modernissa politiikassa moraalinen hegemonia ei siis perustu enää vain julkiseen diskurssiin tai ideologisiin argumentteihin, vaan siihen, **mitkä moraaliset intuitiot yhteiskunnassa aktivoituvat automaattisesti**. Kuten Lakoff (2004) on osoittanut, poliittinen viestintä toimii kehysten (frames) kautta, jotka vetoavat suoraan Haidtin moraalisiin perustuksiin. “Perhe”, “vapaus”, “turvallisuus” ja “vastuu” eivät ole neutraaleja käsitteitä, vaan ne kutsuvat esiin syvälle juurtuneita moraalisia refleksejä.
+
+Tämä tekee politiikasta **affektiivista hallintaa** (affective governance) (Protevi, 2009; Ahmed, 2014): tavoitteena ei ole vakuuttaa rationaalisesti, vaan ohjata moraalisia tuntemuksia ja identiteettireaktioita. Samalla poliittinen kamppailu siirtyy “järjestelmätason” kiistoista siihen, kuka onnistuu määrittämään, **mikä tuntuu oikealta** (Massumi, 2015).
+
+Tutkimukset affektiivisesta polarisaatiosta osoittavat, että poliittinen identiteetti toimii nykyään lähes samalla tavalla kuin uskonnollinen tai etninen identiteetti (Iyengar et al., 2019). Moraalinen erimielisyys ei tällöin ole vain mielipide-ero, vaan identiteettiristiriita, joka aktivoi samoja puolustusmekanismeja kuin uhka omaa ryhmää kohtaan (Greene, 2013). Tämän vuoksi “faktojen esittäminen” toimii usein päinvastoin — se vahvistaa ryhmärajoja, koska se koetaan hyökkäykseksi omaa moraalista itseymmärrystä vastaan (Kunda, 1990; Nyhan & Reifler, 2010).
+
+Hegemoninen valta onnistuu juuri silloin, kun se **luo moraalisia automaatioita** – tilanteita, joissa tietyt arvot ja reaktiot tuntuvat “luonnollisilta” ja kyseenalaistaminen “moraalisesti väärältä”. Tällainen moraalinen automaatio on Gramscin hegemonian ja Bourdieun symbolisen väkivallan (1991) affektiivinen vastine: alistetut osallistuvat oman hallintansa uusintamiseen, koska hallinta koetaan moraalisesti perustelluksi.
+
+Tässä mielessä **hyvinvointivaltion puolustaminen ei ole vain talouspoliittinen vaan affektiivinen projekti**. Se vaatii vaihtoehtoisen moraalisen hegemoniakehyksen, joka kykenee aktivoimaan samoja intuitiivisia tuntemuksia kuin nykyinen meritokratia- ja ansioajattelu. Moraalinen argumentti “autetaan toisiamme, koska olemme yhteisö” on tehokas vain, jos se tuntuu oikealta — jos se resonoi identiteetin tasolla, ei vain järjen.
+
+Tämä johtaa poliittisen kommunikaation ytimeen: **moraalinen uudelleenkehystys (reframing)** on samalla affektiivisen infrastruktuurin uudelleenrakentamista. Politiikka ei muutu, ennen kuin muuttuu se, mikä tuntuu moraaliselta.
+
 **Ideologian materiaalinen perusta**
 
 Pierre Bourdieu'n (1991) käsite "symbolisesta väkivallasta" on keskeinen ymmärtämään, miten valtasuhteet muuttuvat moraalisiksi intuitioiksi. Symbolinen väkivalta on prosessi, jossa hallitsevat ryhmät saavat hallitut hyväksymään oman alistuksensa "luonnollisena" tai "moraalisena". Tämä ei tapahdu suoran pakon kautta, vaan muokkaamalla sitä, mikä tuntuu intuitiivisesti oikealta.
@@ -265,6 +281,8 @@ Hyvinvointivaltio-keskustelu voi muuttua hedelmällisemmäksi, jos ymmärrämme 
 
 ## Lähteet (täydennys osille 1-2)
 
+Ahmed, S. (2014). *The Cultural Politics of Emotion*. Edinburgh University Press.
+
 Bourdieu, P. (1984). *Distinction: A social critique of the judgement of taste*. Cambridge, MA: Harvard University Press.
 
 Bourdieu, P. (1991). *Language and symbolic power*. Cambridge, MA: Harvard University Press.
@@ -279,6 +297,8 @@ Hall, S. (1988). The hard road to renewal: Thatcherism and the crisis of the lef
 
 Harjuniemi, T., & Ampuja, M. (2019). Established ideas in new forms: The covert media logic of economic journalism. *Discourse & Communication*, 13(1), 5-27.
 
+Iyengar, S., Sood, G., & Lelkes, Y. (2019). Affective polarization in the United States. *Annual Review of Political Science*, 22, 129–146.
+
 Lakoff, G. (2004). *Don't think of an elephant! Know your values and frame the debate*. White River Junction, VT: Chelsea Green Publishing.
 
 Littler, J. (2017). *Against meritocracy: Culture, power and myths of mobility*. London: Routledge.
@@ -287,9 +307,15 @@ Marx, K. (1977). A contribution to the critique of political economy. Moscow: Pr
 
 Maslow, A. H. (1943). A theory of human motivation. *Psychological Review*, 50(4), 370-396.
 
+Massumi, B. (2015). *Politics of Affect*. Polity Press.
+
 Mirowski, P., & Plehwe, D. (Eds.). (2009). *The road from Mont Pèlerin: The making of the neoliberal thought collective*. Cambridge, MA: Harvard University Press.
 
 Nozick, R. (1974). *Anarchy, state, and utopia*. New York: Basic Books.
+
+Nyhan, B., & Reifler, J. (2010). When corrections fail: The persistence of political misperceptions. *Political Behavior*, 32(2), 303–330.
+
+Protevi, J. (2009). *Political Affect: Connecting the Social and the Somatic*. University of Minnesota Press.
 
 Rawls, J. (1971). *A theory of justice*. Cambridge, MA: Harvard University Press.
 
