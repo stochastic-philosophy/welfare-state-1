@@ -140,6 +140,24 @@ Kun ihmiset kokevat taloudellista tai sosiaalista uhkaa, heidän moraaliset kant
 
 Ehdotan, että moraali kehittyy pragmaattisesti: **moraalinen intuitio on tilastollinen keskiarvo niistä reaktioista, jotka ovat aiemmin toimineet tai epäonnistuneet yksilön elämässä**.
 
+### Empiirinen tuki ja mittarit moraaliselle growth/fixed-ajattelulle
+
+Empiirinen tutkimus tarjoaa tukea ajatukselle, että yksilöiden näkemykset moraalin muokattavuudesta — ns. *moral incrementalism* tai *moraalinen growth-mindset* — ennustavat todellista toimintaa ja moraalista joustavuutta. Plaks (2017) esittelee implicit theory -tutkimusten kokoelman, josta käy ilmi, että uskomukset ihmisluonnon muuttuvuudesta vaikuttavat siihen, miten yksilöt reagoivat moraalisiin ristiriitoihin. Lisäksi Han et al. osoittavat, että nuorten keskuudessa growth-uskomus korreloi sitoutumiseen prososiaaliseen toimintaan, mikä viittaa siihen, että moraalinen mindset ei ole pelkkä retoriikka vaan käytännön voimavara (Han ym. 2018). Tamir ja Hughes puolestaan havainnollistavat, että motivaatio- ja palkkiojärjestelmät muovaavat niitä arvoja, joita ihmiset pitävät merkityksellisinä ja mihin he ovat valmiita muokkaamaan käyttäytymistään (Tamir & Hughes 2018). Näin ollen nämä löydökset vahvistavat näkökulmaasi siitä, että growth-orientaatio voi toimia moraalisena suhdekehyksenä, joka lieventää identiteettipainetta ja edistää avoimempaa normatiivista oppimista.
+
+### Painotettu moraalinen oppiminen ja geneettinen arkkitehtuuri”
+
+On kuitenkin tärkeää täsmentää, ettei moraali toimi aritmeettisena keskiarvona aiemmista kokemuksista, vaan pikemminkin **painotettuna keskiarvona**, jossa kokemusten emotionaalinen intensiteetti, toistuvuus ja sosiaalinen vahvistus määrittävät niiden suhteellisen vaikutuksen. Kaikki aiemmat moraaliset episodit eivät siis painotu yhtä paljon: voimakkaasti affektiiviset tai identiteettiä koskettavat kokemukset saavat suuremman “painokertoimen” moraalisessa oppimisverkossa.
+
+Tätä voi verrata hermoverkon oppimiseen: myös ihmisen moraalinen järjestelmä säätää yhteyksiensä voimakkuuksia palautteen, palkkion ja uhan perusteella. Ero on siinä, että **ihmisen “verkkoarkkitehtuuri” ei ole neutraali**. Osa synaptisista yhteyksistä ja niiden herkkyydestä on biologisesti määräytynyt — geneettisesti säädeltyjä valmiuksia kuten empatia, inhoreaktiot, statusherkkyys ja vastavuoroisuuden odotus. Nämä muodostavat moraalisen oppimisen fylogeneettisen perustan, jota kulttuuri ja yksilöllinen kokemus hienosäätävät elämän aikana.
+
+Moraalinen oppiminen on siis **kolmikerroksinen prosessi**:
+
+1. **Geneettinen perusrakenne** määrittää, mitä tunne- ja arvoreaktioita on ylipäänsä mahdollista oppia.
+2. **Varhaiset kiintymys- ja sosiaalistumiskokemukset** muokkaavat painokertoimien herkkyyttä – mikä laukeaa uhkana, mikä palkintona.
+3. **Elämänhistorian aikaiset moraaliset episodit** kalibroivat näitä painoja jatkuvasti suhteessa identiteetin ja yhteisön vaatimuksiin.
+
+Tämä tarkoittaa, että “moraali tilastollisena keskiarvona” ei viittaa kylmään behavioristiseen laskentaan, vaan **biologisesti painotettuun ja affektiivisesti muovautuvaan oppimisprosessiin**, jossa tietyt kokemukset muokkaavat hermostollista ja kulttuurista rakennetta pysyvämmin kuin toiset. Moraalinen järjestelmä ei siis laske kaikkea, vaan *muistaa sen, mikä sattui, liikutti tai sai hyväksynnän.*
+
 Tämä on yhdenmukainen sekä Haidtin (2001, 2012) näkemyksen kanssa siitä, että moraaliset intuitiot ovat nopeita ja automaattisia, että ne kehittyvät kulttuurisessa kontekstissa, että Dweckin (2006, 2017) näkemyksen kanssa siitä, että lapsuuden kokemukset muokkaavat mindsettejä.
 
 Jos lapsi on jatkuvasti ollut tilanteissa, joissa:
@@ -245,6 +263,8 @@ Haidt, J. (2012). *The righteous mind: Why good people are divided by politics a
 
 Haidt, J., Koller, S. H., & Dias, M. G. (1993). Affect, culture, and morality, or is it wrong to eat your dog? *Journal of Personality and Social Psychology*, 65(4), 613-628.
 
+Han, H., Kim, M. S., Jeong, C., & Lapsley, D. K. (2018). Moral growth mindset is associated with change in voluntary service engagement. Journal of Moral Education, 47(3), 361–376. https://doi.org/10.1080/03057240.2018.1463214
+
 Harman, G. (1999). Moral philosophy meets social psychology: Virtue ethics and the fundamental attribution error. *Proceedings of the Aristotelian Society*, 99, 315-331.
 
 Harmon-Jones, E., & Mills, J. (2019). An introduction to cognitive dissonance theory and an overview of current perspectives on the theory. In E. Harmon-Jones (Ed.), *Cognitive dissonance: Reexamining a pivotal theory in psychology* (pp. 3-24). American Psychological Association.
@@ -252,6 +272,8 @@ Harmon-Jones, E., & Mills, J. (2019). An introduction to cognitive dissonance th
 Henrich, J., Heine, S. J., & Norenzayan, A. (2010). The weirdest people in the world? *Behavioral and Brain Sciences*, 33(2-3), 61-83.
 
 Hwang, K. K. (2006). Moral face and social face: Contingent self-esteem in Confucian society. *International Journal of Psychology*, 41(4), 276-281.
+
+Ji, D., Miu, A. C., & Zhou, Y. (2020). Development and validation of the English version of the Moral Identity Scale for adolescents. Personality and Individual Differences, 163, 110102. https://doi.org/10.1016/j.paid.2020.110102
 
 Jost, J. T., Glaser, J., Kruglanski, A. W., & Sulloway, F. J. (2003). Political conservatism as motivated social cognition. *Psychological Bulletin*, 129(3), 339-375.
 
@@ -283,6 +305,8 @@ Mobbs, D., Hagan, C. C., Dalgleish, T., Silston, B., & Prévost, C. (2015). The 
 
 Mueller, C. M., & Dweck, C. S. (1998). Praise for intelligence can undermine children's motivation and performance. *Journal of Personality and Social Psychology*, 75(1), 33-52.
 
+Plaks, J. E. (2017). Assumptions that shape social and moral cognition. In J. M. Olson & M. P. Zanna (Eds.), Advances in experimental social psychology (Vol. 56, pp. 241–281). Academic Press. https://doi.org/10.1016/bs.aesp.2017.02.005
+
 Plaks, J. E. (2017). Implicit theories: Assumptions that shape social and moral cognition. In J. M. Olson (Ed.), *Advances in experimental social psychology* (Vol. 56, pp. 259-310). San Diego, CA: Academic Press.
 
 Pomerantz, E. M., & Kempner, S. G. (2013). Mothers' daily person and process praise: Implications for children's theory of intelligence and motivation. *Developmental Psychology*, 49(11), 2040-2046.
@@ -308,6 +332,8 @@ Sperber, D., & Baumard, N. (2012). Moral reputation: An evolutionary and cogniti
 Steele, C. M. (1988). The psychology of self-affirmation: Sustaining the integrity of the self. In L. Berkowitz (Ed.), *Advances in experimental social psychology* (Vol. 21, pp. 261-302). San Diego, CA: Academic Press.
 
 Steele, C. M., Spencer, S. J., & Aronson, J. (2002). Contending with group image: The psychology of stereotype and social identity threat. In M. P. Zanna (Ed.), *Advances in experimental social psychology* (Vol. 34, pp. 379-440). San Diego, CA: Academic Press.
+
+Tamir, D. I., & Hughes, B. L. (2018). Social rewards: From basic social building blocks to complex social phenomena. Current Opinion in Behavioral Sciences, 24, 1–6. https://doi.org/10.1016/j.cobeha.2018.09.012
 
 Tetlock, P. E., Kristel, O. V., Elson, S. B., Green, M. C., & Lerner, J. S. (2000). The psychology of the unthinkable: Taboo trade-offs, forbidden base rates, and heretical counterfactuals. *Journal of Personality and Social Psychology*, 78(5), 853-870.
 
