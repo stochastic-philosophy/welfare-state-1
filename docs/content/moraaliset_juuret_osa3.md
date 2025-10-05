@@ -30,15 +30,15 @@ Kriittisesti: **moraalinen tunne on tietoa**. Kun konservatiivi **tuntee syväss
 
 #### Tunteet eivät ole universaaleja "perusemoottioita"
 
-Lisa Feldman Barrettin (2017, 2020) käänteentekevä tutkimus haastaa perinteisen käsityksen tunteista universaaleina "perusemoottioina". Hänen **constructed emotion** -teoriansa osoittaa, että tunteet ovat **ennustavia konstruktioita** joita aivot rakentavat jatkuvasti yhdistämällä kehon sisäisiä signaaleja, ympäristön kontekstia ja aiempia oppimiskokemuksia (Barrett, 2017).
+Lisa Feldman Barrettin (2017, 2020) revolutioniääri tutkimus haastaa perinteisen käsityksen tunteista universaaleina "perusemoottioina". Hänen **constructed emotion** -teoriansa osoittaa, että tunteet ovat **ennustavia konstruktioita** joita aivot rakentavat jatkuvasti yhdistämällä kehon sisäisiä signaaleja, ympäristön kontekstia ja aiempia oppimiskokemuksia (Barrett, 2017).
 
-Tämä tarkoittaa, että kulttuurit eivät vain "tulkitse" universaaleja tunteita eri tavoin - ne **opettavat erilaisia tapoja konstruoida tunteita**. Eri kulttuureissa ihmiset oppivat erilaisia "tunnekonsepteja" (emotion concepts) jotka määrittävät, millaisia tunteellisia kokemuksia heillä on ja milloin (Barrett, 2017, 2020).
+Tämä tarkoittaa, että kulttuurit eivät vain "tulkitse" universaaleja tunteita eri tavoin - ne **opettavat erilaisia tapoja konstruoida tunteita**. Eri kulttuureissa ihmiset oppivat erilaisia "tunnekonseptyja" (emotion concepts) jotka määrittävät, millaisia tunteellisia kokemuksia heillä on ja milloin (Barrett, 2017, 2020).
 
 #### Vaikutukset moraalisten intuitioiden ymmärtämiseen: Kulttuurinen variaatio ei tarkoita relativismia
 
 Barrettin teoria tekee Haidtin (2012) moraalisten perustusten kulttuurisesta variaatiosta vielä syvemmän. **Moraaliset intuitiot eivät ole universaaleja biologisia reaktioita joita kulttuuri vain "virittää"** - ne ovat **kulttuurisesti opittuja tapoja tuottaa tietoa** yhdistämällä biologiset valmiudet sosiaalisesti opittuihin kategorioihin.
 
-Mutta tämä ei tee niistä **mielivaltaisia**. Kun amerikkalainen konservatiivi tuntee "pyhennyksen rikkomista" kuullessaan veroista, ja suomalainen sosiaalidemokraatti tuntee "pyhennyksen rikkomista" kuullessaan köyhien jättämisestä yksin, molemmat tunnerekistereissä kumppaninsa **heuristisia arvioita** siitä, mikä säilyttää ja mikä uhkaa hyvin toimivaa yhteiskuntaa. Kumpikin integroi tietoa siitä, miten yhteiskunnat toimivat ja milloin ne romahtavat (Barrett, 2017).
+Mutta tämä ei tee niistä **mielivaltaisia**. Kun amerikkalainen konservatiivi tuntee että **jotain pyhää rikotaan** kuullessaan veroista, ja suomalainen sosiaalidemokraatti tuntee että **moraalinen järjestys häiriintyy** kuullessaan köyhien jättämisestä yksin, molemmat tunnerekistereissä tuottavat **heuristisia arvioita** siitä, mikä säilyttää ja mikä uhkaa hyvin toimivaa yhteiskuntaa. Kumpikin integroi tietoa siitä, miten yhteiskunnat toimivat ja milloin ne romahtavat (Barrett, 2017).
 
 **Se, että tunnekonseptyat ovat kulttuurisesti opittuja, ei tee niistä epistemologisesti arvottomia**. Kulttuuri itsessään on kollektiivinen oppimisprosessi, jossa yhteisöt oppivat mikä toimii ja mikä ei. Toiset kulttuurit ovat voineet oppia parempia tapoja tuottaa moraalista tietoa kuin toiset. Ilman tunteellisia informaatiolähteitä - kuten Phineas Gage -tapauksissa - ihmiset eivät pystyisi priorisoimaan mitään, koska heiltä puuttuisi tieto siitä, mikä on tärkeää ja mikä ei.
 
