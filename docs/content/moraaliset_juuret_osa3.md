@@ -32,7 +32,7 @@ Kriittisesti: **moraalinen tunne on tietoa**. Kun konservatiivi **tuntee syväss
 
 Lisa Feldman Barrettin (2017, 2020) revolutioniääri tutkimus haastaa perinteisen käsityksen tunteista universaaleina "perusemoottioina". Hänen **constructed emotion** -teoriansa osoittaa, että tunteet ovat **ennustavia konstruktioita** joita aivot rakentavat jatkuvasti yhdistämällä kehon sisäisiä signaaleja, ympäristön kontekstia ja aiempia oppimiskokemuksia (Barrett, 2017).
 
-Tämä tarkoittaa, että kulttuurit eivät vain "tulkitse" universaaleja tunteita eri tavoin - ne **opettavat erilaisia tapoja konstruoida tunteita**. Eri kulttuureissa ihmiset oppivat erilaisia "tunnekonseptyja" (emotion concepts) jotka määrittävät, millaisia tunteellisia kokemuksia heillä on ja milloin (Barrett, 2017, 2020).
+Tämä tarkoittaa, että kulttuurit eivät vain "tulkitse" universaaleja tunteita eri tavoin - ne **opettavat erilaisia tapoja konstruoida tunteita**. Eri kulttuureissa ihmiset oppivat erilaisia "tunnekonsepteja" (emotion concepts) jotka määrittävät, millaisia tunteellisia kokemuksia heillä on ja milloin (Barrett, 2017, 2020).
 
 #### Vaikutukset moraalisten intuitioiden ymmärtämiseen: Kulttuurinen variaatio ei tarkoita relativismia
 
