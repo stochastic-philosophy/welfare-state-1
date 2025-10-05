@@ -18,13 +18,13 @@ Antonio Damasion (1994, 2005) tutkimus ventromediaalisen prefrontaalisen korteks
 
 Damasion **somaattisten markereiden teoria** ehdottaa, että tunteet toimivat nopeina, esitietoisina arvioina eri vaihtoehtojen hyvyydestä tai huonoudesta. Kehomme tuottaa hienovaraisia fysiologisia reaktioita - "somaattisia markereita" - jotka ohjaavat huomiotamme lupaaviin vaihtoehtoihin ja varoittavat vaaroista ennen tietoista analyysiä (Damasio, 1994, 2005).
 
-#### Vaikutukset moraalipsykologiaan
+#### Vaikutukset moraalipsykologiaan: Moraaliset tunteet tietona
 
-Nämä löydökset mullistavat ymmärryksemme Haidtin (2001, 2012) "norsun ja ratsastajan" mallista. **"Norsu" ei ole irrationaalinen häirikkö joka estää hyvää päätöksentekoa - se ON hyvän päätöksenteon edellytys**. Moraaliset intuittiot eivät ole "pelkkiä tunteita" jotka pitäisi sivuuttaa, vaan monimutkaisia arviointijärjestelmiä jotka integroivat valtavia määriä tietoa aiemmista kokemuksista, kulttuurisista normeista ja sosiaalisista konteksteista.
+Nämä löydökset mullistavat ymmärryksemme Haidtin (2001, 2012) "norsun ja ratsastajan" mallista. **"Norsu" ei ole irrationaalinen häirikkö joka estää hyvää päätöksentekoa - se ON hyvän päätöksenteon edellytys**. Moraaliset intuittiot eivät ole "pelkkiä tunteita" jotka pitäisi sivuuttaa, vaan **informaatiolähteitä** jotka kertovat jotain tärkeää maailman toiminnasta ja prioriteeteista.
 
-Kun konservatiivi "tuntee luissa ja ytimissään" että tulonsiirrot ovat väärin, kyse ei ole primitiivisestä reaktiosta vaan **kehittyneestä arviointijärjestelmästä** joka integroi hänen kokemuksensa ansiokkuuden merkityksestä, huolenpidon kohteiden priorisoimisesta ja yhteiskunnallisten hierarkioiden toimivuudesta. Samoin kun liberaali "tuntee siskoissaan" että eriarvoisuus on väärä, kyse on kehittyneestä järjestelmästä joka integroi kokemuksia reiluudesta, yhteisvastuusta ja haavoittuvuudesta.
+Kriittisesti: **moraalinen tunne on tietoa**. Kun konservatiivi "tuntee siskoissaan" että tulonsiirrot ovat väärin, hänen tunnereaktionsa sisältää **heuristisen arvion** siitä, että tämä toimintatapa todennäköisesti johtaa huonoihin seurauksiin - kannustinongelmat, riippuvuuden kulttuuri, yhteiskunnallisen koheesion heikkeneminen. Samoin kun liberaali "tuntee siskoissaan" että eriarvoisuus on väärä, hänen reaktionsa sisältää heuristisen arvion siitä, että eriarvoisuus johtaa sosiaaliseen epävakauteen, lahjakkuuden hukkaan ja kärsimykseen.
 
-Kumpikaan reaktio ei ole "objektiivisempi" tai "rationaalisempi" - molemmat ovat **rationaalis-emotionaalisia arviointeja** jotka perustuvat erilaisiin kokemuspohjiin ja painotuksiin.
+**Molemmat reaktiot ovat informatiivisia** - ne perustuvat erilaisiin kokemuksiin ja havainnointeihin maailman toiminnasta. Mutta tämä ei tarkoita, että molemmat olisivat **yhtä oikeita**. Jos moraali on viimekädessä heuristinen vastaus kysymyksiin "miten luonto toimii ja mitä priorisoida jotta itselle tärkeisiin tavoitteisiin päästään", niin empiirinen evidenssi voi kertoa, kumpi heuristiikka toimii paremmin tiettyjen tavoitteiden saavuttamisessa.
 
 ### Lisa Feldman Barrettin constructed emotion -teoria
 
@@ -34,13 +34,15 @@ Lisa Feldman Barrettin (2017, 2020) revolutioniääri tutkimus haastaa perinteis
 
 Tämä tarkoittaa, että kulttuurit eivät vain "tulkitse" universaaleja tunteita eri tavoin - ne **opettavat erilaisia tapoja konstruoida tunteita**. Eri kulttuureissa ihmiset oppivat erilaisia "tunnekonseptyja" (emotion concepts) jotka määrittävät, millaisia tunteellisia kokemuksia heillä on ja milloin (Barrett, 2017, 2020).
 
-#### Vaikutukset moraalisten intuitioiden ymmärtämiseen
+#### Vaikutukset moraalisten intuitioiden ymmärtämiseen: Kulttuurinen variaatio ei tarkoita relativismia
 
-Barrettin teoria tekee Haidtin (2012) moraalisten perustusten kulttuurisesta variaatiosta vielä syvemmän. **Moraaliset intuitiot eivät ole universaaleja biologisia reaktioita joita kulttuuri vain "virittää"** - ne ovat **kulttuurisesti opittuja konstruktioita** jotka yhdistävät biologiset valmiudet sosiaalisesti opittuihin kategorioihin.
+Barrettin teoria tekee Haidtin (2012) moraalisten perustusten kulttuurisesta variaatiosta vielä syvemmän. **Moraaliset intuitiot eivät ole universaaleja biologisia reaktioita joita kulttuuri vain "virittää"** - ne ovat **kulttuurisesti opittuja tapoja tuottaa tietoa** yhdistämällä biologiset valmiudet sosiaalisesti opittuihin kategorioihin.
 
-Kun amerikkalainen konservatiivi tuntee "pyhennyksen rikkomista" kun kuulee veroista, ja suomalainen sosiaalidemokraatti tuntee "pyhennyksen rikkomista" kun kuulee köyhien jättämisestä yksin, molemmat **rakentavat aidosti erilaisia tunteellisia kokemuksia** saman biologisen perustan päälle. Kumpikin on yhtä "todellinen" ja neurobiologisesti perusteltu (Barrett, 2017).
+Mutta tämä ei tee niistä **mielivaltaisia**. Kun amerikkalainen konservatiivi tuntee "pyhennyksen rikkomista" kuullessaan veroista, ja suomalainen sosiaalidemokraatti tuntee "pyhennyksen rikkomista" kuullessaan köyhien jättämisestä yksin, molemmat tunnerekistereissä kumppaninsa **heuristisia arvioita** siitä, mikä säilyttää ja mikä uhkaa hyvin toimivaa yhteiskuntaa. Kumpikin integroi tietoa siitä, miten yhteiskunnat toimivat ja milloin ne romahtavat (Barrett, 2017).
 
-Tämä selittää myös, miksi rationaaliset argumentit eivät pure: ne eivät vain **haasta intellektuaalisia uskomuksia** vaan **uhkaavat syvällä opittuja tapoja konstruoida tunteellisia todellisuuksia**. Muutos vaatii uusien tunnekonseptyjen oppimista, ei vain uusien faktojen omaksumista.
+**Se, että tunnekonseptyat ovat kulttuurisesti opittuja, ei tee niistä epistemologisesti arvottomia**. Kulttuuri itsessään on kollektiivinen oppimisprosessi, jossa yhteisöt oppivat mikä toimii ja mikä ei. Toiset kulttuurit ovat voineet oppia parempia tapoja tuottaa moraalista tietoa kuin toiset. Ilman tunteellisia informaatiolähteitä - kuten Phineas Gage -tapauksissa - ihmiset eivät pystyisi priorisoimaan mitään, koska heiltä puuttuisi tieto siitä, mikä on tärkeää ja mikä ei.
+
+Tämä selittää myös, miksi rationaaliset argumentit eivät pure: ne eivät vain **haasta intellektuaalisia uskomuksia** vaan **uhkaavat syvällä opittuja tapoja tuottaa tietoa maailmasta**. Muutos vaatii osoittamista siitä, että uusi tiedontuottamistapa on **toimivampi** vanhan sijaan, ei vain uusien faktojen esittämistä.
 
 ### Dweckin mindset-teoria neurotieteen valossa
 
@@ -95,17 +97,23 @@ Kaikki edellä mainitut prosessit toimivat **kulttuurisesti opittujen kategorioi
 - Mitkä tunnekonseptyat ovat käytettävissä (esim. "pyhän rikkominen" vs. "solidaarisuus")
 - Mitkä ryhmät ovat "meitä" vs. "heitä" (lojaalisuuden kohteet)
 
-### Normatiiviset kysymykset säilyvät keskeisinä
+### Normatiiviset kysymykset vahvistuvat
 
-Tämä integroiva malli **ei selitä pois** normatiivisia kysymyksiä oikeudenmukaisuudesta ja hyvästä yhteiskunnasta. Se pikemminkin **auttaa vastaamaan niihin viisaammin** osoittamalla:
+Tämä integroiva malli **ei selitä pois** normatiivisia kysymyksiä oikeudenmukaisuudesta ja hyvästä yhteiskunnasta - se **vahvistaa niiden tärkeyttä** osoittamalla, että moraalisilla intuitioilla on todellista epistemologista arvoa. Jos moraaliset tunteet ovat tietolähteitä, niitä ei pidä sivuuttaa vaan **arvioida kriittisesti niiden informaatioarvon suhteen**.
 
-1. **Miksi pelkkä "rationaalinen argumentointi" on riittämätöntä:** Se ei huomioi moraalisen päätöksenteon tunne-kognitio-luonnetta
+Tämä lähestymistapa osoittaa:
 
-2. **Miten eri osapuolet voivat olla vilpittömiä mutta silti eri mieltä:** He rakentavat aidosti erilaisia tunteellisia todellisuuksia samoista tapahtumista
+1. **Miksi pelkkä "rationaalinen argumentointi" on riittämätöntä:** Se ei huomioi moraalisen päätöksenteon tunteellista informaatiokomponenttia, joka on **välttämätön** hyvälle päätöksenteolle
 
-3. **Millä edellytyksillä hedelmällinen keskustelu on mahdollista:** Kun identiteettiuhka minimoidaan ja growth mindset mahdollistetaan
+2. **Miten eri osapuolet voivat olla vilpittömiä mutta silti eri mieltä:** He tuottavat aidosti erilaista tietoa samoista tilanteista perustuen erilaisiin kokemuspohjiin ja oppimishistorioihin
 
-4. **Miten moraalista edistystä voi tapahtua:** Kun opimme uusia tunnekonseptyja ja laajennammr empatian piiritämme
+3. **Miksi konfliktitilanteissa ei ole välttämättä "kahta yhtä oikeaa näkemystä":** Jos moraali on heuristiikkaa tavoitteiden saavuttamiseen, empiirinen evidenssi voi osoittaa kumpi toimii paremmin
+
+4. **Millä edellytyksillä hedelmällinen keskustelu on mahdollista:** Kun tunnustetaan vastapuolen informaatioperusta aidoksi mutta arvioidaan sen laatua ja relevanssia kriittisesti
+
+5. **Miten moraalista edistystä voi tapahtua:** Kun opimme parempia tapoja tuottaa moraalista tietoa ja laajennamme informaatiopohjaamme
+
+**Keskeinen oivallus:** Ilman tunteellisia informaatiolähteitä - kuten Phineas Gage ja muut VMF-potilaat osoittavat - emme pystyisi priorisoimaan mitään. Moraalisten tunteiden eliminoiminen ei johtaisi "puhtaaseen rationaalisuuteen" vaan **täydelliseen toimintakyvyttömyyteen** kaikissa käytännön päätöksentekotilanteissa. Tunteet eivät ole järjen vihollisia - ne ovat järjen välttämätön kumppani.
 
 Seuraavassa osassa siirryn tarkastelemaan, miten tämä integroiva ymmärrys voi auttaa meitä rakentamaan hedelmällisempää hyvinvointivaltio-keskustelua ja laajemmin parantamaan demokratista päätöksentekoa.
 
