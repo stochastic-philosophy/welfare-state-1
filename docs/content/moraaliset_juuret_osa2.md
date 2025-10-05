@@ -30,6 +30,20 @@ Cohen, Aronson ja Steele (2000) osoittivat, että kun afrikkalaistaustaisia amer
 
 Nämä löydökset viittaavat siihen, että moraalisten reaktioiden jäykkyys ei ole kiinteä ominaisuus vaan riippuu siitä, kuinka uhattuna identiteetti on missäkin hetkessä.
 
+### Neurobiologiset mekanismit identiteettiuhan taustalla
+
+Identiteetin läheisyyden vaikutus moraalisiin reaktioihin ei ole pelkästään psykologinen ilmiö, vaan sillä on syvät neurobiologiset juuret. Terror Management Theory (TMT) tarjoaa ehkä suorimman yhteyden eksistentiaalisten uhkien ja primitiivireaktioiden välille (Greenberg, Pyszczynski & Solomon, 1986). Kun ihmisiä muistutetaan kuolevaisuudestaan tai muista eksistentiaalisista uhista, heidän aivoissaan tapahtuu mitattavia muutoksia: amygdala aktivoituu voimakkaasti samalla kun prefrontaalisen korteksin toiminta heikkenee (Klackl et al., 2013). Käytännössä tämä tarkoittaa, että "pelkäävät aivot" ottavat kontrollin "ajattelevilta aivoilta".
+
+Tämä neurobiologinen siirtymä selittää, miksi identiteettiä uhkaavissa tilanteissa ihmiset palaavat varhain opittuihin, automatisoituihin reaktioihin. Schwabe ja Wolf (2013) ovat osoittaneet, että stressin alla tavoitteellinen, tietoinen käyttäytyminen (goal-directed behavior) korvautuu tottumuksiin perustuvalla käyttäytymisellä (habitual behavior), vaikka henkilö tietäisi näiden tottumusten olevan tehottomia nykytilanteessa. Tämä ilmiö on erityisen voimakas silloin, kun stressi liittyy identiteettiin tai sosiaaliseen statukseen (Schwabe et al., 2011).
+
+Dual-process teoriat kognitiivisesta prosessoinnista tarjoavat teoreettisen kehyksen ymmärtää tätä ilmiötä (Evans & Stanovich, 2013; Kahneman, 2011). Meillä on kaksi tiedonkäsittelyjärjestelmää: System 1 (nopea, automaattinen, intuitiivinen) ja System 2 (hidas, tietoinen, analyyttinen). Identiteettiuhan alla System 1 dominoi lähes täydellisesti, tehden analyyttisesta moraalisesta päättelystä käytännössä mahdotonta. Tämä ei ole tahdonheikkouden kysymys, vaan neurobiologinen realiteetti.
+
+Social Identity Threat -tutkimus (Steele, Spencer & Aronson, 2002) on dokumentoinut laajasti, miten identiteettiuhat vaikuttavat paitsi ajatteluun, myös fysiologiaan. Identiteettiuhan kokeminen nostaa kortisolitasoja, heikentää työmuistia ja aktivoi aivojen anterior cingulate cortexin - saman alueen joka prosessoi fyysistä kipua (Eisenberger & Lieberman, 2004). Toisin sanoen, identiteettiuhka kirjaimellisesti "sattuu" aivoissa samalla tavalla kuin fyysinen kipu.
+
+Erityisen merkittävää moraalisen päättelyn kannalta on havainto siitä, että ihmiset jatkavat opittuja selviytymisstrategioitaan silloinkin, kun tietävät niiden olevan haitallisia. Van der Kolk (2014) on laajasti dokumentoinut, miten traumatisoituneet ihmiset toistavat samoja käyttäytymismalleja, vaikka kognitiivisesti ymmärtäisivät niiden olevan sopimattomia nykytilanteeseen. Tämä "tiedän mutta en voi muuttua" -paradoksi on keskeinen ymmärtämään, miksi pelkkä faktojen esittäminen ei riitä muuttamaan syvälle juurtuneita moraalisia intuitioita.
+
+Cognitive dissonance -teoria (Festinger, 1957; Harmon-Jones & Mills, 2019) selittää, miten ihmiset ratkaisevat ristiriidan tietonsa ja käyttäytymisensä välillä: useimmiten he muuttavat uskomuksiaan käyttäytymisen muuttamisen sijaan. Kun identiteetti on uhattuna, tämä taipumus voimistuu entisestään. Hyvinvointivaltio-kontekstissa tämä voi tarkoittaa, että vaikka henkilö näkisi empiirisiä todisteita hyvinvointivaltion toimivuudesta, hän saattaa rationalisoida ne pois ("ne luvut ovat vääristettyjä", "se toimii vain Pohjoismaissa") sen sijaan että muuttaisi perustavaa uskomustaan.
+
 ## Uuden oppimisen priorisointi osana identiteettiä
 
 ### Dweckin mindset-teoria: Kaksi erilaista tapaa suhtautua kykyihinsä
@@ -106,15 +120,30 @@ On tärkeää huomata, että Haidtin (2012) moraaliset perustukset eivät ole un
 
 Näin ollen kun käytämme MFT:tä hyvinvointivaltio-keskustelun analyysissä, meidän on oltava tarkkoja sen suhteen, **mihin kulttuurisesti määrittyneisiin sisältöihin** moraaliperustat kytkeytyvät kussakin kontekstissa.
 
----
+### Moraali heuristisena insinööritietona: Universaali prosessi, kulttuurispesifit sisällöt
 
-*Jatkuu osassa 3...*
+On kriittisen tärkeää ymmärtää, että vaikka tässä analyysissa käytetyt kategoriat (Haidtin moraaliset perustukset, individualistinen identiteettikäsitys) ovat länsimaisia konstruktioita, teorian perusmekanismi on universaali. Moraali voidaan ymmärtää "heuristisena insinööritietona" - käytännöllisinä oikopolkuina ja nyrkkisääntöinä, jotka ovat kehittyneet ratkaisemaan toistuvia sosiaalisia ja selviytymishaasteita kussakin kulttuurisessa kontekstissa (Gigerenzer, 2008; Henrich et al., 2010).
+
+Tämä näkökulma selittää, miksi moraalisten reaktioiden *prosessi* on universaali (identiteetin läheisyys → intuitiivinen reaktio; etäisyys → analyyttinen pohdinta), mutta *sisällöt* vaihtelevat radikaalisti. Esimerkiksi kollektivistisissa kulttuureissa "identiteetti" ei ole individualistinen konstruktio vaan suhteellinen - minuus määrittyy suhteessa perheeseen, yhteisöön ja sosiaalisiin rooleihin (Markus & Kitayama, 1991). Tällöin identiteettiuhka voi aktivoitua täysin erilaisista ärsykkeistä kuin individualistisissa kulttuureissa.
+
+Boyd ja Richerson (2005) ovat osoittaneet, että kulttuurinen evoluutio toimii samankaltaisilla mekanismeilla kuin biologinen evoluutio: toimivat ratkaisut leviävät ja säilyvät, toimimattomat häviävät. Moraaliset intuitiot ovat näin ollen "fossiloituneita" ratkaisuja menneisyyden haasteisiin - ne ovat muuttuneet automaattisiksi (System 1) juuri siksi, että niitä ei ole tarvinnut kyseenalaistaa selviytymisen kannalta (Haidt, 2012; Sperber & Baumard, 2012).
+
+Tämä tarkoittaa, että eri kulttuureissa samat perusmekanismit tuottavat erilaisia moraalisia kategorioita:
+- Kiinalaisessa kontekstissa "kasvojen menetys" aktivoi samanlaisen neurobiologisen puolustusreaktion kuin länsimaissa "yksilöllisen autonomian uhka" (Hwang, 2006)
+- Intialaisessa kastijärjestelmässä "puhtauden" käsite liittyy sosiaaliseen hierarkiaan tavalla, joka on vieras länsimaiselle ajattelulle, mutta aktivoi samat aivoalueet kuin länsimainen "pyhyys" (Rozin et al., 2008)
+- Monissa Afrikan kulttuureissa Ubuntu-filosofia ("minä olen koska me olemme") tekee "yksilön oikeuksista" kategorivirheen - moraali rakentuu yhteisöllisyyden, ei yksilöllisyyden varaan (Metz, 2007)
+
+Näin ollen Haidtin moraaliset perustukset eivät ole universaaleja *kategorioita* vaan pikemminkin länsimaisia tapoja nimetä ja jäsentää universaaleja *prosesseja*. Eri kulttuureissa nämä prosessit tuottavat erilaisia kategorioita, jotka palvelevat samaa funktiota: automatisoituja reaktioita toistuviin sosiaalisiin haasteisiin. "Identiteetin läheisyys" on siis universaali mekanismi, mutta se mikä muodostaa identiteetin ytimen, vaihtelee radikaalisti kulttuurien välillä ja sisällä.
+
+---
 
 ## Lähteet
 
 Alter, A. L., & Oppenheimer, D. M. (2009). Uniting the tribes of fluency to form a metacognitive nation. *Personality and Social Psychology Review*, 13(3), 219-235.
 
 Alter, A. L., Oppenheimer, D. M., Epley, N., & Eyre, R. N. (2007). Overcoming intuition: Metacognitive difficulty activates analytic reasoning. *Journal of Experimental Psychology: General*, 136(4), 569-576.
+
+Boyd, R., & Richerson, P. J. (2005). *The origin and evolution of cultures*. Oxford: Oxford University Press.
 
 Cohen, G. L., Aronson, J., & Steele, C. M. (2000). When beliefs yield to evidence: Reducing biased evaluation by affirming the self. *Personality and Social Psychology Bulletin*, 26(9), 1151-1164.
 
@@ -126,7 +155,17 @@ Dweck, C. S. (2017). From needs to goals and representations: Foundations for a 
 
 Dweck, C. S., & Leggett, E. L. (1988). A social-cognitive approach to motivation and personality. *Psychological Review*, 95(2), 256-273.
 
+Eisenberger, N. I., & Lieberman, M. D. (2004). Why rejection hurts: A common neural alarm system for physical and social pain. *Trends in Cognitive Sciences*, 8(7), 294-300.
+
+Evans, J. S. B., & Stanovich, K. E. (2013). Dual-process theories of higher cognition: Advancing the debate. *Perspectives on Psychological Science*, 8(3), 223-241.
+
+Festinger, L. (1957). *A theory of cognitive dissonance*. Stanford, CA: Stanford University Press.
+
+Gigerenzer, G. (2008). Moral intuition = Fast and frugal heuristics? In W. Sinnott-Armstrong (Ed.), *Moral psychology: The cognitive science of morality* (Vol. 2, pp. 1-26). Cambridge, MA: MIT Press.
+
 Graham, J., Nosek, B. A., Haidt, J., Iyer, R., Koleva, S., & Ditto, P. H. (2011). Mapping the moral domain. *Journal of Personality and Social Psychology*, 101(2), 366-385.
+
+Greenberg, J., Pyszczynski, T., & Solomon, S. (1986). The causes and consequences of a need for self-esteem: A terror management theory. In R. F. Baumeister (Ed.), *Public self and private self* (pp. 189-212). New York: Springer-Verlag.
 
 Haidt, J. (2001). The emotional dog and its rational tail: A social intuitionist approach to moral judgment. *Psychological Review*, 108(4), 814-834.
 
@@ -134,7 +173,23 @@ Haidt, J. (2012). *The righteous mind: Why good people are divided by politics a
 
 Haidt, J., Koller, S. H., & Dias, M. G. (1993). Affect, culture, and morality, or is it wrong to eat your dog? *Journal of Personality and Social Psychology*, 65(4), 613-628.
 
+Harmon-Jones, E., & Mills, J. (2019). An introduction to cognitive dissonance theory and an overview of current perspectives on the theory. In E. Harmon-Jones (Ed.), *Cognitive dissonance: Reexamining a pivotal theory in psychology* (pp. 3-24). American Psychological Association.
+
+Henrich, J., Heine, S. J., & Norenzayan, A. (2010). The weirdest people in the world? *Behavioral and Brain Sciences*, 33(2-3), 61-83.
+
+Hwang, K. K. (2006). Moral face and social face: Contingent self-esteem in Confucian society. *International Journal of Psychology*, 41(4), 276-281.
+
+Kahneman, D. (2011). *Thinking, fast and slow*. New York: Farrar, Straus and Giroux.
+
+Klackl, J., Jonas, E., & Kronbichler, M. (2013). Existential neuroscience: Neurophysiological correlates of proximal defenses against death-related thoughts. *Social Cognitive and Affective Neuroscience*, 8(3), 333-340.
+
 Kohlberg, L. (1969). Stage and sequence: The cognitive-developmental approach to socialization. In D. A. Goslin (Ed.), *Handbook of socialization theory and research* (pp. 347-480). Chicago: Rand McNally.
+
+Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. *Psychological Review*, 98(2), 224-253.
+
+Metz, T. (2007). Toward an African moral theory. *Journal of Political Philosophy*, 15(3), 321-341.
+
+Mikulincer, M., & Shaver, P. R. (2007). *Attachment in adulthood: Structure, dynamics, and change*. New York: Guilford Press.
 
 Mueller, C. M., & Dweck, C. S. (1998). Praise for intelligence can undermine children's motivation and performance. *Journal of Personality and Social Psychology*, 75(1), 33-52.
 
@@ -144,8 +199,18 @@ Pomerantz, E. M., & Kempner, S. G. (2013). Mothers' daily person and process pra
 
 Porges, S. W. (2011). *The polyvagal theory: Neurophysiological foundations of emotions, attachment, communication, and self-regulation*. New York: W. W. Norton.
 
+Rozin, P., Haidt, J., & McCauley, C. R. (2008). Disgust. In M. Lewis, J. M. Haviland-Jones & L. F. Barrett (Eds.), *Handbook of emotions* (3rd ed., pp. 757-776). New York: Guilford Press.
+
+Schwabe, L., & Wolf, O. T. (2013). Stress and multiple memory systems: From 'thinking' to 'doing'. *Trends in Cognitive Sciences*, 17(2), 60-68.
+
+Schwabe, L., Tegenthoff, M., Höffken, O., & Wolf, O. T. (2011). Simultaneous glucocorticoid and noradrenergic activity disrupts the neural basis of goal-directed action in the human brain. *Journal of Neuroscience*, 31(30), 10146-10155.
+
 Sherman, D. K., & Cohen, G. L. (2006). The psychology of self-defense: Self-affirmation theory. In M. P. Zanna (Ed.), *Advances in experimental social psychology* (Vol. 38, pp. 183-242). San Diego, CA: Academic Press.
 
+Sperber, D., & Baumard, N. (2012). Moral reputation: An evolutionary and cognitive perspective. *Mind & Language*, 27(5), 495-518.
+
 Steele, C. M. (1988). The psychology of self-affirmation: Sustaining the integrity of the self. In L. Berkowitz (Ed.), *Advances in experimental social psychology* (Vol. 21, pp. 261-302). San Diego, CA: Academic Press.
+
+Steele, C. M., Spencer, S. J., & Aronson, J. (2002). Contending with group image: The psychology of stereotype and social identity threat. In M. P. Zanna (Ed.), *Advances in experimental social psychology* (Vol. 34, pp. 379-440). San Diego, CA: Academic Press.
 
 Van der Kolk, B. (2014). *The body keeps the score: Brain, mind, and body in the healing of trauma*. New York: Viking.
