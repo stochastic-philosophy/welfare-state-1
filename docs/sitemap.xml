@@ -122,21 +122,28 @@
   <!-- Kokonaisuus C: Moraaliset ja psykologiset juuret -->
   <url>
     <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa1.md</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2025-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa2.md</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa3.md</loc>
+    <lastmod>2025-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa3.md</loc>
-    <lastmod>2025-10-02</lastmod>
+    <loc>https://stochastic-philosophy.github.io/welfare-state-1/content/moraaliset_juuret_osa4.md</loc>
+    <lastmod>2025-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
