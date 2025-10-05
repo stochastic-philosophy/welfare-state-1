@@ -97,21 +97,25 @@ Kaikki edellä mainitut prosessit toimivat **kulttuurisesti opittujen kategorioi
 - Mitkä tunnekonseptit ovat käytettävissä (esim. "pyhän rikkominen" vs. "solidaarisuus")
 - Mitkä ryhmät ovat "meitä" vs. "heitä" (lojaalisuuden kohteet)
 
-### Normatiiviset kysymykset vahvistuvat
+### Normatiiviset kysymykset vahvistuvat: Tunteet huomioverkostona
 
 Tämä integroiva malli **ei selitä pois** normatiivisia kysymyksiä oikeudenmukaisuudesta ja hyvästä yhteiskunnasta - se **vahvistaa niiden tärkeyttä** osoittamalla, että moraalisilla intuitioilla on todellista epistemologista arvoa. Jos moraaliset tunteet ovat tietolähteitä, niitä ei pidä sivuuttaa vaan **arvioida kriittisesti niiden informaatioarvon suhteen**.
 
+**Kriittinen ymmärrys:** Emme voi "päättää" antaammeko moraalisten tunteiden vaikuttaa päätöksentekoomme, koska **tunteet vaikuttavat ennen tietoista päätöksentekoa**. Tunteet ohjaavat huomioverkostoamme - ne määrittävät mitkä asiat ylipäätään nousevat tietoisuuteemme ja mitkä jäävät huomaamatta. Vain riittävän tunnesisällön omaavat asiat kiinnittävät huomiomme ja tulevat pohdinnan kohteiksi. Jos joku luulee ajattelevansa "kylmän rationaalisesti" tunteiden vaikuttamatta, hän on todennäköisesti vain aleksityyminen - tiedostamaton omista tunteistaan - mutta tunteet silti ohjaavat sitä, mihin hän kiinnittää huomiota ja mistä hän ajattelee.
+
+Phineas Gage -tapaukset osoittavat mitä tapahtuu kun tämä tunneohjattu huomioverkosto ei toimi: **satunnaisia asioita nousee tietoisuuteen** ilman järkevää priorisointia, koska puuttuu elämänkokemuksen tuoma viisaus siitä, mikä on tärkeää ja mikä ei ole.
+
 Tämä lähestymistapa osoittaa:
 
-1. **Miksi pelkkä "rationaalinen argumentointi" on riittämätöntä:** Se ei huomioi moraalisen päätöksenteon tunteellista informaatiokomponenttia, joka on **välttämätön** hyvälle päätöksenteolle
+1. **Miksi pelkkä "rationaalinen argumentointi" on riittämätöntä:** Se ei huomioi sitä, että tunteet määrittävät **mitä ylipäätään tulee keskustelun aiheeksi** - ilman tunteellista informaatiota emme kiinnitä huomiota mihinkään
 
-2. **Miten eri osapuolet voivat olla vilpittömiä mutta silti eri mieltä:** He tuottavat aidosti erilaista tietoa samoista tilanteista perustuen erilaisiin kokemuspohjiin ja oppimishistorioihin
+2. **Miten eri osapuolet voivat olla vilpittömiä mutta silti eri mieltä:** Heidän huomioverkostonsa tuottavat aidosti erilaista tietoa samoista tilanteista perustuen erilaisiin tunne-informaatiojärjestelmiin
 
-3. **Miksi konfliktitilanteissa ei ole välttämättä "kahta yhtä oikeaa näkemystä":** Jos moraali on heuristiikkaa tavoitteiden saavuttamiseen, empiirinen evidenssi voi osoittaa kumpi toimii paremmin
+3. **Miksi konfliktitilanteissa ei ole välttämättä "kahta yhtä oikeaa näkemystä":** Jos moraali on heuristiikkaa tavoitteiden saavuttamiseen, voimme arvioida kumman osapuolen huomioverkosto tuottaa **relevanttimpaa ja tarkempaa tietoa** päätöksenteon kannalta
 
-4. **Millä edellytyksillä hedelmällinen keskustelu on mahdollista:** Kun tunnustetaan vastapuolen informaatioperusta aidoksi mutta arvioidaan sen laatua ja relevanssia kriittisesti
+4. **Millä edellytyksillä hedelmällinen keskustelu on mahdollista:** Kun tunnustetaan että vastapuolen huomioverkosto on aito informaatiojärjestelmä, mutta arvioidaan kriittisesti millaista tietoa se tuottaa ja mitä se jättää huomaamatta
 
-5. **Miten moraalista edistystä voi tapahtua:** Kun opimme parempia tapoja tuottaa moraalista tietoa ja laajennamme informaatiopohjaamme
+5. **Miten moraalista edistystä voi tapahtua:** Kun opimme laajentamaan huomioverkostoamme ja parantamaan tunteiden tuottaman tiedon laatua ja kattavuutta
 
 **Keskeinen oivallus:** Ilman tunteellisia informaatiolähteitä - kuten Phineas Gage ja muut VMF-potilaat osoittavat - emme pystyisi priorisoimaan mitään. Moraalisten tunteiden eliminoiminen ei johtaisi "puhtaaseen rationaalisuuteen" vaan **täydelliseen toimintakyvyttömyyteen** kaikissa käytännön päätöksentekotilanteissa. Tunteet eivät ole järjen vihollisia - ne ovat järjen välttämätön kumppani.
 
