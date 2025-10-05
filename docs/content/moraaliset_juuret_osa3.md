@@ -22,7 +22,7 @@ Damasion **somaattisten markereiden teoria** ehdottaa, että tunteet toimivat no
 
 Nämä löydökset mullistavat ymmärryksemme Haidtin (2001, 2012) "norsun ja ratsastajan" mallista. **"Norsu" ei ole irrationaalinen häirikkö joka estää hyvää päätöksentekoa - se ON hyvän päätöksenteon edellytys**. Moraaliset intuittiot eivät ole "pelkkiä tunteita" jotka pitäisi sivuuttaa, vaan monimutkaisia arviointijärjestelmiä jotka integroivat valtavia määriä tietoa aiemmista kokemuksista, kulttuurisista normeista ja sosiaalisista konteksteista.
 
-Kun konservatiivi "tuntee siskoissaan" että tulonsiirrot ovat väärin, kyse ei ole primitiivisestä reaktiosta vaan **kehittyneestä arviointijärjestelmästä** joka integroi hänen kokemuksensa ansiokkuuden merkityksestä, huolenpidon kohteiden priorisoimisesta ja yhteiskunnallisten hierarkioiden toimivuudesta. Samoin kun liberaali "tuntee siskoissaan" että eriarvoisuus on väärä, kyse on kehittyneestä järjestelmästä joka integroi kokemuksia reiluudesta, yhteisvastuusta ja haavoittuvuudesta.
+Kun konservatiivi "tuntee luissa ja ytimissään" että tulonsiirrot ovat väärin, kyse ei ole primitiivisestä reaktiosta vaan **kehittyneestä arviointijärjestelmästä** joka integroi hänen kokemuksensa ansiokkuuden merkityksestä, huolenpidon kohteiden priorisoimisesta ja yhteiskunnallisten hierarkioiden toimivuudesta. Samoin kun liberaali "tuntee siskoissaan" että eriarvoisuus on väärä, kyse on kehittyneestä järjestelmästä joka integroi kokemuksia reiluudesta, yhteisvastuusta ja haavoittuvuudesta.
 
 Kumpikaan reaktio ei ole "objektiivisempi" tai "rationaalisempi" - molemmat ovat **rationaalis-emotionaalisia arviointeja** jotka perustuvat erilaisiin kokemuspohjiin ja painotuksiin.
 
