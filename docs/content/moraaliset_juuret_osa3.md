@@ -32,6 +32,68 @@ tuurinen määrittyneisyys**
 
 Moraalisten perustusten **sisällöt** ovat aina kulttuurisesti ja mikrokulttuurisesti (perhe, yhteisö, alakulttuuri) määrittyneitä (Graham et al., 2011; Haidt et al., 1993). Esimerkiksi "Lojaalisuus" voi tarkoittaa hyvin erilaisia asioita eri konteksteissa - ammattiliitolle, yritykselle, kansalle, perheelle. Tämä kulttuurinen ja mikrokulttuurinen variaatio on keskeinen ymmärtää, kun sovelletaan MFT:tä mihinkään konkreettiseen poliittiseen kysymykseen.
 
+### Valtasuhteet ja moraalisten kehysten poliittinen ekonomia
+
+Vaikka psykologiset mekanismit selittävät, *miten* moraaliset intuitiot toimivat, ne eivät riittävästi selitä *miksi* tietyt moraaliset kehykset dominoivat tiettynä aikana ja paikassa. Tämä vaatii valtasuhteiden ja materiaalisten intressien analyysia.
+
+**Ideologian materiaalinen perusta**
+
+Pierre Bourdieu'n (1991) käsite "symbolisesta väkivallasta" on keskeinen ymmärtämään, miten valtasuhteet muuttuvat moraalisiksi intuitioiksi. Symbolinen väkivalta on prosessi, jossa hallitsevat ryhmät saavat hallitut hyväksymään oman alistuksensa "luonnollisena" tai "moraalisena". Tämä ei tapahdu suoran pakon kautta, vaan muokkaamalla sitä, mikä tuntuu intuitiivisesti oikealta.
+
+Hyvinvointivaltio-kontekstissa tämä näkyy siinä, miten "ansiokkuus" on muuttunut moraaliseksi kategoriaksi. Meritokratia-narratiivi - että menestys johtuu yksilön kyvyistä ja vaivannäöstä - palvelee niitä, joilla on pääomaa (taloudellista, kulttuurista, sosiaalista), samalla kun se saa vähemmän menestyneet syyttämään itseään "epäonnistumisestaan" (Sandel, 2020; Littler, 2017).
+
+**Moraalisten kehysten tuotanto**
+
+Moraaliset kehykset eivät synny tyhjiössä, vaan niitä tuotetaan aktiivisesti. Gramsci'n (1971) hegemonia-käsite auttaa ymmärtämään, miten hallitseva luokka ei hallitse vain pakolla, vaan tuottamalla "maalaisjärkeä" (common sense) - moraalisia intuitioita siitä, mikä on normaalia, luonnollista ja oikein.
+
+Esimerkiksi 1970-luvulta alkaen:
+- Think tankit (Heritage Foundation, Adam Smith Institute) ovat systemaattisesti tuottaneet ja levittäneet "vapaan markkinan" moraalista kehystä (Mirowski & Plehwe, 2009)
+- Media on toistanut narratiiveja "hyvinvointivaltion riippuvuudesta" ja "ahkerien veronmaksajien taakasta" (Harjuniemi & Ampuja, 2019)
+- Koulutussysteemi on yhä enemmän painottanut yksilöllistä kilpailua ja "yrittäjämäistä minuutta" yhteistyön sijaan (Brown, 2015)
+
+Nämä eivät ole neutraaleja prosesseja, vaan aktiivista ideologista työtä, joka muokkaa sitä, mikä tuntuu moraalisesti oikealta. Ajan myötä nämä kehykset "sedimentoituvat" automaattisiksi intuitioiksi - System 1 reaktioiksi.
+
+**Materiaalisten intressien rooli**
+
+On kriittistä ymmärtää, että moraaliset intuitiot eivät ole irrallaan materiaalisista intresseistä. Marx'n (1859/1977) perusinsight - että "yhteiskunnallinen oleminen määrää tietoisuutta" - pätee myös moraalisiin intuitioihin, vaikkakin monimutkaisemmin kuin vulgaari marxismi esittää.
+
+Varakkaat ihmiset vastustavat progressiivista verotusta ei vain siksi, että heidän Proportionality-perustansa sattuu olemaan vahvempi, vaan koska:
+1. Heidän materiaalinen asemansa hyötyy nykyisestä järjestelmästä
+2. Tämä asema tuottaa kokemuksia, jotka vahvistavat individualistisia moraalisia intuitioita
+3. Heillä on resursseja tuottaa ja levittää omaa moraalista kehystään
+4. Tämä kehys legitimoi heidän etuoikeutettua asemaansa
+
+Samalla tavoin työväenluokan solidaarisuus ei ole vain "erilainen moraalinen painotus", vaan historiallisesti kehittynyt vastaus materiaalisten olosuhteiden tuottamiin haasteisiin (Thompson, 1963).
+
+**Moraalisten kehysten hegemoniset kamppailut**
+
+Stuart Hallin (1988) käsite "hegemonisista kamppailuista" on relevantti: eri ryhmät kamppailevat siitä, mikä moraalinen kehys muuttuu "maalaisjärjeksi". Hyvinvointivaltio-kiistassa näemme jatkuvan kamppailun kahden kehyksen välillä:
+
+1. **Solidaarisuuskehys**: "Olemme kaikki haavoittuvia", "Yhteiskunta on yhteisvastuuta", "Julkiset palvelut ovat sivilisaation merkki"
+2. **Individualistinen kehys**: "Jokainen on oman onnensa seppä", "Verotus on varkautta", "Yksityinen on tehokkaampaa"
+
+Nämä eivät ole vain erilaisia mielipiteitä, vaan eri luokkien materiaalisten intressien ilmentymiä. Se, kumpi kehys "voittaa", riippuu paitsi psykologisista prosesseista, myös valtasuhteista: kenellä on resursseja levittää kehystään, kontrolloida mediaa, vaikuttaa koulutukseen.
+
+**Moraalisten intuitioiden luokkaluonne**
+
+Bourdieu'n (1984) habitus-käsite auttaa ymmärtämään, miten luokka-asema muuttuu moraalisiksi intuitioiksi. Habitus on "strukturoitu struktuuri joka strukturoi" - luokka-aseman tuottamat kokemukset muokkautuvat tavoiksi havaita, arvioida ja reagoida maailmaan, mukaan lukien moraalisesti.
+
+Esimerkiksi:
+- Yläluokan habitus, joka on kehittynyt ympäristössä jossa yksilöllinen valinta ja kontrolli ovat mahdollisia, tuottaa individualistisia moraalisia intuitioita
+- Työväenluokan habitus, joka on kehittynyt keskinäisen riippuvuuden ja kollektiivisen selviytymisen olosuhteissa, tuottaa solidaarisia intuitioita
+
+Nämä eivät ole vain "erilaisia näkemyksiä", vaan eri materiaalisista olosuhteista kumpuavia tapoja olla maailmassa.
+
+**Implikaatiot analyysille**
+
+Tämän valtatarkastelun sisällyttäminen ei kumoa psykologista analyysia, vaan syventää sitä. Moraalisten intuitioiden muuttaminen ei ole vain psykologinen haaste (miten ohittaa identiteettiuhat), vaan myös poliittinen (miten haastaa hallitsevia moraalisia kehyksiä) ja materiaalinen (miten luoda olosuhteet, jotka tukevat solidaarisia intuitioita).
+
+Todellinen muutos vaatii työtä kaikilla tasoilla:
+- **Psykologinen**: Identiteettiä vahvistava kommunikaatio, growth mindsetin tukeminen
+- **Diskursiivinen**: Vaihtoehtoisten moraalisten kehysten tuottaminen ja levittäminen  
+- **Institutionaalinen**: Rakenteiden luominen, jotka tukevat solidaarisia kokemuksia
+- **Materiaalinen**: Eriarvoisuuden vähentäminen, joka mahdollistaa empatiakuilun kaventumisen
+
 ### Soveltaminen hyvinvointivaltio-keskusteluun
 
 #### Miksi rationaaliset argumentit eivät vakuuta
@@ -203,17 +265,39 @@ Hyvinvointivaltio-keskustelu voi muuttua hedelmällisemmäksi, jos ymmärrämme 
 
 ## Lähteet (täydennys osille 1-2)
 
+Bourdieu, P. (1984). *Distinction: A social critique of the judgement of taste*. Cambridge, MA: Harvard University Press.
+
+Bourdieu, P. (1991). *Language and symbolic power*. Cambridge, MA: Harvard University Press.
+
+Brown, W. (2015). *Undoing the demos: Neoliberalism's stealth revolution*. New York: Zone Books.
+
+Gramsci, A. (1971). *Selections from the prison notebooks*. New York: International Publishers.
+
 Greene, J. D. (2013). *Moral tribes: Emotion, reason, and the gap between us and them*. New York: Penguin Press.
+
+Hall, S. (1988). The hard road to renewal: Thatcherism and the crisis of the left. London: Verso.
+
+Harjuniemi, T., & Ampuja, M. (2019). Established ideas in new forms: The covert media logic of economic journalism. *Discourse & Communication*, 13(1), 5-27.
 
 Lakoff, G. (2004). *Don't think of an elephant! Know your values and frame the debate*. White River Junction, VT: Chelsea Green Publishing.
 
+Littler, J. (2017). *Against meritocracy: Culture, power and myths of mobility*. London: Routledge.
+
+Marx, K. (1977). A contribution to the critique of political economy. Moscow: Progress Publishers. (Original work published 1859)
+
 Maslow, A. H. (1943). A theory of human motivation. *Psychological Review*, 50(4), 370-396.
+
+Mirowski, P., & Plehwe, D. (Eds.). (2009). *The road from Mont Pèlerin: The making of the neoliberal thought collective*. Cambridge, MA: Harvard University Press.
 
 Nozick, R. (1974). *Anarchy, state, and utopia*. New York: Basic Books.
 
 Rawls, J. (1971). *A theory of justice*. Cambridge, MA: Harvard University Press.
 
+Sandel, M. J. (2020). *The tyranny of merit: What's become of the common good?* New York: Farrar, Straus and Giroux.
+
 Sen, A. (2009). *The idea of justice*. Cambridge, MA: Harvard University Press.
+
+Thompson, E. P. (1963). *The making of the English working class*. London: Victor Gollancz.
 
 ---
 
