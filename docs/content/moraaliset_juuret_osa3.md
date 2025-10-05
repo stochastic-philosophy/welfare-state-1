@@ -40,7 +40,7 @@ Barrettin teoria tekee Haidtin (2012) moraalisten perustusten kulttuurisesta var
 
 Mutta tämä ei tee niistä **mielivaltaisia**. Kun amerikkalainen konservatiivi tuntee että **jotain pyhää rikotaan** kuullessaan veroista, ja suomalainen sosiaalidemokraatti tuntee että **moraalinen järjestys häiriintyy** kuullessaan köyhien jättämisestä yksin, molemmat tunnerekistereissä tuottavat **heuristisia arvioita** siitä, mikä säilyttää ja mikä uhkaa hyvin toimivaa yhteiskuntaa. Kumpikin integroi tietoa siitä, miten yhteiskunnat toimivat ja milloin ne romahtavat (Barrett, 2017).
 
-**Se, että tunnekonseptyat ovat kulttuurisesti opittuja, ei tee niistä epistemologisesti arvottomia**. Kulttuuri itsessään on kollektiivinen oppimisprosessi, jossa yhteisöt oppivat mikä toimii ja mikä ei. Toiset kulttuurit ovat voineet oppia parempia tapoja tuottaa moraalista tietoa kuin toiset. Ilman tunteellisia informaatiolähteitä - kuten Phineas Gage -tapauksissa - ihmiset eivät pystyisi priorisoimaan mitään, koska heiltä puuttuisi tieto siitä, mikä on tärkeää ja mikä ei.
+**Se, että tunnekonseptit ovat kulttuurisesti opittuja, ei tee niistä epistemologisesti arvottomia**. Kulttuuri itsessään on kollektiivinen oppimisprosessi, jossa yhteisöt oppivat mikä toimii ja mikä ei. Toiset kulttuurit ovat voineet oppia parempia tapoja tuottaa moraalista tietoa kuin toiset. Ilman tunteellisia informaatiolähteitä - kuten Phineas Gage -tapauksissa - ihmiset eivät pystyisi priorisoimaan mitään, koska heiltä puuttuisi tieto siitä, mikä on tärkeää ja mikä ei.
 
 Tämä selittää myös, miksi rationaaliset argumentit eivät pure: ne eivät vain **haasta intellektuaalisia uskomuksia** vaan **uhkaavat syvällä opittuja tapoja tuottaa tietoa maailmasta**. Muutos vaatii osoittamista siitä, että uusi tiedontuottamistapa on **toimivampi** vanhan sijaan, ei vain uusien faktojen esittämistä.
 
@@ -75,7 +75,7 @@ Yhdistämällä nämä tutkimuslinjat voidaan ehdottaa seuraavaa **yhtenäistä 
 
 Kaikki moraalinen päätöksenteko alkaa **Damasion somaattisista markereista**: nopeat, esitietoiset tunne-reaktiot eri vaihtoehtoihin. Nämä eivät ole "irrationaalisia" vaan kehittyneitä arviointijärjestelmiä jotka integroivat:
 - **Biologiset valmiudet** (Haidtin moraaliset perustukset)
-- **Kulttuurisesti opitut tunnekonseptyat** (Barrettin constructed emotions)  
+- **Kulttuurisesti opitut tunnekonseptit** (Barrettin constructed emotions)  
 - **Aiemmat kokemukset** ja oppiminen
 
 #### Taso 2: Identiteetin läheisyyden arviointi
@@ -94,7 +94,7 @@ Aivot arvioivat nopeasti: **kuinka lähellä tämä kysymys on minun identiteett
 
 Kaikki edellä mainitut prosessit toimivat **kulttuurisesti opittujen kategorioiden** kautta:
 - Mitkä asiat lasketaan "moraalisiksi" (vs. käytännöllisiksi, esteettisiksi tms.)
-- Mitkä tunnekonseptyat ovat käytettävissä (esim. "pyhän rikkominen" vs. "solidaarisuus")
+- Mitkä tunnekonseptit ovat käytettävissä (esim. "pyhän rikkominen" vs. "solidaarisuus")
 - Mitkä ryhmät ovat "meitä" vs. "heitä" (lojaalisuuden kohteet)
 
 ### Normatiiviset kysymykset vahvistuvat
