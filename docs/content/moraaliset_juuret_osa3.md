@@ -1,4 +1,4 @@
-# Hyvinvointivaltiokiistan moraaliset juuret
+# Hyvinvointivaltiokiistan moraaliset juuret - Väliosio
 
 ## Neurotieteen valossa: Tunteet rationaalisen päätöksenteon ytimessä
 
@@ -22,7 +22,7 @@ Damasion **somaattisten markereiden teoria** ehdottaa, että tunteet toimivat no
 
 Nämä löydökset mullistavat ymmärryksemme Haidtin (2001, 2012) "norsun ja ratsastajan" mallista. **"Norsu" ei ole irrationaalinen häirikkö joka estää hyvää päätöksentekoa - se ON hyvän päätöksenteon edellytys**. Moraaliset intuittiot eivät ole "pelkkiä tunteita" jotka pitäisi sivuuttaa, vaan **informaatiolähteitä** jotka kertovat jotain tärkeää maailman toiminnasta ja prioriteeteista.
 
-Kriittisesti: **moraalinen tunne on tietoa**. Kun konservatiivi "tuntee siskoissaan" että tulonsiirrot ovat väärin, hänen tunnereaktionsa sisältää **heuristisen arvion** siitä, että tämä toimintatapa todennäköisesti johtaa huonoihin seurauksiin - kannustinongelmat, riippuvuuden kulttuuri, yhteiskunnallisen koheesion heikkeneminen. Samoin kun liberaali "tuntee siskoissaan" että eriarvoisuus on väärä, hänen reaktionsa sisältää heuristisen arvion siitä, että eriarvoisuus johtaa sosiaaliseen epävakauteen, lahjakkuuden hukkaan ja kärsimykseen.
+Kriittisesti: **moraalinen tunne on tietoa**. Kun konservatiivi **tuntee syvässä sisimmässään** että tulonsiirrot ovat väärin, hänen tunnereaktionsa sisältää **heuristisen arvion** siitä, että tämä toimintatapa todennäköisesti johtaa huonoihin seurauksiin - kannustinongelmat, riippuvuuden kulttuuri, yhteiskunnallisen koheesion heikkeneminen. Samoin kun liberaali **tuntee intuitiivisesti** että eriarvoisuus on väärä, hänen reaktionsa sisältää heuristisen arvion siitä, että eriarvoisuus johtaa sosiaaliseen epävakauteen, lahjakkuuden hukkaan ja kärsimykseen.
 
 **Molemmat reaktiot ovat informatiivisia** - ne perustuvat erilaisiin kokemuksiin ja havainnointeihin maailman toiminnasta. Mutta tämä ei tarkoita, että molemmat olisivat **yhtä oikeita**. Jos moraali on viimekädessä heuristinen vastaus kysymyksiin "miten luonto toimii ja mitä priorisoida jotta itselle tärkeisiin tavoitteisiin päästään", niin empiirinen evidenssi voi kertoa, kumpi heuristiikka toimii paremmin tiettyjen tavoitteiden saavuttamisessa.
 
