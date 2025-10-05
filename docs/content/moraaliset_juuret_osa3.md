@@ -1,5 +1,21 @@
 # Hyvinvointivaltiokiistan moraaliset juuret - Osa 3
 
+**Normatiivinen refleksiivisyys: moraalinen kasvu ja tiedollinen nöyryys arvona**
+
+Jos moraalinen ajattelu on, kuten edellä on esitetty, dynaaminen oppimisprosessi, ei tämän mallin merkitys jää deskriptiiviseksi. Se sisältää implisiittisen **normatiivisen väitteen**: moraalisesti kehittynyt yhteiskunta on sellainen, joka kykenee ylläpitämään refleksiivisyyttä — toisin sanoen, kykyä tarkastella ja muuttaa omia moraalisia skeemojaan.
+
+Tämä ajatus voidaan nimetä **moraaliseksi kasvuksi**, analogisesti Dweckin (2006, 2017) “growth mindsetiin”. Mutta toisin kuin pelkkä kognitiivinen joustavuus, moraalinen kasvu on myös **tiedollista nöyryyttä** (*epistemic humility*): ymmärrystä siitä, että omat intuitiot voivat olla kontekstuaalisia, historiallisesti rakentuneita ja rajallisia (Churchland, 2011; Zagzebski, 1996).
+
+Refleksiivinen moraali ei siis perustu vakaiden periaatteiden kumoamiseen, vaan niiden jatkuvaan arviointiin — siihen, että identiteetin ytimessä ei ole tietty arvo, vaan **valmius arvioida arvojaan**. Tällainen metatason asenne vastaa Aristoteleen *phronesis*-käsitteen (käytännöllinen viisaus) ja Habermasin (1990) kommunikatiivisen rationaalisuuden yhdistelmää: moraali ei ole sääntöjen noudattamista, vaan yhteisöllistä keskustelua siitä, mikä on oikein.
+
+Tämä tuo tekstin keskeisen väitteen normatiiviseen muotoon:
+
+> Moraalisesti kypsä yhteiskunta ei ole se, joka on löytänyt “oikeat arvot”, vaan se, joka on institutionalisoitunut tavalla, joka **palkitsee oppimisen, itsekorjauksen ja moraalisen epävarmuuden sietämisen**.
+
+Tämä näkemys asettuu vastakkain sekä konservatiivisen moraalirealismin että relativistisen moraalisen skeptisismin kanssa. Ensimmäinen pitää moraalia pysyvänä ja muuttumattomana (fixed moral mindset), jälkimmäinen hylkää yhteiset perustelut kokonaan. Refleksiivinen moraali tunnustaa sen sijaan, että moraali on *historiallisesti välittynyt mutta rationaalisesti korjattavissa oleva prosessi* (Appiah, 2008; Dewey, 1939; Nussbaum, 1997).
+
+Moraalisen kasvun ihanne on näin myös demokraattinen ihanne: se edellyttää rakenteita, jotka tekevät mahdolliseksi toisinajattelun ilman identiteettiuhkaa. Hyvinvointivaltiokeskustelussa tämä tarkoittaa, että poliittisen argumentin rinnalla täytyy olla **turvallisuuden ja tunnustuksen infrastruktuuri** (Honneth, 1995). Vasta kun ihmiset kokevat identiteettinsä riittävän turvatuksi, he voivat olla moraalisesti avoimia — ei siksi, että olisivat rationaalisempia, vaan siksi, että he uskaltavat olla haavoittuvia.
+
 ## Synteesi: Integroiva teoria moraalisesta päätöksenteosta
 
 ### Yhdistävä malli
@@ -283,19 +299,29 @@ Hyvinvointivaltio-keskustelu voi muuttua hedelmällisemmäksi, jos ymmärrämme 
 
 Ahmed, S. (2014). *The Cultural Politics of Emotion*. Edinburgh University Press.
 
+Appiah, K. A. (2008). *Experiments in Ethics*. Harvard University Press.
+
 Bourdieu, P. (1984). *Distinction: A social critique of the judgement of taste*. Cambridge, MA: Harvard University Press.
 
 Bourdieu, P. (1991). *Language and symbolic power*. Cambridge, MA: Harvard University Press.
 
 Brown, W. (2015). *Undoing the demos: Neoliberalism's stealth revolution*. New York: Zone Books.
 
+Churchland, P. S. (2011). *Braintrust: What Neuroscience Tells Us about Morality*. Princeton University Press.
+
+Dewey, J. (1939). *Theory of Valuation*. University of Chicago Press.
+
 Gramsci, A. (1971). *Selections from the prison notebooks*. New York: International Publishers.
 
 Greene, J. D. (2013). *Moral tribes: Emotion, reason, and the gap between us and them*. New York: Penguin Press.
 
+Habermas, J. (1990). *Moral Consciousness and Communicative Action*. MIT Press.
+
 Hall, S. (1988). The hard road to renewal: Thatcherism and the crisis of the left. London: Verso.
 
 Harjuniemi, T., & Ampuja, M. (2019). Established ideas in new forms: The covert media logic of economic journalism. *Discourse & Communication*, 13(1), 5-27.
+
+Honneth, A. (1995). *The Struggle for Recognition: The Moral Grammar of Social Conflicts*. Polity Press.
 
 Iyengar, S., Sood, G., & Lelkes, Y. (2019). Affective polarization in the United States. *Annual Review of Political Science*, 22, 129–146.
 
@@ -313,6 +339,8 @@ Mirowski, P., & Plehwe, D. (Eds.). (2009). *The road from Mont Pèlerin: The mak
 
 Nozick, R. (1974). *Anarchy, state, and utopia*. New York: Basic Books.
 
+Nussbaum, M. C. (1997). *Cultivating Humanity: A Classical Defense of Reform in Liberal Education*. Harvard University Press.
+
 Nyhan, B., & Reifler, J. (2010). When corrections fail: The persistence of political misperceptions. *Political Behavior*, 32(2), 303–330.
 
 Protevi, J. (2009). *Political Affect: Connecting the Social and the Somatic*. University of Minnesota Press.
@@ -324,6 +352,8 @@ Sandel, M. J. (2020). *The tyranny of merit: What's become of the common good?* 
 Sen, A. (2009). *The idea of justice*. Cambridge, MA: Harvard University Press.
 
 Thompson, E. P. (1963). *The making of the English working class*. London: Victor Gollancz.
+
+Zagzebski, L. (1996). *Virtues of the Mind: An Inquiry into the Nature of Virtue and the Ethical Foundations of Knowledge*. Cambridge University Press.
 
 ---
 
