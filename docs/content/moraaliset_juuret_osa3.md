@@ -103,7 +103,7 @@ Tämä integroiva malli **ei selitä pois** normatiivisia kysymyksiä oikeudenmu
 
 **Kriittinen ymmärrys:** Emme voi "päättää" antaammeko moraalisten tunteiden vaikuttaa päätöksentekoomme, koska **tunteet vaikuttavat ennen tietoista päätöksentekoa**. Tunteet ohjaavat huomioverkostoamme - ne määrittävät mitkä asiat ylipäätään nousevat tietoisuuteemme ja mitkä jäävät huomaamatta. Vain riittävän tunnesisällön omaavat asiat kiinnittävät huomiomme ja tulevat pohdinnan kohteiksi. Jos joku luulee ajattelevansa "kylmän rationaalisesti" tunteiden vaikuttamatta, hän on todennäköisesti vain aleksityyminen - tiedostamaton omista tunteistaan - mutta tunteet silti ohjaavat sitä, mihin hän kiinnittää huomiota ja mistä hän ajattelee.
 
-Phineas Gage -tapaukset osoittavat mitä tapahtuu kun tämä tunneohjattu huomioverkosto ei toimi lainkaan: **satunnaisia asioita nousee tietoisuuteen** ilman järkevää priorisointia, koska puuttuu elämänkokemuksen tuoma viisaus siitä, mikä on tärkeää ja mikä ei ole.
+Phineas Gage -tapaukset osoittavat mitä tapahtuu kun tämä tunneohjattu huomioverkosto ei toimi: **satunnaisia asioita nousee tietoisuuteen** ilman järkevää priorisointia, koska puuttuu elämänkokemuksen tuoma viisaus siitä, mikä on tärkeää ja mikä ei ole.
 
 Tämä lähestymistapa osoittaa:
 
@@ -115,7 +115,7 @@ Tämä lähestymistapa osoittaa:
 
 4. **Millä edellytyksillä hedelmällinen keskustelu on mahdollista:** Kun tunnustetaan että vastapuolen huomioverkosto on aito informaatiojärjestelmä, mutta arvioidaan kriittisesti millaista tietoa se tuottaa ja mitä se jättää huomaamatta
 
-5. **Miten moraalista edistystä voi tapahtua:** Kun opimme laajentamaan huomioverkostoamme ja parantamaan tunteiden tuottaman tiedon laatua ja kattavuutta
+5. **Miten moraalista edistystä voi tapahtua:** Kun opimme **kalibroimaan paremmin** huomioverkostomme tunnereaktioita - ei muuttamalla itse verkon kapasiteettia, vaan parantamalla sitä tietoa jota tunteet tuottavat ja laajentamalla konteksteja joissa toimimme
 
 **Keskeinen oivallus:** Ilman tunteellisia informaatiolähteitä - kuten Phineas Gage ja muut VMF-potilaat osoittavat - emme pystyisi priorisoimaan mitään. Moraalisten tunteiden eliminoiminen ei johtaisi "puhtaaseen rationaalisuuteen" vaan **täydelliseen toimintakyvyttömyyteen** kaikissa käytännön päätöksentekotilanteissa. Tunteet eivät ole järjen vihollisia - ne ovat järjen välttämätön kumppani.
 
