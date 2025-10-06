@@ -103,7 +103,7 @@ Tämä integroiva malli **ei selitä pois** normatiivisia kysymyksiä oikeudenmu
 
 **Kriittinen ymmärrys:** Emme voi "päättää" antaammeko moraalisten tunteiden vaikuttaa päätöksentekoomme, koska **tunteet vaikuttavat ennen tietoista päätöksentekoa**. Tunteet ohjaavat huomioverkostoamme - ne määrittävät mitkä asiat ylipäätään nousevat tietoisuuteemme ja mitkä jäävät huomaamatta. Vain riittävän tunnesisällön omaavat asiat kiinnittävät huomiomme ja tulevat pohdinnan kohteiksi. Jos joku luulee ajattelevansa "kylmän rationaalisesti" tunteiden vaikuttamatta, hän on todennäköisesti vain aleksityyminen - tiedostamaton omista tunteistaan - mutta tunteet silti ohjaavat sitä, mihin hän kiinnittää huomiota ja mistä hän ajattelee.
 
-Phineas Gage -tapaukset osoittavat mitä tapahtuu kun tämä tunneohjattu huomioverkosto ei toimi: **satunnaisia asioita nousee tietoisuuteen** ilman järkevää priorisointia, koska puuttuu elämänkokemuksen tuoma viisaus siitä, mikä on tärkeää ja mikä ei ole.
+Phineas Gage -tapaukset osoittavat mitä tapahtuu kun tämä tunneohjattu huomioverkosto ei toimi lainkaan: **satunnaisia asioita nousee tietoisuuteen** ilman järkevää priorisointia, koska puuttuu elämänkokemuksen tuoma viisaus siitä, mikä on tärkeää ja mikä ei ole.
 
 Tämä lähestymistapa osoittaa:
 
